@@ -5,18 +5,16 @@
 using namespace std;
 int main() {
     cout << "Program Started!" << endl;
-
-    int t=1;  //for the y
+    int x=1; //for the x
+    int y=1;  //for the y
     int k=2; //for the z
     int l=3; //for the z
     for (int i=0 ; i<73;i++) //To Print All Equations
     {
-        for (int j=1; j<2; j++){  //To print second value of B
-
             cout<< "E_constraint" + to_string(i) +": ";
-            cout<<"B" + to_string(j)+ "_"+to_string(t)+ "_"+to_string(k);
+            cout<<"B" + to_string(x)+ "_"+to_string(y)+ "_"+to_string(k);
             cout<<" + ";
-            cout<<"B" + to_string(j)+ "_"+to_string(t)+ "_"+to_string(l);
+            cout<<"B" + to_string(x)+ "_"+to_string(y)+ "_"+to_string(l);
             cout<<" <= ";
             cout<<"1"<<endl;
             k=k+2;
@@ -26,7 +24,7 @@ int main() {
 
             if (k==10)
                 {
-                    t=t+1;
+                    y=y+1;
                     k=2;
                     cout<<endl;
                 }
@@ -34,7 +32,12 @@ int main() {
                 {
                     l=3;
                 }
-        }
+            if (y==4)
+                 {
+                     y=1;
+                    x=x+1;
+                }
+
     }
     return 0;
 }
