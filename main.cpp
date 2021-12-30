@@ -4,23 +4,40 @@
 
 using namespace std;
 int main() {
-    cout << "Program Started!4" << endl;
-    for (int i=0 ; i<3;i++) //To Print All Equations
+    cout << "Program Started!" << endl;
+
+    int t=1;  //for the y
+    int k=2; //for the z
+    int l=3; //for the z
+    for (int i=0 ; i<73;i++) //To Print All Equations
     {
-        for (int j=0; j<9; j++){  //To print second value of B
+        for (int j=1; j<2; j++){  //To print second value of B
 
-            cout<< "E_constraint" + to_string(j) +":"<<endl;
-            cout<<"Hi: "+ to_string(j);
+            cout<< "E_constraint" + to_string(i) +": ";
+            cout<<"B" + to_string(j)+ "_"+to_string(t)+ "_"+to_string(k);
+            cout<<" + ";
+            cout<<"B" + to_string(j)+ "_"+to_string(t)+ "_"+to_string(l);
+            cout<<" <= ";
+            cout<<"1"<<endl;
+            k=k+2;
+            l=l+2;
 
+//B1_1_2 + A1_1_3 <= 1
 
-
-            cout<<": "+ to_string(j);
+            if (k==10)
+                {
+                    t=t+1;
+                    k=2;
+                    cout<<endl;
+                }
+            if (l==11)
+                {
+                    l=3;
+                }
         }
     }
     return 0;
 }
-
-
 /*MINIMIZE
 -x1 -2x2 +2x3 +x4
         SUBJECT TO
