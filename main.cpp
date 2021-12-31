@@ -11,7 +11,6 @@ int main() {
     int z1=2; //for the z
     int z2=3; //for the z
 
-
     myfile<< "MINIMIZE"<<endl;
     myfile<< "-x1 -2x2 +2x3 +x4"<<endl;
     myfile<< "SUBJECT TO"<<endl;
