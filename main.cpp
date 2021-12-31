@@ -1,34 +1,40 @@
 //This is an application for creating automated .qlp files
 #include <iostream>
-#include <string>
+#include <fstream> //for writing to a file
 
 using namespace std;
 int main() {
-    cout << "Program Started!" << endl;
+    ofstream myfile;
+    myfile.open ("final.qlp");
     int x=1; //for the x
     int y=1;  //for the y
     int z1=2; //for the z
     int z2=3; //for the z
 
-    cout<< "MINIMIZE"<<endl;
-    cout<< "-x1 -2x2 +2x3 +x4"<<endl;
 
-    cout<< "SUBJECT TO"<<endl;
-    cout<< "#Existential Constratins"<<endl;
+    myfile << "Writing this to a file.\n";
+    myfile<< "MINIMIZE"<<endl;
 
-    cout<< " "<<endl;
+
+    myfile<< "MINIMIZE"<<endl;
+    myfile<< "-x1 -2x2 +2x3 +x4"<<endl;
+
+    myfile<< "SUBJECT TO"<<endl;
+    myfile<< "#Existential Constratins"<<endl;
+
+    myfile<< " "<<endl;
 
 
     for (int i=1 ; i<73;i++) //To Print All Equations
     {
 
 
-        cout<< "E_constraint" + to_string(i) +": ";
-            cout<<"B" + to_string(x)+ "_"+to_string(y)+ "_"+to_string(z1);
-            cout<<" + ";
-            cout<<"B" + to_string(x)+ "_"+to_string(y)+ "_"+to_string(z2);
-            cout<<" <= ";
-            cout<<"1"<<endl;
+        myfile<< "E_constraint" + to_string(i) +": ";
+        myfile<<"B" + to_string(x)+ "_"+to_string(y)+ "_"+to_string(z1);
+        myfile<<" + ";
+        myfile<<"B" + to_string(x)+ "_"+to_string(y)+ "_"+to_string(z2);
+        myfile<<" <= ";
+        myfile<<"1"<<endl;
             z1=z1+2;
             z2=z2+2;
 
@@ -38,21 +44,38 @@ int main() {
                 {
                     y=y+1;
                     z1=2;
-                    cout<<endl;
+                    myfile<<endl;
                 }
             if (z2==11)
                 {
                     z2=3;
                 }
             if (y==4)
-                 {
+                {
                      y=1;
                     x=x+1;
                 }
 
     }
+
+    myfile.close();
+    cout<<"Writing is successful!"<<endl;
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*MINIMIZE
 -x1 -2x2 +2x3 +x4
         SUBJECT TO
