@@ -1,49 +1,104 @@
 //This is an application for creating automated final.qlp file
 #include <iostream>
 #include <fstream> //for writing to a file
-
 using namespace std;
 int main() {
-    ofstream myfile;
-    myfile.open ("final.qlp");
-    int x=1; //for the x coordinate
-    int y=1;  //for the y
-    int z1=2; //for the z
-    int z2=3; //for the z
+    ofstream myfile; //Defining file name
+    myfile.open ("final.qlp"); //Opening the file
+    int i=1; //for the x coordinate of the board
+    int j=1;  //for the y coordinate of the board
+    int k=3; //k value
 
     myfile<< "MINIMIZE"<<endl;
     myfile<< "-x1 -2x2 +2x3 +x4"<<endl;
     myfile<< "SUBJECT TO"<<endl;
-    myfile<< "#Existential Constratins"<<endl;
+    myfile<< "#Existential Constrains"<<endl;
     myfile<< " "<<endl;
 
-    for (int i=1 ; i<73;i++) //To Print All Equations
-    {
-        myfile<< "E_constraint" + to_string(i) +": ";
-        myfile<<"B" + to_string(x)+ "_"+to_string(y)+ "_"+to_string(z1);
-        myfile<<" + ";
-        myfile<<"B" + to_string(x)+ "_"+to_string(y)+ "_"+to_string(z2);
-        myfile<<" <= ";
-        myfile<<"1"<<endl;
-            z1=z1+2;
-            z2=z2+2;
+    myfile<<"#First Constraint Set of Existential Player (36 Constraints)"<<endl;
 
-            if (z1==10)
-                {
-                    y=y+1;
-                    z1=2;
-                    myfile<<endl;
-                }
-            if (z2==11)
-                {
-                    z2=3;
-                }
-            if (y==4)
-                {
-                     y=1;
-                    x=x+1;
-                }
+    for(int a=1 ; a<37;a++)
+    {
+        //Printing
+        myfile<< "E_constraint" + to_string(a) +": ";
+        myfile<<"B" + to_string(i)+ "_"+to_string(j)+ "_"+to_string(k-1)+ " + ";
+        myfile<<"A" + to_string(i)+ "_"+to_string(j)+ "_"+to_string(k)+ " <= 1"<< endl;
+
+        k=k+2; //Increase k value in each step, k ∈ {3,5,7,9}
+
+        if (k==10 || k==11) // Since k ∈ {3,5,7,9}
+        {
+            k=3; //Resetting K value
+            j=j+1; //Increasing J value
+            myfile<<endl;
+        }
+        if (j==4)
+        {
+            j=1; //Resetting j value since board size is 3x3
+            i=i+1; //Increasing i Value in each three step
+        }
     }
+
+    myfile<<"#Second Constraint Set of Existential Player (36 Constraints)"<<endl;
+    myfile<<endl;
+
+    i=1; //for the x coordinate of the board
+    j=1;  //for the y coordinate of the board
+    k=3; //k value
+    int a=36;
+
+    for (int b=1 ;b<37; b++)
+    {
+        //Printing
+        myfile<< "E_constraint" + to_string(a+b) +": ";
+        myfile<<"A" + to_string(i)+ "_"+to_string(j)+ "_"+to_string(k-2)+ " + ";
+        myfile<<"A" + to_string(i)+ "_"+to_string(j)+ "_"+to_string(k)+ " <= 1"<< endl;
+
+        k=k+2; //Increase k value in each step, k ∈ {3,5,7,9}
+
+        if (k==10 || k==11) // Since k ∈ {3,5,7,9}
+        {
+            k=3; //Resetting K value
+            j=j+1; //Increasing J value
+            myfile<<endl;
+        }
+        if (j==4)
+        {
+            j=1; //Resetting j value since board size is 3x3
+            i=i+1; //Increasing i Value in each three step
+        }
+    }
+
+
+    myfile<<"#Third Constraint Set Ai_j_k"<<endl;
+    myfile<<endl;
+
+    i=1; //for the x coordinate of the board
+    j=1;  //for the y coordinate of the board
+    k=3; //k value
+    int a=36;
+    int b=36;
+
+    for (int c=1 ;c<5; c++)
+    {
+
+        //DEVAM DEFINING
+        //E_Constraint72: A1_1_1+ A1_2_1+ A1_3_1+ A2_1_1 + A2_2_1+ A2_3_1+ A3_1_1+ A3_2_1 + A3_3_1 = 1/2+1
+        //Printing
+        myfile<< "E_constraint" + to_string(a+b+c) +": ";
+        myfile<<"A" + to_string(i)+ "_"+to_string(j)+ "_"+to_string(k-2)+ " + ";
+
+        k=k+2; //Increase k value in each step, k ∈ {3,5,7,9}
+
+
+    }
+
+
+
+
+
+
+
     myfile.close();
     cout<<"Writing is successful!"<<endl;
     return 0;

@@ -1,97 +1,100 @@
-Writing this to a file.
-MINIMIZE
 MINIMIZE
 -x1 -2x2 +2x3 +x4
 SUBJECT TO
-#Existential Constratins
+#Existential Constrains
  
-E_constraint1: B1_1_2 + B1_1_3 <= 1
-E_constraint2: B1_1_4 + B1_1_5 <= 1
-E_constraint3: B1_1_6 + B1_1_7 <= 1
-E_constraint4: B1_1_8 + B1_1_9 <= 1
+#First Constraint Set of Existential Player (36 Constraints)
+E_constraint1: B1_1_2 + A1_1_3 <= 1
+E_constraint2: B1_1_4 + A1_1_5 <= 1
+E_constraint3: B1_1_6 + A1_1_7 <= 1
+E_constraint4: B1_1_8 + A1_1_9 <= 1
 
-E_constraint5: B1_2_2 + B1_2_3 <= 1
-E_constraint6: B1_2_4 + B1_2_5 <= 1
-E_constraint7: B1_2_6 + B1_2_7 <= 1
-E_constraint8: B1_2_8 + B1_2_9 <= 1
+E_constraint5: B1_2_2 + A1_2_3 <= 1
+E_constraint6: B1_2_4 + A1_2_5 <= 1
+E_constraint7: B1_2_6 + A1_2_7 <= 1
+E_constraint8: B1_2_8 + A1_2_9 <= 1
 
-E_constraint9: B1_3_2 + B1_3_3 <= 1
-E_constraint10: B1_3_4 + B1_3_5 <= 1
-E_constraint11: B1_3_6 + B1_3_7 <= 1
-E_constraint12: B1_3_8 + B1_3_9 <= 1
+E_constraint9: B1_3_2 + A1_3_3 <= 1
+E_constraint10: B1_3_4 + A1_3_5 <= 1
+E_constraint11: B1_3_6 + A1_3_7 <= 1
+E_constraint12: B1_3_8 + A1_3_9 <= 1
 
-E_constraint13: B2_1_2 + B2_1_3 <= 1
-E_constraint14: B2_1_4 + B2_1_5 <= 1
-E_constraint15: B2_1_6 + B2_1_7 <= 1
-E_constraint16: B2_1_8 + B2_1_9 <= 1
+E_constraint13: B2_1_2 + A2_1_3 <= 1
+E_constraint14: B2_1_4 + A2_1_5 <= 1
+E_constraint15: B2_1_6 + A2_1_7 <= 1
+E_constraint16: B2_1_8 + A2_1_9 <= 1
 
-E_constraint17: B2_2_2 + B2_2_3 <= 1
-E_constraint18: B2_2_4 + B2_2_5 <= 1
-E_constraint19: B2_2_6 + B2_2_7 <= 1
-E_constraint20: B2_2_8 + B2_2_9 <= 1
+E_constraint17: B2_2_2 + A2_2_3 <= 1
+E_constraint18: B2_2_4 + A2_2_5 <= 1
+E_constraint19: B2_2_6 + A2_2_7 <= 1
+E_constraint20: B2_2_8 + A2_2_9 <= 1
 
-E_constraint21: B2_3_2 + B2_3_3 <= 1
-E_constraint22: B2_3_4 + B2_3_5 <= 1
-E_constraint23: B2_3_6 + B2_3_7 <= 1
-E_constraint24: B2_3_8 + B2_3_9 <= 1
+E_constraint21: B2_3_2 + A2_3_3 <= 1
+E_constraint22: B2_3_4 + A2_3_5 <= 1
+E_constraint23: B2_3_6 + A2_3_7 <= 1
+E_constraint24: B2_3_8 + A2_3_9 <= 1
 
-E_constraint25: B3_1_2 + B3_1_3 <= 1
-E_constraint26: B3_1_4 + B3_1_5 <= 1
-E_constraint27: B3_1_6 + B3_1_7 <= 1
-E_constraint28: B3_1_8 + B3_1_9 <= 1
+E_constraint25: B3_1_2 + A3_1_3 <= 1
+E_constraint26: B3_1_4 + A3_1_5 <= 1
+E_constraint27: B3_1_6 + A3_1_7 <= 1
+E_constraint28: B3_1_8 + A3_1_9 <= 1
 
-E_constraint29: B3_2_2 + B3_2_3 <= 1
-E_constraint30: B3_2_4 + B3_2_5 <= 1
-E_constraint31: B3_2_6 + B3_2_7 <= 1
-E_constraint32: B3_2_8 + B3_2_9 <= 1
+E_constraint29: B3_2_2 + A3_2_3 <= 1
+E_constraint30: B3_2_4 + A3_2_5 <= 1
+E_constraint31: B3_2_6 + A3_2_7 <= 1
+E_constraint32: B3_2_8 + A3_2_9 <= 1
 
-E_constraint33: B3_3_2 + B3_3_3 <= 1
-E_constraint34: B3_3_4 + B3_3_5 <= 1
-E_constraint35: B3_3_6 + B3_3_7 <= 1
-E_constraint36: B3_3_8 + B3_3_9 <= 1
+E_constraint33: B3_3_2 + A3_3_3 <= 1
+E_constraint34: B3_3_4 + A3_3_5 <= 1
+E_constraint35: B3_3_6 + A3_3_7 <= 1
+E_constraint36: B3_3_8 + A3_3_9 <= 1
 
-E_constraint37: B4_1_2 + B4_1_3 <= 1
-E_constraint38: B4_1_4 + B4_1_5 <= 1
-E_constraint39: B4_1_6 + B4_1_7 <= 1
-E_constraint40: B4_1_8 + B4_1_9 <= 1
+#Second Constraint Set of Existential Player (36 Constraints)
 
-E_constraint41: B4_2_2 + B4_2_3 <= 1
-E_constraint42: B4_2_4 + B4_2_5 <= 1
-E_constraint43: B4_2_6 + B4_2_7 <= 1
-E_constraint44: B4_2_8 + B4_2_9 <= 1
+E_constraint37: A1_1_1 + A1_1_3 <= 1
+E_constraint38: A1_1_3 + A1_1_5 <= 1
+E_constraint39: A1_1_5 + A1_1_7 <= 1
+E_constraint40: A1_1_7 + A1_1_9 <= 1
 
-E_constraint45: B4_3_2 + B4_3_3 <= 1
-E_constraint46: B4_3_4 + B4_3_5 <= 1
-E_constraint47: B4_3_6 + B4_3_7 <= 1
-E_constraint48: B4_3_8 + B4_3_9 <= 1
+E_constraint41: A1_2_1 + A1_2_3 <= 1
+E_constraint42: A1_2_3 + A1_2_5 <= 1
+E_constraint43: A1_2_5 + A1_2_7 <= 1
+E_constraint44: A1_2_7 + A1_2_9 <= 1
 
-E_constraint49: B5_1_2 + B5_1_3 <= 1
-E_constraint50: B5_1_4 + B5_1_5 <= 1
-E_constraint51: B5_1_6 + B5_1_7 <= 1
-E_constraint52: B5_1_8 + B5_1_9 <= 1
+E_constraint45: A1_3_1 + A1_3_3 <= 1
+E_constraint46: A1_3_3 + A1_3_5 <= 1
+E_constraint47: A1_3_5 + A1_3_7 <= 1
+E_constraint48: A1_3_7 + A1_3_9 <= 1
 
-E_constraint53: B5_2_2 + B5_2_3 <= 1
-E_constraint54: B5_2_4 + B5_2_5 <= 1
-E_constraint55: B5_2_6 + B5_2_7 <= 1
-E_constraint56: B5_2_8 + B5_2_9 <= 1
+E_constraint49: A2_1_1 + A2_1_3 <= 1
+E_constraint50: A2_1_3 + A2_1_5 <= 1
+E_constraint51: A2_1_5 + A2_1_7 <= 1
+E_constraint52: A2_1_7 + A2_1_9 <= 1
 
-E_constraint57: B5_3_2 + B5_3_3 <= 1
-E_constraint58: B5_3_4 + B5_3_5 <= 1
-E_constraint59: B5_3_6 + B5_3_7 <= 1
-E_constraint60: B5_3_8 + B5_3_9 <= 1
+E_constraint53: A2_2_1 + A2_2_3 <= 1
+E_constraint54: A2_2_3 + A2_2_5 <= 1
+E_constraint55: A2_2_5 + A2_2_7 <= 1
+E_constraint56: A2_2_7 + A2_2_9 <= 1
 
-E_constraint61: B6_1_2 + B6_1_3 <= 1
-E_constraint62: B6_1_4 + B6_1_5 <= 1
-E_constraint63: B6_1_6 + B6_1_7 <= 1
-E_constraint64: B6_1_8 + B6_1_9 <= 1
+E_constraint57: A2_3_1 + A2_3_3 <= 1
+E_constraint58: A2_3_3 + A2_3_5 <= 1
+E_constraint59: A2_3_5 + A2_3_7 <= 1
+E_constraint60: A2_3_7 + A2_3_9 <= 1
 
-E_constraint65: B6_2_2 + B6_2_3 <= 1
-E_constraint66: B6_2_4 + B6_2_5 <= 1
-E_constraint67: B6_2_6 + B6_2_7 <= 1
-E_constraint68: B6_2_8 + B6_2_9 <= 1
+E_constraint61: A3_1_1 + A3_1_3 <= 1
+E_constraint62: A3_1_3 + A3_1_5 <= 1
+E_constraint63: A3_1_5 + A3_1_7 <= 1
+E_constraint64: A3_1_7 + A3_1_9 <= 1
 
-E_constraint69: B6_3_2 + B6_3_3 <= 1
-E_constraint70: B6_3_4 + B6_3_5 <= 1
-E_constraint71: B6_3_6 + B6_3_7 <= 1
-E_constraint72: B6_3_8 + B6_3_9 <= 1
+E_constraint65: A3_2_1 + A3_2_3 <= 1
+E_constraint66: A3_2_3 + A3_2_5 <= 1
+E_constraint67: A3_2_5 + A3_2_7 <= 1
+E_constraint68: A3_2_7 + A3_2_9 <= 1
+
+E_constraint69: A3_3_1 + A3_3_3 <= 1
+E_constraint70: A3_3_3 + A3_3_5 <= 1
+E_constraint71: A3_3_5 + A3_3_7 <= 1
+E_constraint72: A3_3_7 + A3_3_9 <= 1
+
+#Third Constraint Set Ai_j_k
 
