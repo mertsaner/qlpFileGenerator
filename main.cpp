@@ -7,30 +7,42 @@ int main() {
     cout << "Program Started!" << endl;
     int x=1; //for the x
     int y=1;  //for the y
-    int k=2; //for the z
-    int l=3; //for the z
-    for (int i=0 ; i<73;i++) //To Print All Equations
+    int z1=2; //for the z
+    int z2=3; //for the z
+
+    cout<< "MINIMIZE"<<endl;
+    cout<< "-x1 -2x2 +2x3 +x4"<<endl;
+
+    cout<< "SUBJECT TO"<<endl;
+    cout<< "#Existential Constratins"<<endl;
+
+    cout<< " "<<endl;
+
+
+    for (int i=1 ; i<73;i++) //To Print All Equations
     {
-            cout<< "E_constraint" + to_string(i) +": ";
-            cout<<"B" + to_string(x)+ "_"+to_string(y)+ "_"+to_string(k);
+
+
+        cout<< "E_constraint" + to_string(i) +": ";
+            cout<<"B" + to_string(x)+ "_"+to_string(y)+ "_"+to_string(z1);
             cout<<" + ";
-            cout<<"B" + to_string(x)+ "_"+to_string(y)+ "_"+to_string(l);
+            cout<<"B" + to_string(x)+ "_"+to_string(y)+ "_"+to_string(z2);
             cout<<" <= ";
             cout<<"1"<<endl;
-            k=k+2;
-            l=l+2;
+            z1=z1+2;
+            z2=z2+2;
 
 //B1_1_2 + A1_1_3 <= 1
 
-            if (k==10)
+            if (z1==10)
                 {
                     y=y+1;
-                    k=2;
+                    z1=2;
                     cout<<endl;
                 }
-            if (l==11)
+            if (z2==11)
                 {
-                    l=3;
+                    z2=3;
                 }
             if (y==4)
                  {
