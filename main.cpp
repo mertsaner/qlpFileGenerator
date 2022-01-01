@@ -75,25 +75,32 @@ int main() {
 
     i=1; //for the x coordinate of the board
     j=1;  //for the y coordinate of the board
-    k=3; //k value
-    int a=36;
+    k=1; //k value
+    a=36;
     int b=36;
 
-    for (int c=1 ;c<5; c++)
-    {
 
-        //DEVAM DEFINING
-        //E_Constraint72: A1_1_1+ A1_2_1+ A1_3_1+ A2_1_1 + A2_2_1+ A2_3_1+ A3_1_1+ A3_2_1 + A3_3_1 = 1/2+1
-        //Printing
-        myfile<< "E_constraint" + to_string(a+b+c) +": ";
-        myfile<<"A" + to_string(i)+ "_"+to_string(j)+ "_"+to_string(k-2)+ " + ";
+    for (int c=1 ;c<6; c++) {
+        myfile << "E_constraint" + to_string(a + b + c) + ": ";
 
-        k=k+2; //Increase k value in each step, k ∈ {3,5,7,9}
+        for (int d = 1; d < 3; d++) {
 
+            for (e=1;
+                myfile << "A" + to_string(i) + "_" + to_string(j) + "_" + to_string(k) + " + ";
+                i= i+1;
+                j= j+1;
 
+            if (i==4 || j==4)
+            {
+                i=1;
+                j=1;
+
+            }
+        }
+        myfile<<endl;
     }
 
-
+    //k=k+2; //Increase k value in each step, k ∈ {3,5,7,9}
 
 
 
