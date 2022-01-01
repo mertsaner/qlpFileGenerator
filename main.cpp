@@ -91,11 +91,6 @@ int main() {
                 else
                 myfile << "A" + to_string(i+e) + "_" + to_string(j+d) + "_" + to_string(k) + " + ";
             }
-            if (i==4 || j==4)
-            {
-                i=1;
-                j=1;
-            }
         }
         myfile <<" = "+ to_string(k)+"/2 + 1 ";
         k=k+2;
