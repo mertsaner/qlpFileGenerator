@@ -1,4 +1,20 @@
-//This is an application for creating automated final.qlp file
+/*This is an application for creating automated final.qlp file
+* The .qlp file is used to solve Tic-Tac-Toe game using Yasol Solver
+*/
+
+
+/* Explanation of the values defined:
+* Let k ∈ {1, . . . , 9} indicated the number of the current turn.
+* If k is odd it is an existential player’s turn, and if k is even it is the universal player’s turn.
+*/
+
+/*
+The existential player assigns the variables Ak ∈ {0, 1}3×3 and the universal player assigns Bk ∈ {0,1}3×3 in the k-th turn.
+ Aki,j = 1 indicates that cell (i,j) is filled with a piece from the existential player after turn k.
+*/
+
+
+
 #include <iostream>
 #include <fstream> //for writing to a file
 
