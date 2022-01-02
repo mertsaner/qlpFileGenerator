@@ -237,6 +237,7 @@ int main() {
  * First Auxiliary Variables Set
  *
 */
+    myfile<<endl;
     myfile<<"#First Auxiliary Constraint Set"<<endl;
     myfile<<endl;
 
@@ -244,7 +245,7 @@ int main() {
 
     i=1; //for the x coordinate of the board
     j=1; //for the y coordinate of the board
-    k=2; //k value
+    k=1; //k value
     a=36;
     b=27;
 
@@ -252,16 +253,15 @@ int main() {
         myfile << "E_constraint" + to_string(a + b + c) + ": ";
         for (int d = 0; d<3; d++) {
             for (int e=0; e<3; e++) {
-
                 if (e==2 && d==2)
                 {
-                    myfile << "B" + to_string(i+e) + "_" + to_string(j+d) + "_" + to_string(k);
+                    myfile << "A" + to_string(i+e) + "_" + to_string(j+d) + "_" + to_string(k);
                 }
                 else
-                    myfile << "B" + to_string(i+e) + "_" + to_string(j+d) + "_" + to_string(k) + " + ";
+                    myfile << "A" + to_string(i+e) + "_" + to_string(j+d) + "_" + to_string(k) + " + ";
             }
         }
-        myfile <<" = "+ to_string(k)+"/2";
+        myfile << " >= "  "3*(h_" + to_string(k) + "__" + to_string(k) + ")";
         k=k+2;     //Increase k value in each step, k ∈ {2,4,6,8}
         myfile<<endl;
     }
