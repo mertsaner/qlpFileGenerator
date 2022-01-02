@@ -80,7 +80,7 @@ int main() {
         //Printing
         myfile<< "E_constraint" + to_string(a+b) +": ";
         myfile<<"A" + to_string(i)+ "_"+to_string(j)+ "_"+to_string(k-2)+ " + ";
-        myfile<<"A" + to_string(i)+ "_"+to_string(j)+ "_"+to_string(k)+ " <= 1"<< endl;
+        myfile<<"A" + to_string(i)+ "_"+to_string(j)+ "_"+to_string(k)+ " <= 0"<< endl;
 
         k=k+2; //Increase k value in each step, k ∈ {3,5,7,9}
 
@@ -229,6 +229,44 @@ int main() {
         k=k+2;     //Increase k value in each step, k ∈ {2,4,6,8}
         myfile<<endl;
     }
+
+
+
+
+/*
+ * First Auxiliary Variables Set
+ *
+*/
+    myfile<<"#First Auxiliary Constraint Set"<<endl;
+    myfile<<endl;
+
+
+
+    i=1; //for the x coordinate of the board
+    j=1; //for the y coordinate of the board
+    k=2; //k value
+    a=36;
+    b=27;
+
+    for (int c=1 ;c<5; c++) {
+        myfile << "E_constraint" + to_string(a + b + c) + ": ";
+        for (int d = 0; d<3; d++) {
+            for (int e=0; e<3; e++) {
+
+                if (e==2 && d==2)
+                {
+                    myfile << "B" + to_string(i+e) + "_" + to_string(j+d) + "_" + to_string(k);
+                }
+                else
+                    myfile << "B" + to_string(i+e) + "_" + to_string(j+d) + "_" + to_string(k) + " + ";
+            }
+        }
+        myfile <<" = "+ to_string(k)+"/2";
+        k=k+2;     //Increase k value in each step, k ∈ {2,4,6,8}
+        myfile<<endl;
+    }
+
+
 
 
 
