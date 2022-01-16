@@ -1,4 +1,4 @@
-# Install script for directory: /Users/mertsaner/CLionProjects/qlpFile
+# Install script for directory: /Users/mertsaner/CLionProjects/qlpFileGenerator
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/mertsaner/CLionProjects/qlpFile/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/mertsaner/CLionProjects/qlpFileGenerator/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
