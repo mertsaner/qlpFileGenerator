@@ -241,8 +241,6 @@ int main() {
     myfile<<"#First Auxiliary Constraint Set"<<endl;
     myfile<<endl;
 
-
-
     i=1; //for the x coordinate of the board
     j=1; //for the y coordinate of the board
     k=1; //k value
