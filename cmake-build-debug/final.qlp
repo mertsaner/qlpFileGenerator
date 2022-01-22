@@ -154,52 +154,52 @@ U_constraint36: A3_3_7 + B3_3_8 <= 1
 
 #Second Constraint Set of Universal Player (27 Constraints)
 
-E_constraint37: B1_1_2 - B1_1_4 <= 0 
-E_constraint38: B1_1_4 - B1_1_6 <= 0 
-E_constraint39: B1_1_6 - B1_1_8 <= 0 
+U_constraint37: B1_1_2 - B1_1_4 <= 0 
+U_constraint38: B1_1_4 - B1_1_6 <= 0 
+U_constraint39: B1_1_6 - B1_1_8 <= 0 
 
-E_constraint40: B1_2_2 - B1_2_4 <= 0 
-E_constraint41: B1_2_4 - B1_2_6 <= 0 
-E_constraint42: B1_2_6 - B1_2_8 <= 0 
+U_constraint40: B1_2_2 - B1_2_4 <= 0 
+U_constraint41: B1_2_4 - B1_2_6 <= 0 
+U_constraint42: B1_2_6 - B1_2_8 <= 0 
 
-E_constraint43: B1_3_2 - B1_3_4 <= 0 
-E_constraint44: B1_3_4 - B1_3_6 <= 0 
-E_constraint45: B1_3_6 - B1_3_8 <= 0 
+U_constraint43: B1_3_2 - B1_3_4 <= 0 
+U_constraint44: B1_3_4 - B1_3_6 <= 0 
+U_constraint45: B1_3_6 - B1_3_8 <= 0 
 
-E_constraint46: B2_1_2 - B2_1_4 <= 0 
-E_constraint47: B2_1_4 - B2_1_6 <= 0 
-E_constraint48: B2_1_6 - B2_1_8 <= 0 
+U_constraint46: B2_1_2 - B2_1_4 <= 0 
+U_constraint47: B2_1_4 - B2_1_6 <= 0 
+U_constraint48: B2_1_6 - B2_1_8 <= 0 
 
-E_constraint49: B2_2_2 - B2_2_4 <= 0 
-E_constraint50: B2_2_4 - B2_2_6 <= 0 
-E_constraint51: B2_2_6 - B2_2_8 <= 0 
+U_constraint49: B2_2_2 - B2_2_4 <= 0 
+U_constraint50: B2_2_4 - B2_2_6 <= 0 
+U_constraint51: B2_2_6 - B2_2_8 <= 0 
 
-E_constraint52: B2_3_2 - B2_3_4 <= 0 
-E_constraint53: B2_3_4 - B2_3_6 <= 0 
-E_constraint54: B2_3_6 - B2_3_8 <= 0 
+U_constraint52: B2_3_2 - B2_3_4 <= 0 
+U_constraint53: B2_3_4 - B2_3_6 <= 0 
+U_constraint54: B2_3_6 - B2_3_8 <= 0 
 
-E_constraint55: B3_1_2 - B3_1_4 <= 0 
-E_constraint56: B3_1_4 - B3_1_6 <= 0 
-E_constraint57: B3_1_6 - B3_1_8 <= 0 
+U_constraint55: B3_1_2 - B3_1_4 <= 0 
+U_constraint56: B3_1_4 - B3_1_6 <= 0 
+U_constraint57: B3_1_6 - B3_1_8 <= 0 
 
-E_constraint58: B3_2_2 - B3_2_4 <= 0 
-E_constraint59: B3_2_4 - B3_2_6 <= 0 
-E_constraint60: B3_2_6 - B3_2_8 <= 0 
+U_constraint58: B3_2_2 - B3_2_4 <= 0 
+U_constraint59: B3_2_4 - B3_2_6 <= 0 
+U_constraint60: B3_2_6 - B3_2_8 <= 0 
 
-E_constraint61: B3_3_2 - B3_3_4 <= 0 
-E_constraint62: B3_3_4 - B3_3_6 <= 0 
-E_constraint63: B3_3_6 - B3_3_8 <= 0 
+U_constraint61: B3_3_2 - B3_3_4 <= 0 
+U_constraint62: B3_3_4 - B3_3_6 <= 0 
+U_constraint63: B3_3_6 - B3_3_8 <= 0 
 
 #Third Constraint Set of Universal Player (Ai_j_k, 4 Constraints)
 
-E_constraint64: B1_1_2 + B2_1_2 + B3_1_2 + B1_2_2 + B2_2_2 + B3_2_2 + B1_3_2 + B2_3_2 + B3_3_2 = 2/2
-E_constraint65: B1_1_4 + B2_1_4 + B3_1_4 + B1_2_4 + B2_2_4 + B3_2_4 + B1_3_4 + B2_3_4 + B3_3_4 = 4/2
-E_constraint66: B1_1_6 + B2_1_6 + B3_1_6 + B1_2_6 + B2_2_6 + B3_2_6 + B1_3_6 + B2_3_6 + B3_3_6 = 6/2
-E_constraint67: B1_1_8 + B2_1_8 + B3_1_8 + B1_2_8 + B2_2_8 + B3_2_8 + B1_3_8 + B2_3_8 + B3_3_8 = 8/2
+U_constraint64: B1_1_2 + B2_1_2 + B3_1_2 + B1_2_2 + B2_2_2 + B3_2_2 + B1_3_2 + B2_3_2 + B3_3_2 = 2/2
+U_constraint65: B1_1_4 + B2_1_4 + B3_1_4 + B1_2_4 + B2_2_4 + B3_2_4 + B1_3_4 + B2_3_4 + B3_3_4 = 4/2
+U_constraint66: B1_1_6 + B2_1_6 + B3_1_6 + B1_2_6 + B2_2_6 + B3_2_6 + B1_3_6 + B2_3_6 + B3_3_6 = 6/2
+U_constraint67: B1_1_8 + B2_1_8 + B3_1_8 + B1_2_8 + B2_2_8 + B3_2_8 + B1_3_8 + B2_3_8 + B3_3_8 = 8/2
 
 #First Auxiliary Constraint Set
 
-E_constraint64: A1_1_1 + A2_1_1 + A3_1_1 + A1_2_1 + A2_2_1 + A3_2_1 + A1_3_1 + A2_3_1 + A3_3_1 >= 3*(h_1__1)
-E_constraint65: A1_1_3 + A2_1_3 + A3_1_3 + A1_2_3 + A2_2_3 + A3_2_3 + A1_3_3 + A2_3_3 + A3_3_3 >= 3*(h_3__3)
-E_constraint66: A1_1_5 + A2_1_5 + A3_1_5 + A1_2_5 + A2_2_5 + A3_2_5 + A1_3_5 + A2_3_5 + A3_3_5 >= 3*(h_5__5)
-E_constraint67: A1_1_7 + A2_1_7 + A3_1_7 + A1_2_7 + A2_2_7 + A3_2_7 + A1_3_7 + A2_3_7 + A3_3_7 >= 3*(h_7__7)
+A_constraint64: A1_1_1 + A2_1_1 + A3_1_1 + A1_2_1 + A2_2_1 + A3_2_1 + A1_3_1 + A2_3_1 + A3_3_1 >= 3*(h_1__1)
+A_constraint65: A1_1_3 + A2_1_3 + A3_1_3 + A1_2_3 + A2_2_3 + A3_2_3 + A1_3_3 + A2_3_3 + A3_3_3 >= 3*(h_3__3)
+A_constraint66: A1_1_5 + A2_1_5 + A3_1_5 + A1_2_5 + A2_2_5 + A3_2_5 + A1_3_5 + A2_3_5 + A3_3_5 >= 3*(h_5__5)
+A_constraint67: A1_1_7 + A2_1_7 + A3_1_7 + A1_2_7 + A2_2_7 + A3_2_7 + A1_3_7 + A2_3_7 + A3_3_7 >= 3*(h_7__7)

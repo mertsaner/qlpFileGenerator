@@ -179,7 +179,7 @@ int main() {
     for (int b=1 ;b<28; b++)
     {
         //Printing
-        myfile<< "E_constraint" + to_string(a+b) +": ";
+        myfile<< "U_constraint" + to_string(a+b) +": ";
         myfile<<"B" + to_string(i)+ "_"+to_string(j)+ "_"+to_string(k-2)+ " - ";
         myfile<<"B" + to_string(i)+ "_"+to_string(j)+ "_"+to_string(k)+ " <= 0 "<< endl;
 
@@ -213,7 +213,7 @@ int main() {
     b=27;
 
     for (int c=1 ;c<5; c++) {
-        myfile << "E_constraint" + to_string(a + b + c) + ": ";
+        myfile << "U_constraint" + to_string(a + b + c) + ": ";
         for (int d = 0; d<3; d++) {
             for (int e=0; e<3; e++) {
 
@@ -250,7 +250,7 @@ int main() {
     b=27;
 
     for (int c=1 ;c<5; c++) {
-        myfile << "E_constraint" + to_string(a + b + c) + ": ";
+        myfile << "A_constraint" + to_string(a + b + c) + ": ";
         for (int d = 0; d<3; d++) {
             for (int e=0; e<3; e++) {
                 if (e==2 && d==2)
