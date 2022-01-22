@@ -246,7 +246,7 @@ int main() {
     k=1; //k value
     a=36;
     b=27;
-
+    c=5;
     for (int c=1 ;c<5; c++) {
         myfile << "A_constraint" + to_string(a + b + c) + ": ";
         for (int d = 0; d<3; d++) {
