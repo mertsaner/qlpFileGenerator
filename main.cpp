@@ -27,6 +27,9 @@ int main() {
     int i=1; //for the x coordinate of the board
     int j=1;  //for the y coordinate of the board
     int k=3; //k value
+    int count1, count2, count3; //Counter for Existential Constraints
+    int cnt1, cnt2, cnt3; //Count for Universal Constraints
+    int cntA1, cntA2, cntA3; //Count for Auxiliary  Constraints
 
     myfile<< "MINIMIZE"<<endl;
     myfile<< "-x1 -2x2 +2x3 +x4"<<endl;
@@ -40,10 +43,10 @@ int main() {
 
     myfile<<"#First Constraint Set of Existential Player (36 Constraints)"<<endl;
 
-    for(int a=1 ; a<37;a++)
+    for(int count1=1 ; count1<37;count1++)
     {
         //Printing
-        myfile<< "E_constraint" + to_string(a) +": ";
+        myfile<< "E_constraint" + to_string(count1) +": ";
         myfile<<"B" + to_string(i)+ "_"+to_string(j)+ "_"+to_string(k-1)+ " + ";
         myfile<<"A" + to_string(i)+ "_"+to_string(j)+ "_"+to_string(k)+ " <= 1"<< endl;
 
@@ -73,12 +76,12 @@ int main() {
     i=1; //for the x coordinate of the board
     j=1;  //for the y coordinate of the board
     k=3; //k value
-    int a=36;
+    count1=36;
 
-    for (int b=1 ;b<37; b++)
+    for (int count2=1 ;count2<37; count2++)
     {
         //Printing
-        myfile<< "E_constraint" + to_string(a+b) +": ";
+        myfile<< "E_constraint" + to_string(count1+count2) +": ";
         myfile<<"A" + to_string(i)+ "_"+to_string(j)+ "_"+to_string(k-2)+ " + ";
         myfile<<"A" + to_string(i)+ "_"+to_string(j)+ "_"+to_string(k)+ " <= 0"<< endl;
 
@@ -107,11 +110,11 @@ int main() {
     i=1; //for the x coordinate of the board
     j=1; //for the y coordinate of the board
     k=1; //k value
-    a=36;
-    int b=36;
+    count1=36;
+    count2=36;
 
-    for (int c=1 ;c<6; c++) {
-        myfile << "E_constraint" + to_string(a + b + c) + ": ";
+    for (int count3=1 ;count3<6; count3++) {
+        myfile << "E_constraint" + to_string(count1+ count2+ count3) + ": ";
         for (int d = 0; d<3; d++) {
             for (int e=0; e<3; e++) {
 
@@ -130,9 +133,17 @@ int main() {
 
 
  /*
+  * =====================================================================
+  * =====================================================================
   * First Universal Constraint Set
 */
-
+    myfile<< " "<<endl;
+    myfile<< " "<<endl;
+    myfile<< "#========================================================================================================="<<endl;
+    myfile<< "#========================================================================================================="<<endl;
+    myfile<< "#========================================================================================================="<<endl;
+    myfile<< " "<<endl;
+    myfile<< " "<<endl;
     myfile<< "#Universal Constraints"<<endl;
     myfile<< " "<<endl;
     myfile<<"#First Constraint Set of Universal Player (36 Constraints)"<<endl;
@@ -142,10 +153,10 @@ int main() {
     j=1; //for the y coordinate of the board
     k=2; //k value
 
-    for(int a=1 ; a<37;a++)
+    for(int cnt1=1 ; cnt1<37;cnt1++)
     {
         //Printing
-        myfile<< "U_constraint" + to_string(a) +": ";
+        myfile<< "U_constraint" + to_string(cnt1) +": ";
         myfile<<"A" + to_string(i)+ "_"+to_string(j)+ "_"+to_string(k-1)+ " + ";
         myfile<<"B" + to_string(i)+ "_"+to_string(j)+ "_"+to_string(k)+ " <= 1"<< endl;
 
@@ -174,12 +185,12 @@ int main() {
     i=1; //for the x coordinate of the board
     j=1;  //for the y coordinate of the board
     k=4; //k value
-    a=36;
+    cnt1=36;
 
-    for (int b=1 ;b<28; b++)
+    for (int cnt2=1 ;cnt2<28; cnt2++)
     {
         //Printing
-        myfile<< "U_constraint" + to_string(a+b) +": ";
+        myfile<< "U_constraint" + to_string(cnt1+cnt2) +": ";
         myfile<<"B" + to_string(i)+ "_"+to_string(j)+ "_"+to_string(k-2)+ " - ";
         myfile<<"B" + to_string(i)+ "_"+to_string(j)+ "_"+to_string(k)+ " <= 0 "<< endl;
 
@@ -209,11 +220,11 @@ int main() {
     i=1; //for the x coordinate of the board
     j=1; //for the y coordinate of the board
     k=2; //k value
-    a=36;
-    b=27;
+    cnt1=36;
+    cnt2=27;
 
-    for (int c=1 ;c<5; c++) {
-        myfile << "U_constraint" + to_string(a + b + c) + ": ";
+    for (int cnt3=1 ;cnt3<5; cnt3++) {
+        myfile << "U_constraint" + to_string(cnt1 + cnt2 + cnt3) + ": ";
         for (int d = 0; d<3; d++) {
             for (int e=0; e<3; e++) {
 
@@ -231,40 +242,41 @@ int main() {
     }
 
 
-
-
 /*
+ *=====================================================================
+ *=====================================================================
  * First Auxiliary Variables Set
  *
 */
     myfile<<endl;
-    myfile<<"#First Auxiliary Constraint Set"<<endl;
+    myfile<<endl;
+    myfile<< "#========================================================================================================="<<endl;
+    myfile<< "#========================================================================================================="<<endl;
+    myfile<< "#========================================================================================================="<<endl;
+    myfile<<endl;
+    myfile<<"#First Auxiliary Constraint Set, (6.17)"<<endl;
     myfile<<endl;
 
     i=1; //for the x coordinate of the board
     j=1; //for the y coordinate of the board
     k=1; //k value
-    a=36;
-    b=27;
-    c=5;
-    for (int c=1 ;c<5; c++) {
-        myfile << "A_constraint" + to_string(a + b + c) + ": ";
-        for (int d = 0; d<3; d++) {
-            for (int e=0; e<3; e++) {
-                if (e==2 && d==2)
-                {
-                    myfile << "A" + to_string(i+e) + "_" + to_string(j+d) + "_" + to_string(k);
-                }
-                else
-                    myfile << "A" + to_string(i+e) + "_" + to_string(j+d) + "_" + to_string(k) + " + ";
+for(int i; i<5;i++) {
+    for (int cntA1 = 1; cntA1 < 6; cntA1++) {
+        myfile << "A_constraint" + to_string(cntA1) + ": ";
+        for (int d = 0; d < 3; d++) {
+            for (int e = 0; e < 3; e++) {
+                if (e == 2 && d == 2) {
+                    myfile << "A" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k);
+                } else
+                    myfile << "A" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k) + " + ";
             }
         }
-        myfile << " >= "  "3*(h_" + to_string(k) + "__" + to_string(k) + ")";
-        k=k+2;     //Increase k value in each step, k ∈ {2,4,6,8}
-        myfile<<endl;
+        myfile << " >= "  "3*(h_" + to_string(i) + "__" + to_string(k) + ")";
+        k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
+        myfile << endl;
     }
-
-
+    i=i+2;
+}
 
 
     myfile.close();

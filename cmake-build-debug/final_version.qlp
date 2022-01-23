@@ -367,15 +367,7 @@ DONE above it
 ==================================================================
 
 E_Constraint36: A1_1_1 + A1_1_3 <= 0
-E_Constraint36: A1_1_1 + A1_1_3 <= 0
 
-E_Constraint36: A1_1_1 + A1_1_3 <= 0
-
-E_Constraint36: A1_1_1 + A1_1_3 <= 0
-
-E_Constraint36: A1_1_1 + A1_1_3 <= 0
-
-E_Constraint36: A1_1_1 + A1_1_3 <= 0
 
 #Auxiliary Constraint (6.17)
 
@@ -385,7 +377,6 @@ A_Constraint: A1_1_1 + A2_1_1 + A3_1_1 + A1_2_1 + A2_2_1 + A3_2_1 + A1_3_1 + A2_
 A_Constraint: A1_1_1 + A2_1_1 + A3_1_1 + A1_2_1 + A2_2_1 + A3_2_1 + A1_3_1 + A2_3_1 + A3_3_1>= 3*(h_2___1)
 #for k=1 and i=3
 A_Constraint: A1_1_1 + A2_1_1 + A3_1_1 + A1_2_1 + A2_2_1 + A3_2_1 + A1_3_1 + A2_3_1 + A3_3_1>= 3*(h_3___1)
-
 
 for k=3 and i=1
 A_Constraint: A1_1_3 + A2_1_3 + A3_1_3 + A1_2_3 + A2_2_3 + A3_2_3 + A1_3_3 + A2_3_3 + A3_3_3 >= 3*(h_1___3)
