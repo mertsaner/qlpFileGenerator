@@ -260,7 +260,7 @@ int main() {
     i=1; //for the x coordinate of the board
     j=1; //for the y coordinate of the board
     k=1; //k value
-for(int i; i<5;i++) {
+
     for (int cntA1 = 1; cntA1 < 6; cntA1++) {
         myfile << "A_constraint" + to_string(cntA1) + ": ";
         for (int d = 0; d < 3; d++) {
@@ -275,8 +275,6 @@ for(int i; i<5;i++) {
         k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
         myfile << endl;
     }
-    i=i+2;
-}
 
 
     myfile.close();
