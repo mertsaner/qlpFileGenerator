@@ -281,7 +281,7 @@ int main() {
     myfile<<"#Second Set of First Auxiliary Constraint Set, (6.17)"<<endl;
     myfile<<endl;
 
-    i=2; //for the x coordinate of the board
+    i=1; //for the x coordinate of the board
     j=1; //for the y coordinate of the board
     k=1; //k value
 
@@ -304,12 +304,12 @@ int main() {
     myfile<<"Third Set of First Auxiliary Constraint Set, (6.17)"<<endl;
     myfile<<endl;
 
-    i=3; //for the x coordinate of the board
+    i=1; //for the x coordinate of the board
     j=1; //for the y coordinate of the board
     k=1; //k value
 
     for (int cntA3 = 1; cntA3 < 6; cntA3++) {
-        myfile << "A_constraint" + to_string(cntA2) + ": ";
+        myfile << "A_constraint" + to_string(cntA3) + ": ";
         for (int d = 0; d < 3; d++) {
             for (int e = 0; e < 3; e++) {
                 if (e == 2 && d == 2) {
