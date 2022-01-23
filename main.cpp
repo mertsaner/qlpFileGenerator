@@ -118,7 +118,7 @@ int main() {
         for (int d = 0; d<3; d++) {
             for (int e=0; e<3; e++) {
 
-                if (e==2 && d==2)
+                if (e==2 && d==2) //This Helps to delete last sum symbol at the end of the equation
                 {
                     myfile << "A" + to_string(i+e) + "_" + to_string(j+d) + "_" + to_string(k);
                 }
@@ -228,7 +228,7 @@ int main() {
         for (int d = 0; d<3; d++) {
             for (int e=0; e<3; e++) {
 
-                if (e==2 && d==2)
+                if (e==2 && d==2) //This Helps to delete last sum symbol at the end of the equation
                 {
                     myfile << "B" + to_string(i+e) + "_" + to_string(j+d) + "_" + to_string(k);
                 }
@@ -367,7 +367,7 @@ int main() {
         myfile << "A_constraint" + to_string(cntA5) + ": ";
         for (int d = 0; d < 3; d++) {
             for (int e = 0; e < 3; e++) {
-                if (e == 2 && d == 2) {
+                if (e == 2 && d == 2) { //This Helps to delete last sum symbol at the end of the equation
                     myfile << "A" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k);
                 } else
                     myfile << "A" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k) + " + ";
@@ -379,10 +379,35 @@ int main() {
         myfile << endl;
     }
 
+    myfile<<endl;
+    myfile<<endl;
+    myfile<< "#========================================================================================================="<<endl;
+    myfile<< "#========================================================================================================="<<endl;
+    myfile<< "#========================================================================================================="<<endl;
+    myfile<<endl;
+    myfile<<"First Set of Second Auxiliary Constraint Set, (6.18)"<<endl;
+    myfile<<endl;
+    myfile<<endl;
 
-
-
-
+    i=1; //for the x coordinate of the board
+    j=1; //for the y coordinate of the board
+    k=1; //k value
+    i2=1; //Right hand side of the equation
+    for (int cntA5 = 1; cntA5 < 4; cntA5++) {
+        myfile << "A_constraint" + to_string(cntA5) + ": ";
+        for (int d = 0; d < 3; d++) {
+            for (int e = 0; e < 3; e++) {
+                if (e == 2 && d == 2) {
+                    myfile << "h" + to_string(i + e) + "_" + "_" + to_string(k);
+                } else
+                    myfile << "v" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k) + " + ";
+            }
+        }
+        myfile << " >= "  "3*(h_" + to_string(i2) + "___" + to_string(k) + ")";
+        //    k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
+       // i2++;
+        myfile << endl;
+    }
 
 
 
