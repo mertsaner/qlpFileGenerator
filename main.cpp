@@ -27,10 +27,12 @@ int main() {
     int i=1; //for the x coordinate of the board
     int j=1;  //for the y coordinate of the board
     int k=3; //k value
-    int count1, count2, count3; //Counter for Existential Constraints
-    int cnt1, cnt2, cnt3; //Count for Universal Constraints
-    int cntA1, cntA2, cntA3, cntA4, cntA5; //Count for Auxiliary  Constraints
+    int count1=0, count2=0, count3=0; //Counter for Existential Constraints
+    int cnt1=0, cnt2, cnt3=0; //Count for Universal Constraints
+    int cntA1=0, cntA2=0, cntA3=0, cntA4=0, cntA5=0, cntA6=0; //Count for Auxiliary  Constraints
+    int i2=1; //Right hand side of the equation 6.17
 
+    int z;
     myfile<< "MINIMIZE"<<endl;
     myfile<< "-x1 -2x2 +2x3 +x4"<<endl;
     myfile<< "SUBJECT TO"<<endl;
@@ -43,7 +45,7 @@ int main() {
 
     myfile<<"#First Constraint Set of Existential Player (36 Constraints)"<<endl;
 
-    for(int count1=1 ; count1<37;count1++)
+    for(count1=1 ; count1<37;count1++)
     {
         //Printing
         myfile<< "E_constraint" + to_string(count1) +": ";
@@ -76,9 +78,8 @@ int main() {
     i=1; //for the x coordinate of the board
     j=1;  //for the y coordinate of the board
     k=3; //k value
-    count1=36;
 
-    for (int count2=1 ;count2<37; count2++)
+    for (count2=1 ;count2<37; count2++)
     {
         //Printing
         myfile<< "E_constraint" + to_string(count1+count2) +": ";
@@ -110,10 +111,8 @@ int main() {
     i=1; //for the x coordinate of the board
     j=1; //for the y coordinate of the board
     k=1; //k value
-    count1=36;
-    count2=36;
 
-    for (int count3=1 ;count3<6; count3++) { //Constraint Number Counter
+    for (count3=1 ;count3<6; count3++) { //Constraint Number Counter
         myfile << "E_constraint" + to_string(count1+ count2+ count3) + ": ";
         for (int d = 0; d<3; d++) { //Two nested For loops Represents increase in i  and j value
             for (int e=0; e<3; e++) {
@@ -153,7 +152,7 @@ int main() {
     j=1; //for the y coordinate of the board
     k=2; //k value
 
-    for(int cnt1=1 ; cnt1<37;cnt1++)
+    for(cnt1=1 ; cnt1<37;cnt1++)
     {
         //Printing
         myfile<< "U_constraint" + to_string(cnt1) +": ";
@@ -185,9 +184,8 @@ int main() {
     i=1; //for the x coordinate of the board
     j=1;  //for the y coordinate of the board
     k=4; //k value
-    cnt1=36;
 
-    for (int cnt2=1 ;cnt2<28; cnt2++)
+    for (cnt2=1 ;cnt2<28; cnt2++)
     {
         //Printing
         myfile<< "U_constraint" + to_string(cnt1+cnt2) +": ";
@@ -208,8 +206,6 @@ int main() {
             i=i+1; //Increasing i Value in each three step
         }
     }
-
-
 /*
  * Third Universal Constraint Set
 */
@@ -220,10 +216,8 @@ int main() {
     i=1; //for the x coordinate of the board
     j=1; //for the y coordinate of the board
     k=2; //k value
-    cnt1=36;
-    cnt2=27;
 
-    for (int cnt3=1 ;cnt3<5; cnt3++) {  //Constraint Number Counter
+    for (cnt3=1 ;cnt3<5; cnt3++) {  //Constraint Number Counter
         myfile << "U_constraint" + to_string(cnt1 + cnt2 + cnt3) + ": ";
         for (int d = 0; d<3; d++) { //Two nested For loops Represents increase in i  and j value
             for (int e=0; e<3; e++) {
@@ -260,10 +254,10 @@ int main() {
     i=1; //for the x coordinate of the board
     j=1; //for the y coordinate of the board
     k=1; //k value
-    int i2=1; //Right hand side of the equation
+    i2=1; //Right hand side of the equation
 
 
-    for (int cntA1 = 1; cntA1 < 4; cntA1++) {  //Constraint Number Counter
+    for (cntA1 = 1; cntA1 < 4; cntA1++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntA1) + ": ";
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
             for (int e = 0; e < 3; e++) {
@@ -289,9 +283,8 @@ int main() {
     k=3; //k value
     i2=1; //Right hand side of the equation
 
-
-    for (int cntA2 = 1; cntA2 < 4; cntA2++) { //Constraint Number Counter
-        myfile << "A_constraint" + to_string(cntA2) + ": ";
+    for (cntA2 = 1; cntA2 < 4; cntA2++) { //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntA1+cntA2) + ": ";
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
             for (int e = 0; e < 3; e++) {
                 if (e == 2 && d == 2) { //This Helps to delete last sum symbol at the end of the equation
@@ -314,8 +307,8 @@ int main() {
     j=1; //for the y coordinate of the board
     k=5; //k value
     i2=1; //Right hand side of the equation
-    for (int cntA3 = 1; cntA3 < 4; cntA3++) { //Constraint Number Counter
-        myfile << "A_constraint" + to_string(cntA3) + ": ";
+    for (cntA3 = 1; cntA3 < 4; cntA3++) { //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntA1+cntA2+cntA3) + ": ";
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
             for (int e = 0; e < 3; e++) {
                 if (e == 2 && d == 2) { //This Helps to delete last sum symbol at the end of the equation
@@ -338,8 +331,8 @@ int main() {
     j=1; //for the y coordinate of the board
     k=7; //k value
     i2=1; //Right hand side of the equation
-    for (int cntA4 = 1; cntA4 < 4; cntA4++) { //Constraint Number Counter
-        myfile << "A_constraint" + to_string(cntA4) + ": ";
+    for (cntA4 = 1; cntA4 < 4; cntA4++) { //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntA1+cntA2+cntA3+cntA4) + ": ";
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i and j value
             for (int e = 0; e < 3; e++) {
                 if (e == 2 && d == 2) { //This Helps to delete last sum symbol at the end of the equation
@@ -364,7 +357,7 @@ int main() {
     k=9; //k value
     i2=1; //Right hand side of the equation
     for (int cntA5 = 1; cntA5 < 4; cntA5++) { //Constraint Number Counter
-        myfile << "A_constraint" + to_string(cntA5) + ": ";
+        myfile << "A_constraint" + to_string(cntA1 + cntA2 + cntA3 + cntA4 + cntA5) + ": ";
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
             for (int e = 0; e < 3; e++) {
                 if (e == 2 && d == 2) { //This Helps to delete last sum symbol at the end of the equation
@@ -393,18 +386,18 @@ int main() {
     j=1; //for the y coordinate of the board
     k=1; //k value
     i2=1; //Right hand side of the equation
-    for (int cntA5 = 1; cntA5 < 4; cntA5++) { //Constraint Number Counter
-        myfile << "A_constraint" + to_string(cntA5) + ": ";
+    for (int cntA6 = 1; cntA6 < 6; cntA6++) { //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntA6) + ": ";
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
             for (int e = 0; e < 3; e++) {
                 if (e == 2 && d == 2) { //This Helps to delete last sum symbol at the end of the equation
-                    myfile << "h" + to_string(i + e) + "_" + "_" + to_string(k);
+                    myfile << "v" + to_string(i + e) + "_" + "_" + to_string(k);
                 } else
-                    myfile << "v" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k) + " + ";
+                    myfile << "h" + to_string(i + e) + "_" + "_" + to_string(k) + " + ";
             }
         }
-        myfile << " >= "  "3*(h_" + to_string(i2) + "___" + to_string(k) + ")";
-        //    k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
+        myfile << " >= "  "w_" + to_string(k);
+           k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
        // i2++;
         myfile << endl;
     }
