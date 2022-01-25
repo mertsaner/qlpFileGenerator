@@ -583,7 +583,7 @@ int main() {
     j=1; //for the y coordinate of the board
     k=2; //k value
     i2=1; //Right hand side of the equation
-    for (cntA7 = 0; cntA15 < 4; cntA15++) { //Constraint Number Counter
+    for (cntA15 = 0; cntA15 < 4; cntA15++) { //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntA1 + cntA2 + cntA3 + cntA4 + cntA5 + cntA6 + cntA7 ) + ": ";
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
             for (int e = 0; e < 3; e++) {
@@ -619,7 +619,7 @@ int main() {
     myfile <<"BOUNDS"<<endl;
     myfile<<endl;
 
-    myfile <<"#First Bound Set"<<endl;
+    myfile <<"#First Bound Set for A"<<endl;
 
     //myfile << "0 <= A1_1_1 <= 1" << endl;
 
@@ -635,7 +635,7 @@ int main() {
         }
 
     myfile << endl;
-    myfile <<"#Second Bound Set"<<endl;
+    myfile <<"#Second Bound Set for A"<<endl;
     myfile << endl;
 
     //myfile << "0 <= A1_1_1 <= 1" << endl;
@@ -651,7 +651,7 @@ int main() {
         myfile << endl;
     }
     myfile << endl;
-    myfile <<"#Third Bound Set"<<endl;
+    myfile <<"#Third Bound Set for A"<<endl;
     myfile << endl;
 
     //myfile << "0 <= A1_1_1 <= 1" << endl;
@@ -667,6 +667,63 @@ int main() {
         myfile << endl;
     }
     myfile << endl;
+    myfile<<endl;
+
+    myfile <<"#First Bound Set for B"<<endl;
+
+    //myfile << "0 <= A1_1_1 <= 1" << endl;
+
+    i=1; //for the x coordinate of the board
+    j=1; //for the y coordinate of the board
+    k=1; //k value
+    for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
+        for (int e = 0; e < 3; e++) {
+            myfile << "0 <= B" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k)+ " <= 1";
+            myfile<<endl;
+        }
+        myfile << endl;
+    }
+
+    myfile << endl;
+    myfile <<"#Second Bound Set for B"<<endl;
+    myfile << endl;
+
+    //myfile << "0 <= A1_1_1 <= 1" << endl;
+
+    i=1; //for the x coordinate of the board
+    j=1; //for the y coordinate of the board
+    k=2; //k value
+    for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
+        for (int e = 0; e < 3; e++) {
+            myfile << "0 <= B" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k)+ " <= 1";
+            myfile<<endl;
+        }
+        myfile << endl;
+    }
+    myfile << endl;
+    myfile <<"#Third Bound Set for B"<<endl;
+    myfile << endl;
+
+    //myfile << "0 <= A1_1_1 <= 1" << endl;
+
+    i=1; //for the x coordinate of the board
+    j=1; //for the y coordinate of the board
+    k=3; //k value
+    for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
+        for (int e = 0; e < 3; e++) {
+            myfile << "0 <= B" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k)+ " <= 1";
+            myfile<<endl;
+        }
+        myfile << endl;
+    }
+    myfile << endl;
+
+
+
+
+
+
+
 
 
     myfile<<"BINARIES"<< endl;
