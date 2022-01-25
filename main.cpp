@@ -2,7 +2,6 @@
 * The .qlp file is used to solve Tic-Tac-Toe game using Yasol Solver
 */
 
-
 /* Explanation of the values defined:
 * Let k ∈ {1, . . . , 9} indicated the number of the current turn.
 * If k is odd it is an existential player’s turn, and if k is even it is the universal player’s turn.
@@ -14,7 +13,6 @@ The existential player assigns the variables Ak ∈ {0, 1}3×3 and the universal
 */
 
 
-
 #include <iostream>
 #include <fstream> //for writing to a file
 
@@ -24,14 +22,16 @@ int main() {
 
     ofstream myfile; //Defining file name
     myfile.open ("final.qlp"); //Opening the file
+    //Initialazation of the Variables
     int i=1; //for the x coordinate of the board
-    int j=1;  //for the y coordinate of the board
+    int j=1; //for the y coordinate of the board
     int k=3; //k value
     int count1=0, count2=0, count3=0; //Counter for Existential Constraints
     int cnt1=0, cnt2, cnt3=0; //Count for Universal Constraints
     int cntA1=0, cntA2=0, cntA3=0, cntA4=0, cntA5=0, cntA6=0, cntA7=0, cntA8=0; //Count for Auxiliary  Constraints
+    int cntA9=0, cntA10=0, cntA11=0, cntA12=0, cntA13=0, cntA14=0, cntA15=0, cntA16=0; //Count for Auxiliary  Constraints
+    int cntA17=0, cntA18=0, cntA19=0, cntA20=0, cntA21=0, cntA22=0, cntA23=0, cntA24=0; //Count for Auxiliary  Constraints
     int i2=1; //Right hand side of the equation 6.17
-    int z;
 
     myfile<< "MINIMIZE"<<endl;
     myfile<< "-x1 -2x2 +2x3 +x4"<<endl;
@@ -43,7 +43,7 @@ int main() {
   * First Existential Constraint Set
 */
 
-    myfile<<"#First Constraint Set of Existential Player (36 Constraints)"<<endl;
+    myfile<<"#First Constraint Set of Existential Player 6.11 (36 Constraints)"<<endl;
 
     for(count1=1 ; count1<37;count1++)
     {
@@ -72,7 +72,7 @@ int main() {
  * Second Existential Constraint Set
 */
 
-    myfile<<"#Second Constraint Set of Existential Player (36 Constraints)"<<endl;
+    myfile<<"#Second Constraint Set of Existential Player 6.12 (36 Constraints)"<<endl;
     myfile<<endl;
 
     i=1; //for the x coordinate of the board
@@ -105,7 +105,7 @@ int main() {
  * Third Existential Constraint Set
 */
 
-    myfile<<"#Third Constraint Set of Existential Player (Ai_j_k, 5 Constraints)"<<endl;
+    myfile<<"#Third Constraint Set of Existential Player 6.13 (Ai_j_k, 5 Constraints)"<<endl;
     myfile<<endl;
 
     i=1; //for the x coordinate of the board
@@ -145,7 +145,7 @@ int main() {
     myfile<< " "<<endl;
     myfile<< "#Universal Constraints"<<endl;
     myfile<< " "<<endl;
-    myfile<<"#First Constraint Set of Universal Player (36 Constraints)"<<endl;
+    myfile<<"#First Constraint Set of Universal Player 6.14 (36 Constraints)"<<endl;
     myfile<< endl;
 
     i=1; //for the x coordinate of the board
@@ -178,7 +178,7 @@ int main() {
  * Second Universal Constraint Set
 */
 
-    myfile<<"#Second Constraint Set of Universal Player (27 Constraints)"<<endl;
+    myfile<<"#Second Constraint Set of Universal Player 6.15 (27 Constraints)"<<endl;
     myfile<<endl;
 
     i=1; //for the x coordinate of the board
@@ -210,7 +210,7 @@ int main() {
  * Third Universal Constraint Set
 */
 
-    myfile<<"#Third Constraint Set of Universal Player (Ai_j_k, 4 Constraints)"<<endl;
+    myfile<<"#Third Constraint Set of Universal Player 6.16 (Ai_j_k, 4 Constraints) "<<endl;
     myfile<<endl;
 
     i=1; //for the x coordinate of the board
@@ -248,7 +248,7 @@ int main() {
     myfile<< "#========================================================================================================="<<endl;
     myfile<< "#========================================================================================================="<<endl;
     myfile<<endl;
-    myfile<<"#First Set of First Auxiliary Constraint Set, (6.17)"<<endl;
+    myfile<<"#First Set of Auxiliary Constraint Set 6.17"<<endl;
     myfile<<endl;
 
     i=1; //for the x coordinate of the board
@@ -267,7 +267,7 @@ int main() {
                     myfile << "A" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k) + " + ";
             }
         }
-        myfile << " >= "  "3*(h_" + to_string(i2) + "___" + to_string(k) + ")";
+        myfile << " >= "  "3*(h" + to_string(i2) + "___" + to_string(k) + ")";
       //  k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
       i2++;
         myfile << endl;
@@ -275,7 +275,7 @@ int main() {
 
 
     myfile<<endl;
-    myfile<<"#Second Set of First Auxiliary Constraint Set, (6.17)"<<endl;
+    myfile<<"#Second Set of Auxiliary Constraint Set 6.17"<<endl;
     myfile<<endl;
 
     i=1; //for the x coordinate of the board
@@ -293,14 +293,14 @@ int main() {
                     myfile << "A" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k) + " + ";
             }
         }
-        myfile << " >= "  "3*(h_" + to_string(i2) + "___" + to_string(k) + ")";
+        myfile << " >= "  "3*(h" + to_string(i2) + "___" + to_string(k) + ")";
       //  k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
         i2++;
         myfile << endl;
     }
 
     myfile<<endl;
-    myfile<<"Third Set of First Auxiliary Constraint Set, (6.17)"<<endl;
+    myfile<<"Third Set of Auxiliary Constraint Set 6.17"<<endl;
     myfile<<endl;
 
     i=1; //for the x coordinate of the board
@@ -317,14 +317,14 @@ int main() {
                     myfile << "A" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k) + " + ";
             }
         }
-        myfile << " >= "  "3*(h_" + to_string(i2) + "___" + to_string(k) + ")";
+        myfile << " >= "  "3*(h" + to_string(i2) + "___" + to_string(k) + ")";
     //    k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
         i2++;
         myfile << endl;
     }
 
     myfile<<endl;
-    myfile<<"Fourth Set of First Auxiliary Constraint Set, (6.17)"<<endl;
+    myfile<<"Fourth Set of Auxiliary Constraint Set 6.17"<<endl;
     myfile<<endl;
 
     i=1; //for the x coordinate of the board
@@ -341,15 +341,14 @@ int main() {
                     myfile << "A" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k) + " + ";
             }
         }
-        myfile << " >= "  "3*(h_" + to_string(i2) + "___" + to_string(k) + ")";
+        myfile << " >= "  "3*(h" + to_string(i2) + "___" + to_string(k) + ")";
         //    k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
         i2++;
         myfile << endl;
     }
 
-
     myfile<<endl;
-    myfile<<"Fifth Set of First Auxiliary Constraint Set, (6.17)"<<endl;
+    myfile<<"Fifth Set of Auxiliary Constraint Set 6.17"<<endl;
     myfile<<endl;
 
     i=1; //for the x coordinate of the board
@@ -366,11 +365,161 @@ int main() {
                     myfile << "A" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k) + " + ";
             }
         }
-        myfile << " >= "  "3*(h_" + to_string(i2) + "___" + to_string(k) + ")";
+        myfile << " >= "  "3*(h" + to_string(i2) + "___" + to_string(k) + ")";
         //    k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
         i2++;
         myfile << endl;
     }
+
+    /*
+ *=====================================================================
+ *=====================================================================
+ * Second Auxiliary Variables Set (6.17.2)
+ *
+*/
+    myfile<<endl;
+    myfile<<endl;
+    myfile<< "#========================================================================================================="<<endl;
+    myfile<< "#========================================================================================================="<<endl;
+    myfile<< "#========================================================================================================="<<endl;
+    myfile<<endl;
+    myfile<<"#First Set of Second Auxiliary Constraint Set, (6.17.2)"<<endl;
+    myfile<<endl;
+
+    i=1; //for the x coordinate of the board
+    j=1; //for the y coordinate of the board
+    k=1; //k value
+    i2=1; //Right hand side of the equation
+
+
+    for (cntA6 = 0; cntA6 < 3; cntA6++) {  //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntA1 + cntA2 + cntA3 + cntA4 + cntA5 + cntA6) + ": ";
+        for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
+            for (int e = 0; e < 3; e++) {
+                if (e == 2 && d == 2) {
+                    myfile << "A" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k);
+                } else
+                    myfile << "A" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k) + " + ";
+            }
+        }
+        myfile << " >= "  "3*(v" + to_string(i2) + "_" + to_string(i2) +  "_" + to_string(k) + ")";
+        //  k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
+        i2++;
+        myfile << endl;
+    }
+
+
+    myfile<<endl;
+    myfile<<"#Second Set Auxiliary Constraint Set 6.17.2"<<endl;
+    myfile<<endl;
+
+    i=1; //for the x coordinate of the board
+    j=1; //for the y coordinate of the board
+    k=3; //k value
+    i2=1; //Right hand side of the equation
+
+    for (cntA7 = 0; cntA7 < 3; cntA7++) { //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntA1 + cntA2 + cntA3 + cntA4 + cntA5 + cntA6 +cntA7) + ": ";
+        for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
+            for (int e = 0; e < 3; e++) {
+                if (e == 2 && d == 2) { //This Helps to delete last sum symbol at the end of the equation
+                    myfile << "A" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k);
+                } else
+                    myfile << "A" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k) + " + ";
+            }
+        }
+        myfile << " >= "  "3*(v" + to_string(i2) + "_" + to_string(i2) +  "_" + to_string(k) + ")";
+        //  k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
+        i2++;
+        myfile << endl;
+    }
+
+    myfile<<endl;
+    myfile<<"Third Set of Second Auxiliary Constraint Set, (6.17.2)"<<endl;
+    myfile<<endl;
+
+    i=1; //for the x coordinate of the board
+    j=1; //for the y coordinate of the board
+    k=5; //k value
+    i2=1; //Right hand side of the equation
+    for (cntA8 = 0; cntA8 < 3; cntA8++) { //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntA1 + cntA2 + cntA3 + cntA4 + cntA5 + cntA6+ cntA7 + cntA8) + ": ";
+        for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
+            for (int e = 0; e < 3; e++) {
+                if (e == 2 && d == 2) { //This Helps to delete last sum symbol at the end of the equation
+                    myfile << "A" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k);
+                } else
+                    myfile << "A" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k) + " + ";
+            }
+        }
+        myfile << " >= "  "3*(v" + to_string(i2) + "_" + to_string(i2) +  "_" + to_string(k) + ")";
+        //    k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
+        i2++;
+        myfile << endl;
+    }
+
+    myfile<<endl;
+    myfile<<"Fourth Set of Second Auxiliary Constraint Set 6.17.2"<<endl;
+    myfile<<endl;
+
+    i=1; //for the x coordinate of the board
+    j=1; //for the y coordinate of the board
+    k=7; //k value
+    i2=1; //Right hand side of the equation
+    for (cntA9 = 0; cntA9 < 3; cntA9++) { //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntA1 + cntA2 + cntA3 + cntA4 + cntA5 + cntA6+ cntA7 + cntA8 + cntA9 ) + ": ";
+        for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i and j value
+            for (int e = 0; e < 3; e++) {
+                if (e == 2 && d == 2) { //This Helps to delete last sum symbol at the end of the equation
+                    myfile << "A" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k);
+                } else
+                    myfile << "A" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k) + " + ";
+            }
+        }
+        myfile << " >= "  "3*(v" + to_string(i2) + "_" + to_string(i2) +  "_" + to_string(k) + ")";
+        //    k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
+        i2++;
+        myfile << endl;
+    }
+
+    myfile<<endl;
+    myfile<<"Fifth Set of Second Auxiliary Constraint Set 6.17.2"<<endl;
+    myfile<<endl;
+
+    i=1; //for the x coordinate of the board
+    j=1; //for the y coordinate of the board
+    k=9; //k value
+    i2=1; //Right hand side of the equation
+    for (cntA10 = 0; cntA10 < 3; cntA10++) { //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntA1 + cntA2 + cntA3 + cntA4 + cntA5 + cntA6+ cntA7 + cntA8 + cntA9 + cntA10) + ": ";
+        for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
+            for (int e = 0; e < 3; e++) {
+                if (e == 2 && d == 2) { //This Helps to delete last sum symbol at the end of the equation
+                    myfile << "A" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k);
+                } else
+                    myfile << "A" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k) + " + ";
+            }
+        }
+        myfile << " >= "  "3*(v" + to_string(i2) + "_" + to_string(i2) +  "_" + to_string(k) + ")";
+        //    k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
+        i2++;
+        myfile << endl;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     myfile<<endl;
     myfile<<endl;
@@ -378,7 +527,7 @@ int main() {
     myfile<< "#========================================================================================================="<<endl;
     myfile<< "#========================================================================================================="<<endl;
     myfile<<endl;
-    myfile<<"First Set of Second Auxiliary Constraint Set(6.18)"<<endl;
+    myfile<<"First Set of Second Auxiliary Constraint Set 6.18 "<<endl;
     myfile<<endl;
     myfile<<endl;
 
@@ -386,7 +535,7 @@ int main() {
     j=1; //for the y coordinate of the board
     k=1; //k value
     i2=1; //Right hand side of the equation
-    for (cntA6 = 0; cntA6 < 5; cntA6++) { //Constraint Number Counter
+    for (cntA15 = 0; cntA15 < 5; cntA15++) { //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntA1 + cntA2 + cntA3 + cntA4 + cntA5+ cntA6) + ": ";
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
             for (int e = 0; e < 3; e++) {
@@ -427,14 +576,14 @@ int main() {
     myfile<< "#========================================================================================================="<<endl;
     myfile<<endl;
     myfile<<endl;
-    myfile<<"First Set of Third Auxiliary Constraint Set, (6.19)"<<endl;
+    myfile<<"First Set Auxiliary Constraint Set 6.19"<<endl;
     myfile<<endl;
 
     i=1; //for the x coordinate of the board
     j=1; //for the y coordinate of the board
     k=2; //k value
     i2=1; //Right hand side of the equation
-    for (cntA7 = 0; cntA7 < 4; cntA7++) { //Constraint Number Counter
+    for (cntA7 = 0; cntA15 < 4; cntA15++) { //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntA1 + cntA2 + cntA3 + cntA4 + cntA5 + cntA6 + cntA7 ) + ": ";
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
             for (int e = 0; e < 3; e++) {
