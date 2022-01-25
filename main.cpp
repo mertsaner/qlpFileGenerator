@@ -31,6 +31,7 @@ int main() {
     int cntA1=0, cntA2=0, cntA3=0, cntA4=0, cntA5=0, cntA6=0, cntA7=0, cntA8=0; //Count for Auxiliary  Constraints
     int cntA9=0, cntA10=0, cntA11=0, cntA12=0, cntA13=0, cntA14=0, cntA15=0, cntA16=0; //Count for Auxiliary  Constraints
     int cntA17=0, cntA18=0, cntA19=0, cntA20=0, cntA21=0, cntA22=0, cntA23=0, cntA24=0; //Count for Auxiliary  Constraints
+    int cntTemp=0;
     int i2=1; //Right hand side of the equation 6.17
 
     myfile<< "MAXIMIZE"<<endl;
@@ -507,20 +508,266 @@ int main() {
     }
 
 
+    cntTemp=cntA1 + cntA2 + cntA3 + cntA4 + cntA5 + cntA6+ cntA7 + cntA8 + cntA9 + cntA10;
+
+    myfile<<endl;
+    myfile<<endl;
+    myfile<< "#========================================================================================================="<<endl;
+    myfile<< "#========================================================================================================="<<endl;
+    myfile<< "#========================================================================================================="<<endl;
+    myfile<<endl;
+    myfile<<"#First Set of Third Auxiliary Constraint Set 6.17.3"<<endl;
+    myfile<<endl;
+
+
+    i=1; //for the x coordinate of the board
+    j=1; //for the y coordinate of the board
+    k=3; //k value
+    i2=1; //Right hand side of the equation
+    for (cntA11 = 0; cntA11 < 3; cntA11++) { //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntTemp+cntA11) + ": ";
+        for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
+            for (int e = 0; e < 3; e++) {
+                if (e == 2 && d == 2) { //This Helps to delete last sum symbol at the end of the equation
+                    myfile << "A" + to_string(i + e) + "_" + to_string(j + e) + "_" + to_string(k);
+                } else
+                    myfile << "A" + to_string(i + e) + "_" + to_string(j + e) + "_" + to_string(k) + " + ";
+            }
+        }
+        myfile << " >= "  "3*(d" + to_string(i2) + "_" + to_string(i2) +  "_" + to_string(k) + ")";
+        //    k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
+        i2++;
+        myfile << endl;
+    }
+
+    myfile<<endl;
+    myfile<<"#Second Set of Third Auxiliary Constraint Set 6.17.3"<<endl;
+    myfile<<endl;
+
+
+    i=1; //for the x coordinate of the board
+    j=1; //for the y coordinate of the board
+    k=5; //k value
+    i2=1; //Right hand side of the equation
+    for (cntA12 = 0; cntA12 < 3; cntA12++) { //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntTemp+cntA11+cntA12) + ": ";
+        for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
+            for (int e = 0; e < 3; e++) {
+                if (e == 2 && d == 2) { //This Helps to delete last sum symbol at the end of the equation
+                    myfile << "A" + to_string(i + e) + "_" + to_string(j + e) + "_" + to_string(k);
+                } else
+                    myfile << "A" + to_string(i + e) + "_" + to_string(j + e) + "_" + to_string(k) + " + ";
+            }
+        }
+        myfile << " >= "  "3*(d" + to_string(i2) + "_" + to_string(i2) +  "_" + to_string(k) + ")";
+        //    k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
+        i2++;
+        myfile << endl;
+    }
+
+    myfile<<endl;
+    myfile<<"#Third Set of Third Auxiliary Constraint Set 6.17.3"<<endl;
+    myfile<<endl;
+
+
+    i=1; //for the x coordinate of the board
+    j=1; //for the y coordinate of the board
+    k=7; //k value
+    i2=1; //Right hand side of the equation
+    for (cntA13 = 0; cntA13 < 3; cntA13++) { //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntTemp+cntA11+cntA12+cntA13) + ": ";
+        for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
+            for (int e = 0; e < 3; e++) {
+                if (e == 2 && d == 2) { //This Helps to delete last sum symbol at the end of the equation
+                    myfile << "A" + to_string(i + e) + "_" + to_string(j + e) + "_" + to_string(k);
+                } else
+                    myfile << "A" + to_string(i + e) + "_" + to_string(j + e) + "_" + to_string(k) + " + ";
+            }
+        }
+        myfile << " >= "  "3*(d" + to_string(i2) + "_" + to_string(i2) +  "_" + to_string(k) + ")";
+        //    k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
+        i2++;
+        myfile << endl;
+    }
+
+    myfile<<endl;
+    myfile<<"#Fourth Set of Third Auxiliary Constraint Set 6.17.3"<<endl;
+    myfile<<endl;
+
+    i=1; //for the x coordinate of the board
+    j=1; //for the y coordinate of the board
+    k=7; //k value
+    i2=1; //Right hand side of the equation
+    for (cntA14 = 0; cntA14 < 3; cntA14++) { //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntTemp+cntA11+cntA12+cntA13+cntA14) + ": ";
+        for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
+            for (int e = 0; e < 3; e++) {
+                if (e == 2 && d == 2) { //This Helps to delete last sum symbol at the end of the equation
+                    myfile << "A" + to_string(i + e) + "_" + to_string(j + e) + "_" + to_string(k);
+                } else
+                    myfile << "A" + to_string(i + e) + "_" + to_string(j + e) + "_" + to_string(k) + " + ";
+            }
+        }
+        myfile << " >= "  "3*(d" + to_string(i2) + "_" + to_string(i2) +  "_" + to_string(k) + ")";
+        //    k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
+        i2++;
+        myfile << endl;
+    }
+
+    myfile<<endl;
+    myfile<<"#Fifth Set of Third Auxiliary Constraint Set 6.17.3"<<endl;
+    myfile<<endl;
+
+
+    i=1; //for the x coordinate of the board
+    j=1; //for the y coordinate of the board
+    k=9; //k value
+    i2=1; //Right hand side of the equation
+    for (cntA15 = 0; cntA15 < 3; cntA15++) { //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntTemp+cntA11+cntA12+cntA13+cntA14+cntA15) + ": ";
+        for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
+            for (int e = 0; e < 3; e++) {
+                if (e == 2 && d == 2) { //This Helps to delete last sum symbol at the end of the equation
+                    myfile << "A" + to_string(i + e) + "_" + to_string(j + e) + "_" + to_string(k);
+                } else
+                    myfile << "A" + to_string(i + e) + "_" + to_string(j + e) + "_" + to_string(k) + " + ";
+            }
+        }
+        myfile << " >= "  "3*(d" + to_string(i2) + "_" + to_string(i2) +  "_" + to_string(k) + ")";
+        //    k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
+        i2++;
+        myfile << endl;
+    }
 
 
 
+    myfile<<endl;
+    myfile<<endl;
+    myfile<< "#========================================================================================================="<<endl;
+    myfile<< "#========================================================================================================="<<endl;
+    myfile<< "#========================================================================================================="<<endl;
+    myfile<<endl;
+    myfile<<"#First Set of Fourth Auxiliary Constraint Set  6.17.4"<<endl;
+    myfile<<endl;
 
 
+    i=1; //for the x coordinate of the board
+    j=1; //for the y coordinate of the board
+    k=1; //k value
+    i2=1; //Right hand side of the equation
+    for (cntA16 = 0; cntA16 < 3; cntA16++) { //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntTemp+cntA11+cntA12+cntA13+cntA14+cntA15+cntA16) + ": ";
+        for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
+            for (int e = 0; e < 3; e++) {
+                if (e == 2 && d == 2) { //This Helps to delete last sum symbol at the end of the equation
+                    myfile << "A" + to_string(i + e) + "_" + to_string(j + e) + "_" + to_string(k);
+                } else
+                    myfile << "A" + to_string(i + e) + "_" + to_string(4-(j + e)) + "_" + to_string(k) + " + ";
+            }
+        }
+        myfile << " >= "  "3*(d" + to_string(i2) + "_" + to_string(i2) +  "_" + to_string(k) + ")";
+        //    k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
+        i2++;
+        myfile << endl;
+    }
 
+    myfile<<endl;
+    myfile<<"#Second Set of Fourth Auxiliary Constraint Set  6.17.4"<<endl;
+    myfile<<endl;
 
+    i=1; //for the x coordinate of the board
+    j=1; //for the y coordinate of the board
+    k=3; //k value
+    i2=1; //Right hand side of the equation
+    for (cntA17 = 0; cntA17 < 3; cntA17++) { //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntTemp+cntA11+cntA12+cntA13+cntA14+cntA15+cntA16+cntA17) + ": ";
+        for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
+            for (int e = 0; e < 3; e++) {
+                if (e == 2 && d == 2) { //This Helps to delete last sum symbol at the end of the equation
+                    myfile << "A" + to_string(i + e) + "_" + to_string(j + e) + "_" + to_string(k);
+                } else
+                    myfile << "A" + to_string(i + e) + "_" + to_string(4-(j + e)) + "_" + to_string(k) + " + ";
+            }
+        }
+        myfile << " >= "  "3*(d" + to_string(i2) + "_" + to_string(i2) +  "_" + to_string(k) + ")";
+        //    k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
+        i2++;
+        myfile << endl;
+    }
 
+    myfile<<endl;
+    myfile<<"#Third Set of Fourth Auxiliary Constraint Set  6.17.4"<<endl;
+    myfile<<endl;
 
+    i=1; //for the x coordinate of the board
+    j=1; //for the y coordinate of the board
+    k=5; //k value
+    i2=1; //Right hand side of the equation
+    for (cntA18 = 0; cntA18 < 3; cntA18++) { //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntTemp+cntA11+cntA12+cntA13+cntA14+cntA15+cntA16+cntA17+cntA18) + ": ";
+        for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
+            for (int e = 0; e < 3; e++) {
+                if (e == 2 && d == 2) { //This Helps to delete last sum symbol at the end of the equation
+                    myfile << "A" + to_string(i + e) + "_" + to_string(j + e) + "_" + to_string(k);
+                } else
+                    myfile << "A" + to_string(i + e) + "_" + to_string(4-(j + e)) + "_" + to_string(k) + " + ";
+            }
+        }
+        myfile << " >= "  "3*(d" + to_string(i2) + "_" + to_string(i2) +  "_" + to_string(k) + ")";
+        //    k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
+        i2++;
+        myfile << endl;
+    }
 
+    myfile<<endl;
+    myfile<<"#Fourth Set of Fourth Auxiliary Constraint Set  6.17.4"<<endl;
+    myfile<<endl;
 
+    i=1; //for the x coordinate of the board
+    j=1; //for the y coordinate of the board
+    k=7; //k value
+    i2=1; //Right hand side of the equation
+    for (cntA19 = 0; cntA19 < 3; cntA19++) { //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntTemp+cntA11+cntA12+cntA13+cntA14+cntA15+cntA16+cntA17+cntA18+cntA19) + ": ";
+        for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
+            for (int e = 0; e < 3; e++) {
+                if (e == 2 && d == 2) { //This Helps to delete last sum symbol at the end of the equation
+                    myfile << "A" + to_string(i + e) + "_" + to_string(j + e) + "_" + to_string(k);
+                } else
+                    myfile << "A" + to_string(i + e) + "_" + to_string(4-(j + e)) + "_" + to_string(k) + " + ";
+            }
+        }
+        myfile << " >= "  "3*(d" + to_string(i2) + "_" + to_string(i2) +  "_" + to_string(k) + ")";
+        //    k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
+        i2++;
+        myfile << endl;
+    }
 
+    myfile<<endl;
+    myfile<<"#Fifth Set of Fourth Auxiliary Constraint Set  6.17.4"<<endl;
+    myfile<<endl;
 
+    i=1; //for the x coordinate of the board
+    j=1; //for the y coordinate of the board
+    k=9; //k value
+    i2=1; //Right hand side of the equation
+    for (cntA20 = 0; cntA20 < 3; cntA20++) { //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntTemp+cntA11+cntA12+cntA13+cntA14+cntA15+cntA16+cntA17+cntA18+cntA19+cntA20) + ": ";
+        for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
+            for (int e = 0; e < 3; e++) {
+                if (e == 2 && d == 2) { //This Helps to delete last sum symbol at the end of the equation
+                    myfile << "A" + to_string(i + e) + "_" + to_string(j + e) + "_" + to_string(k);
+                } else
+                    myfile << "A" + to_string(i + e) + "_" + to_string(4-(j + e)) + "_" + to_string(k) + " + ";
+            }
+        }
+        myfile << " >= "  "3*(d" + to_string(i2) + "_" + to_string(i2) +  "_" + to_string(k) + ")";
+        //    k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
+        i2++;
+        myfile << endl;
+    }
 
+    cntTemp=cntTemp+cntA11+cntA12+cntA13+cntA14+cntA15+cntA16+cntA17+cntA18+cntA19+cntA20;
     myfile<<endl;
     myfile<<endl;
     myfile<< "#========================================================================================================="<<endl;
@@ -535,8 +782,8 @@ int main() {
     j=1; //for the y coordinate of the board
     k=1; //k value
     i2=1; //Right hand side of the equation
-    for (cntA15 = 0; cntA15 < 5; cntA15++) { //Constraint Number Counter
-        myfile << "A_constraint" + to_string(cntA1 + cntA2 + cntA3 + cntA4 + cntA5+ cntA6) + ": ";
+    for (cntA21 = 0; cntA21 < 5; cntA21++) { //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntTemp+cntA21) + ": ";
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
             for (int e = 0; e < 3; e++) {
 
@@ -583,8 +830,34 @@ int main() {
     j=1; //for the y coordinate of the board
     k=2; //k value
     i2=1; //Right hand side of the equation
-    for (cntA15 = 0; cntA15 < 4; cntA15++) { //Constraint Number Counter
-        myfile << "A_constraint" + to_string(cntA1 + cntA2 + cntA3 + cntA4 + cntA5 + cntA6 + cntA7 ) + ": ";
+    for (cntA22 = 0; cntA22 < 4; cntA22++) { //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntTemp+cntA22 ) + ": ";
+        for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
+            for (int e = 0; e < 3; e++) {
+                if (e == 2 && d == 2) { //This Helps to delete last sum symbol at the end of the equation
+                    myfile << "B" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k);
+                } else
+                    myfile << "B" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k) + " + ";
+            }
+        }
+        myfile << " <= "  " 2 + w" + to_string(k-1);
+
+        k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
+        myfile << endl;
+    }
+
+
+    myfile<<endl;
+    myfile<<endl;
+    myfile<<"Second Set Auxiliary Constraint Set 6.19"<<endl;
+    myfile<<endl;
+
+    i=1; //for the x coordinate of the board
+    j=1; //for the y coordinate of the board
+    k=2; //k value
+    i2=1; //Right hand side of the equation
+    for (cntA23 = 0; cntA23 < 4; cntA23++) { //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntTemp+cntA22+cntA23 ) + ": ";
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
             for (int e = 0; e < 3; e++) {
                 if (e == 2 && d == 2) { //This Helps to delete last sum symbol at the end of the equation
