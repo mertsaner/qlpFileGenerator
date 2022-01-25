@@ -599,6 +599,10 @@ int main() {
         myfile << endl;
     }
 
+    myfile<< "#========================================================================================================="<<endl;
+    myfile<< "#========================================================================================================="<<endl;
+    myfile<< "#========================================================================================================="<<endl;
+    myfile<<endl;
 
 /*  Constraints set is finished
  * Final Part
@@ -615,8 +619,84 @@ int main() {
     myfile <<"BOUNDS"<<endl;
     myfile<<endl;
 
+    myfile <<"#First Bound Set"<<endl;
+
+    //myfile << "0 <= A1_1_1 <= 1" << endl;
+
+    i=1; //for the x coordinate of the board
+    j=1; //for the y coordinate of the board
+    k=1; //k value
+        for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
+            for (int e = 0; e < 3; e++) {
+                    myfile << "0 <= A" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k)+ " <= 1";
+                    myfile<<endl;
+            }
+            myfile << endl;
+        }
+
+    myfile << endl;
+    myfile <<"#Second Bound Set"<<endl;
+    myfile << endl;
+
+    //myfile << "0 <= A1_1_1 <= 1" << endl;
+
+    i=1; //for the x coordinate of the board
+    j=1; //for the y coordinate of the board
+    k=2; //k value
+    for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
+        for (int e = 0; e < 3; e++) {
+            myfile << "0 <= A" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k)+ " <= 1";
+            myfile<<endl;
+        }
+        myfile << endl;
+    }
+    myfile << endl;
+    myfile <<"#Third Bound Set"<<endl;
+    myfile << endl;
+
+    //myfile << "0 <= A1_1_1 <= 1" << endl;
+
+    i=1; //for the x coordinate of the board
+    j=1; //for the y coordinate of the board
+    k=3; //k value
+    for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
+        for (int e = 0; e < 3; e++) {
+            myfile << "0 <= A" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k)+ " <= 1";
+            myfile<<endl;
+        }
+        myfile << endl;
+    }
+    myfile << endl;
 
 
+    myfile<<"BINARIES"<< endl;
+    myfile<<""<< endl;
+
+    myfile <<"A1_1_1 A2_1_1 A3_1_1 A1_2_1 A2_2_1 A3_2_1 A1_3_1 A2_3_1 A3_3_1 "
+             "A1_1_3 A2_1_3 A3_1_3 A1_2_3 A2_2_3 A3_2_3 A1_3_3 A2_3_3 A3_3_3"
+             "A1_1_5 A1_2_5 A1_3_5 A2_1_5 A2_2_5 A2_3_5 A3_1_5 A3_2_5 A3_3_5"
+             "A1_1_7 A1_2_7 A1_3_7 A2_1_7 A2_2_7 A2_3_7 A3_1_7 A3_2_7 A3_3_7"
+             "A1_1_9 A1_2_9 A1_3_9 A2_1_9 A2_2_9 A2_3_9 A3_1_9 A3_2_9 A3_3_9"
+             <<endl;   //45 times for A
+
+    myfile <<"B1_1_2 B2_1_2 B3_1_2 B1_2_2 B2_2_2 B3_2_2 B1_3_2 B2_3_2 B3_3_2"
+             "B1_1_4 B2_1_4 B3_1_4 B1_2_4 B2_2_4 B3_2_4 B1_3_4 B2_3_4 B3_3_4"
+             "B1_1_6 B2_1_6 B3_1_6 B1_2_6 B2_2_6 B3_2_6 B1_3_6 B2_3_6 B3_3_6"
+             "B1_1_8 B2_1_8 B3_1_8 B1_2_8 B2_2_8 B3_2_8 B1_3_8 B2_3_8 B3_3_8"
+             <<endl; //36 times for B
+
+
+    myfile<<"45 times for C"<< endl;
+
+
+
+    //45 times for C
+
+
+
+    myfile << endl;
+    myfile << endl;
+    myfile << endl;
 
     myfile <<"EXISTS"<<endl;
     myfile<<endl;
