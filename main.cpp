@@ -831,7 +831,7 @@ int main() {
     k=2; //k value
     i2=1; //Right hand side of the equation
     for (cntA22 = 0; cntA22 < 4; cntA22++) { //Constraint Number Counter
-        myfile << "A_constraint" + to_string(cntTemp+cntA22 ) + ": ";
+        myfile << "A_constraint" + to_string(cntTemp+cntA21+cntA22 ) + ": ";
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
             for (int e = 0; e < 3; e++) {
                 if (e == 2 && d == 2) { //This Helps to delete last sum symbol at the end of the equation
@@ -857,7 +857,7 @@ int main() {
     k=2; //k value
     i2=1; //Right hand side of the equation
     for (cntA23 = 0; cntA23 < 4; cntA23++) { //Constraint Number Counter
-        myfile << "A_constraint" + to_string(cntTemp+cntA22+cntA23 ) + ": ";
+        myfile << "A_constraint" + to_string(cntTemp+cntA21+ cntA22+cntA23 ) + ": ";
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
             for (int e = 0; e < 3; e++) {
                 if (e == 2 && d == 2) { //This Helps to delete last sum symbol at the end of the equation
