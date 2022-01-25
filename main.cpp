@@ -720,12 +720,6 @@ int main() {
 
 
 
-
-
-
-
-
-
     myfile<<"BINARIES"<< endl;
     myfile<<""<< endl;
 
