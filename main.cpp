@@ -29,10 +29,10 @@ int main() {
     int k=3; //k value
     int count1=0, count2=0, count3=0; //Counter for Existential Constraints
     int cnt1=0, cnt2, cnt3=0; //Count for Universal Constraints
-    int cntA1=0, cntA2=0, cntA3=0, cntA4=0, cntA5=0, cntA6=0; //Count for Auxiliary  Constraints
+    int cntA1=0, cntA2=0, cntA3=0, cntA4=0, cntA5=0, cntA6=0, cntA7=0, cntA8=0; //Count for Auxiliary  Constraints
     int i2=1; //Right hand side of the equation 6.17
-
     int z;
+
     myfile<< "MINIMIZE"<<endl;
     myfile<< "-x1 -2x2 +2x3 +x4"<<endl;
     myfile<< "SUBJECT TO"<<endl;
@@ -420,7 +420,35 @@ int main() {
     }
 
 
+    myfile<<endl;
+    myfile<<endl;
+    myfile<< "#========================================================================================================="<<endl;
+    myfile<< "#========================================================================================================="<<endl;
+    myfile<< "#========================================================================================================="<<endl;
+    myfile<<endl;
+    myfile<<endl;
+    myfile<<"First Set of Third Auxiliary Constraint Set, (6.19)"<<endl;
+    myfile<<endl;
 
+    i=1; //for the x coordinate of the board
+    j=1; //for the y coordinate of the board
+    k=2; //k value
+    i2=1; //Right hand side of the equation
+    for (cntA7 = 0; cntA7 < 4; cntA7++) { //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntA1 + cntA2 + cntA3 + cntA4 + cntA5 + cntA6 + cntA7 ) + ": ";
+        for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
+            for (int e = 0; e < 3; e++) {
+                if (e == 2 && d == 2) { //This Helps to delete last sum symbol at the end of the equation
+                    myfile << "B" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k);
+                } else
+                    myfile << "B" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k) + " + ";
+            }
+        }
+        myfile << " <= "  " 2 + w" + to_string(k-1);
+
+        k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
+        myfile << endl;
+    }
 
 
 
