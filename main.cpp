@@ -33,8 +33,8 @@ int main() {
     int cntA17=0, cntA18=0, cntA19=0, cntA20=0, cntA21=0, cntA22=0, cntA23=0, cntA24=0; //Count for Auxiliary  Constraints
     int i2=1; //Right hand side of the equation 6.17
 
-    myfile<< "MINIMIZE"<<endl;
-    myfile<< "-x1 -2x2 +2x3 +x4"<<endl;
+    myfile<< "MAXIMIZE"<<endl;
+    myfile<< "w9"<<endl;
     myfile<< "SUBJECT TO"<<endl;
     myfile<< "#Existential Constrains"<<endl;
     myfile<< " "<<endl;
@@ -610,13 +610,48 @@ int main() {
 
 
 
+//Final Part
+
+    myfile <<"A and B are existential"<<endl;
+    myfile <<"U is universal"<<endl;
+    myfile << endl;
+    myfile <<"BOUNDS"<<endl;
 
 
 
 
 
+    myfile <<"EXISTS"<<endl;
+    myfile <<"A1_1_1 A2_1_1 A3_1_1 A1_2_1 A2_2_1 A3_2_1 A1_3_1 A2_3_1 A3_3_1 "
+             "A1_1_3 A2_1_3 A3_1_3 A1_2_3 A2_2_3 A3_2_3 A1_3_3 A2_3_3 A3_3_3"
+             "A1_1_5 A1_2_5 A1_3_5 A2_1_5 A2_2_5 A2_3_5 A3_1_5 A3_2_5 A3_3_5"
+             "A1_1_7 A1_2_7 A1_3_7 A2_1_7 A2_2_7 A2_3_7 A3_1_7 A3_2_7 A3_3_7"
+             "A1_1_9 A1_2_9 A1_3_9 A2_1_9 A2_2_9 A2_3_9 A3_1_9 A3_2_9 A3_3_9"
+    <<endl; //Defining Variable A in the .qlp
+    myfile <<"B2 B4 B5 B8"<<endl; //Defining Variables  B the .qlp
+    myfile <<"h1 h3 h5 h7 h9"<<endl; //Defining Variable h in the .qlp
+    myfile <<"v1 v3 v5 v7 v9"<<endl; //Defining Variable v in the .qlp
+    myfile <<"d1 d3 d5 d7 d9"<<endl; //Defining Variable d in the .qlp
+    myfile <<"w1 w3 w5 w7 w9"<<endl; //Defining Variable w in the .qlp
+
+
+
+    myfile <<"ALL"<<endl;
+
+
+    myfile <<"x3"<<endl;
+
+    myfile <<"ORDER"<<endl;
+
+    myfile <<"x1 x2 x3 x4"<<endl;
+
+
+
+    myfile <<"END"<<endl;
+    //End of the .qlp file Code
 
     myfile.close();
     cout<<"Writing is successful!"<<endl;
     return 0;
+    //THE END
 }

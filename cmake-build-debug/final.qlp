@@ -1,5 +1,5 @@
-MINIMIZE
--x1 -2x2 +2x3 +x4
+MAXIMIZE
+w9
 SUBJECT TO
 #Existential Constrains
  
@@ -296,3 +296,19 @@ A_constraint19: h1___9 + h2___9 + h3___9 + v__1_9 + v__2_9 + v__3_9 + d1_9 + d2_
 
 First Set Auxiliary Constraint Set 6.19
 
+A and B are existential
+U is universal
+
+BOUNDS
+EXISTS
+A1_1_1 A2_1_1 A3_1_1 A1_2_1 A2_2_1 A3_2_1 A1_3_1 A2_3_1 A3_3_1 A1_1_3 A2_1_3 A3_1_3 A1_2_3 A2_2_3 A3_2_3 A1_3_3 A2_3_3 A3_3_3A1_1_5 A1_2_5 A1_3_5 A2_1_5 A2_2_5 A2_3_5 A3_1_5 A3_2_5 A3_3_5A1_1_7 A1_2_7 A1_3_7 A2_1_7 A2_2_7 A2_3_7 A3_1_7 A3_2_7 A3_3_7A1_1_9 A1_2_9 A1_3_9 A2_1_9 A2_2_9 A2_3_9 A3_1_9 A3_2_9 A3_3_9
+B2 B4 B5 B8
+h1 h3 h5 h7 h9
+v1 v3 v5 v7 v9
+d1 d3 d5 d7 d9
+w1 w3 w5 w7 w9
+ALL
+x3
+ORDER
+x1 x2 x3 x4
+END

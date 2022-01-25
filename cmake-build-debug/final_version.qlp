@@ -1,6 +1,6 @@
-MINIMIZE
+MAXIMIZE
 
--x1 -2x2 +2x3 +x4
+W9
 
 SUBJECT TO
 
