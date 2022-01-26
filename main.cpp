@@ -30,7 +30,7 @@ int main() {
     int cnt1=0, cnt2, cnt3=0; //Count for Universal Constraints
     int cntA1=0, cntA2=0, cntA3=0, cntA4=0, cntA5=0, cntA6=0, cntA7=0, cntA8=0; //Count for Auxiliary  Constraints
     int cntA9=0, cntA10=0, cntA11=0, cntA12=0, cntA13=0, cntA14=0, cntA15=0, cntA16=0; //Count for Auxiliary  Constraints
-    int cntA17=0, cntA18=0, cntA19=0, cntA20=0, cntA21=0, cntA22=0, cntA23=0, cntA24=0; //Count for Auxiliary  Constraints
+    int cntA17=0, cntA18=0, cntA19=0, cntA20=0, cntA21=0, cntA22=0, cntA23=0, cntA24=0,cntA25=0,cntA26=0; //Count for Auxiliary  Constraints
     int cntTemp=0;
     int i2=1; //Right hand side of the equation 6.17
 
@@ -529,9 +529,9 @@ int main() {
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
             for (int e = 0; e < 3; e++) {
                 if (e == 2 && d == 2) { //This Helps to delete last sum symbol at the end of the equation
-                    myfile << "A" + to_string(i + e) + "_" + to_string(j + e) + "_" + to_string(k);
+                    myfile << "A" + to_string(i + e) + "_" + to_string(i + e) + "_" + to_string(k);
                 } else
-                    myfile << "A" + to_string(i + e) + "_" + to_string(j + e) + "_" + to_string(k) + " + ";
+                    myfile << "A" + to_string(i + e) + "_" + to_string(i + e) + "_" + to_string(k) + " + ";
             }
         }
         myfile << " >= "  "3*(d" + to_string(i2) + "_" + to_string(i2) +  "_" + to_string(k) + ")";
@@ -554,9 +554,9 @@ int main() {
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
             for (int e = 0; e < 3; e++) {
                 if (e == 2 && d == 2) { //This Helps to delete last sum symbol at the end of the equation
-                    myfile << "A" + to_string(i + e) + "_" + to_string(j + e) + "_" + to_string(k);
+                    myfile << "A" + to_string(i + e) + "_" + to_string(i + e) + "_" + to_string(k);
                 } else
-                    myfile << "A" + to_string(i + e) + "_" + to_string(j + e) + "_" + to_string(k) + " + ";
+                    myfile << "A" + to_string(i + e) + "_" + to_string(i + e) + "_" + to_string(k) + " + ";
             }
         }
         myfile << " >= "  "3*(d" + to_string(i2) + "_" + to_string(i2) +  "_" + to_string(k) + ")";
@@ -579,9 +579,9 @@ int main() {
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
             for (int e = 0; e < 3; e++) {
                 if (e == 2 && d == 2) { //This Helps to delete last sum symbol at the end of the equation
-                    myfile << "A" + to_string(i + e) + "_" + to_string(j + e) + "_" + to_string(k);
+                    myfile << "A" + to_string(i + e) + "_" + to_string(i + e) + "_" + to_string(k);
                 } else
-                    myfile << "A" + to_string(i + e) + "_" + to_string(j + e) + "_" + to_string(k) + " + ";
+                    myfile << "A" + to_string(i + e) + "_" + to_string(i + e) + "_" + to_string(k) + " + ";
             }
         }
         myfile << " >= "  "3*(d" + to_string(i2) + "_" + to_string(i2) +  "_" + to_string(k) + ")";
@@ -603,9 +603,9 @@ int main() {
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
             for (int e = 0; e < 3; e++) {
                 if (e == 2 && d == 2) { //This Helps to delete last sum symbol at the end of the equation
-                    myfile << "A" + to_string(i + e) + "_" + to_string(j + e) + "_" + to_string(k);
+                    myfile << "A" + to_string(i + e) + "_" + to_string(i + e) + "_" + to_string(k);
                 } else
-                    myfile << "A" + to_string(i + e) + "_" + to_string(j + e) + "_" + to_string(k) + " + ";
+                    myfile << "A" + to_string(i + e) + "_" + to_string(i + e) + "_" + to_string(k) + " + ";
             }
         }
         myfile << " >= "  "3*(d" + to_string(i2) + "_" + to_string(i2) +  "_" + to_string(k) + ")";
@@ -628,9 +628,9 @@ int main() {
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
             for (int e = 0; e < 3; e++) {
                 if (e == 2 && d == 2) { //This Helps to delete last sum symbol at the end of the equation
-                    myfile << "A" + to_string(i + e) + "_" + to_string(j + e) + "_" + to_string(k);
+                    myfile << "A" + to_string(i + e) + "_" + to_string(i + e) + "_" + to_string(k);
                 } else
-                    myfile << "A" + to_string(i + e) + "_" + to_string(j + e) + "_" + to_string(k) + " + ";
+                    myfile << "A" + to_string(i + e) + "_" + to_string(i + e) + "_" + to_string(k) + " + ";
             }
         }
         myfile << " >= "  "3*(d" + to_string(i2) + "_" + to_string(i2) +  "_" + to_string(k) + ")";
@@ -660,9 +660,9 @@ int main() {
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
             for (int e = 0; e < 3; e++) {
                 if (e == 2 && d == 2) { //This Helps to delete last sum symbol at the end of the equation
-                    myfile << "A" + to_string(i + e) + "_" + to_string(j + e) + "_" + to_string(k);
+                    myfile << "A" + to_string(i + e) + "_" + to_string(4-(i + e)) + "_" + to_string(k);
                 } else
-                    myfile << "A" + to_string(i + e) + "_" + to_string(4-(j + e)) + "_" + to_string(k) + " + ";
+                    myfile << "A" + to_string(i + e) + "_" + to_string(4-(i + e)) + "_" + to_string(k) + " + ";
             }
         }
         myfile << " >= "  "3*(d" + to_string(i2) + "_" + to_string(i2) +  "_" + to_string(k) + ")";
@@ -684,9 +684,9 @@ int main() {
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
             for (int e = 0; e < 3; e++) {
                 if (e == 2 && d == 2) { //This Helps to delete last sum symbol at the end of the equation
-                    myfile << "A" + to_string(i + e) + "_" + to_string(j + e) + "_" + to_string(k);
+                    myfile << "A" + to_string(i + e) + "_" + to_string(4-(i + e)) + "_" + to_string(k);
                 } else
-                    myfile << "A" + to_string(i + e) + "_" + to_string(4-(j + e)) + "_" + to_string(k) + " + ";
+                    myfile << "A" + to_string(i + e) + "_" + to_string(4-(i + e)) + "_" + to_string(k) + " + ";
             }
         }
         myfile << " >= "  "3*(d" + to_string(i2) + "_" + to_string(i2) +  "_" + to_string(k) + ")";
@@ -708,9 +708,9 @@ int main() {
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
             for (int e = 0; e < 3; e++) {
                 if (e == 2 && d == 2) { //This Helps to delete last sum symbol at the end of the equation
-                    myfile << "A" + to_string(i + e) + "_" + to_string(j + e) + "_" + to_string(k);
+                    myfile << "A" + to_string(i + e) + "_" + to_string(4-(i + e)) + "_" + to_string(k);
                 } else
-                    myfile << "A" + to_string(i + e) + "_" + to_string(4-(j + e)) + "_" + to_string(k) + " + ";
+                    myfile << "A" + to_string(i + e) + "_" + to_string(4-(i + e)) + "_" + to_string(k) + " + ";
             }
         }
         myfile << " >= "  "3*(d" + to_string(i2) + "_" + to_string(i2) +  "_" + to_string(k) + ")";
@@ -732,9 +732,9 @@ int main() {
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
             for (int e = 0; e < 3; e++) {
                 if (e == 2 && d == 2) { //This Helps to delete last sum symbol at the end of the equation
-                    myfile << "A" + to_string(i + e) + "_" + to_string(j + e) + "_" + to_string(k);
+                    myfile << "A" + to_string(i + e) + "_" + to_string(4-(i + e)) + "_" + to_string(k);
                 } else
-                    myfile << "A" + to_string(i + e) + "_" + to_string(4-(j + e)) + "_" + to_string(k) + " + ";
+                    myfile << "A" + to_string(i + e) + "_" + to_string(4-(i + e)) + "_" + to_string(k) + " + ";
             }
         }
         myfile << " >= "  "3*(d" + to_string(i2) + "_" + to_string(i2) +  "_" + to_string(k) + ")";
@@ -756,9 +756,9 @@ int main() {
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
             for (int e = 0; e < 3; e++) {
                 if (e == 2 && d == 2) { //This Helps to delete last sum symbol at the end of the equation
-                    myfile << "A" + to_string(i + e) + "_" + to_string(j + e) + "_" + to_string(k);
+                    myfile << "A" + to_string(i + e) + "_" + to_string(4-(i + e)) + "_" + to_string(k);
                 } else
-                    myfile << "A" + to_string(i + e) + "_" + to_string(4-(j + e)) + "_" + to_string(k) + " + ";
+                    myfile << "A" + to_string(i + e) + "_" + to_string(4-(i + e)) + "_" + to_string(k) + " + ";
             }
         }
         myfile << " >= "  "3*(d" + to_string(i2) + "_" + to_string(i2) +  "_" + to_string(k) + ")";
@@ -849,7 +849,7 @@ int main() {
 
     myfile<<endl;
     myfile<<endl;
-    myfile<<"Second Set Auxiliary Constraint Set 6.19"<<endl;
+    myfile<<"Auxiliary Constraint Set 6.19.2"<<endl;
     myfile<<endl;
 
     i=1; //for the x coordinate of the board
@@ -871,6 +871,64 @@ int main() {
         k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
         myfile << endl;
     }
+
+
+
+    myfile<<endl;
+    myfile<<endl;
+    myfile<<"Auxiliary Constraint Set 6.19.3"<<endl;
+    myfile<<endl;
+
+    i=1; //for the x coordinate of the board
+    j=1; //for the y coordinate of the board
+    k=2; //k value
+    i2=1; //Right hand side of the equation
+    for (cntA24 = 0; cntA24 < 4; cntA24++) { //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntTemp+cntA21+ cntA22+cntA23+cntA24) + ": ";
+        for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
+            for (int e = 0; e < 3; e++) {
+                if (e == 2 && d == 2) { //This Helps to delete last sum symbol at the end of the equation
+                    myfile << "B" + to_string(i + e) + "_" + to_string(i + d) + "_" + to_string(k);
+                } else
+                    myfile << "B" + to_string(i + e) + "_" + to_string(i + d) + "_" + to_string(k) + " + ";
+            }
+        }
+        myfile << " <= "  " 2 + w" + to_string(k-1);
+
+        k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
+        myfile << endl;
+    }
+
+
+
+    myfile<<endl;
+    myfile<<endl;
+    myfile<<"Auxiliary Constraint Set 6.19.4"<<endl;
+    myfile<<endl;
+
+    i=1; //for the x coordinate of the board
+    j=1; //for the y coordinate of the board
+    k=2; //k value
+    i2=1; //Right hand side of the equation
+    for (cntA25 = 0; cntA25 < 4; cntA25++) { //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntTemp+cntA21+ cntA22+cntA23+cntA24+cntA25 ) + ": ";
+        for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
+            for (int e = 0; e < 3; e++) {
+                if (e == 2 && d == 2) { //This Helps to delete last sum symbol at the end of the equation
+                    myfile << "B" + to_string(i + e) + "_" + to_string(4-(i + e)) + "_" + to_string(k);
+                } else
+                    myfile << "B" + to_string(i + e) + "_" + to_string(4-(i + e)) + "_" + to_string(k) + " + ";
+            }
+        }
+        myfile << " <= "  " 2 + w" + to_string(k-1);
+
+        k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
+        myfile << endl;
+    }
+
+
+
+
 
     myfile<< "#========================================================================================================="<<endl;
     myfile<< "#========================================================================================================="<<endl;
