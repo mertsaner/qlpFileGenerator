@@ -1069,7 +1069,7 @@ int main() {
              <<endl; //36 times for B
 
 
-    myfile<<"45 times for C"<< endl;
+    myfile<<"#45 times for C"<< endl;
 
 
 
