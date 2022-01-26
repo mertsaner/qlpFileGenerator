@@ -1069,12 +1069,8 @@ int main() {
              <<endl; //36 times for B
 
 
-    myfile<<"#45 times for C"<< endl;
-
-
-
-    //45 times for C
-
+    //myfile<<"#45 times for C"<< endl;//45 times for C
+    //myfile<<"GENERALS"<< endl;
 
 
     myfile << endl;
