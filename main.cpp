@@ -301,7 +301,7 @@ int main() {
     }
 
     myfile<<endl;
-    myfile<<"Third Set of Auxiliary Constraint Set 6.17"<<endl;
+    myfile<<"#Third Set of Auxiliary Constraint Set 6.17"<<endl;
     myfile<<endl;
 
     i=1; //for the x coordinate of the board
@@ -325,7 +325,7 @@ int main() {
     }
 
     myfile<<endl;
-    myfile<<"Fourth Set of Auxiliary Constraint Set 6.17"<<endl;
+    myfile<<"#Fourth Set of Auxiliary Constraint Set 6.17"<<endl;
     myfile<<endl;
 
     i=1; //for the x coordinate of the board
@@ -349,7 +349,7 @@ int main() {
     }
 
     myfile<<endl;
-    myfile<<"Fifth Set of Auxiliary Constraint Set 6.17"<<endl;
+    myfile<<"#Fifth Set of Auxiliary Constraint Set 6.17"<<endl;
     myfile<<endl;
 
     i=1; //for the x coordinate of the board
@@ -436,7 +436,7 @@ int main() {
     }
 
     myfile<<endl;
-    myfile<<"Third Set of Second Auxiliary Constraint Set, (6.17.2)"<<endl;
+    myfile<<"#Third Set of Second Auxiliary Constraint Set, (6.17.2)"<<endl;
     myfile<<endl;
 
     i=1; //for the x coordinate of the board
@@ -460,7 +460,7 @@ int main() {
     }
 
     myfile<<endl;
-    myfile<<"Fourth Set of Second Auxiliary Constraint Set 6.17.2"<<endl;
+    myfile<<"#Fourth Set of Second Auxiliary Constraint Set 6.17.2"<<endl;
     myfile<<endl;
 
     i=1; //for the x coordinate of the board
@@ -484,7 +484,7 @@ int main() {
     }
 
     myfile<<endl;
-    myfile<<"Fifth Set of Second Auxiliary Constraint Set 6.17.2"<<endl;
+    myfile<<"#Fifth Set of Second Auxiliary Constraint Set 6.17.2"<<endl;
     myfile<<endl;
 
     i=1; //for the x coordinate of the board
@@ -775,7 +775,7 @@ int main() {
     myfile<< "#========================================================================================================="<<endl;
     myfile<< "#========================================================================================================="<<endl;
     myfile<<endl;
-    myfile<<"First Set of Second Auxiliary Constraint Set 6.18 "<<endl;
+    myfile<<"#First Set of Second Auxiliary Constraint Set 6.18 "<<endl;
     myfile<<endl;
     myfile<<endl;
 
@@ -824,7 +824,7 @@ int main() {
     myfile<< "#========================================================================================================="<<endl;
     myfile<<endl;
     myfile<<endl;
-    myfile<<"First Set Auxiliary Constraint Set 6.19"<<endl;
+    myfile<<"#First Set Auxiliary Constraint Set 6.19"<<endl;
     myfile<<endl;
 
     i=1; //for the x coordinate of the board
@@ -850,7 +850,7 @@ int main() {
 
     myfile<<endl;
     myfile<<endl;
-    myfile<<"Auxiliary Constraint Set 6.19.2"<<endl;
+    myfile<<"#Auxiliary Constraint Set 6.19.2"<<endl;
     myfile<<endl;
 
     i=1; //for the x coordinate of the board
@@ -877,7 +877,7 @@ int main() {
 
     myfile<<endl;
     myfile<<endl;
-    myfile<<"Auxiliary Constraint Set 6.19.3"<<endl;
+    myfile<<"#Auxiliary Constraint Set 6.19.3"<<endl;
     myfile<<endl;
 
     i=1; //for the x coordinate of the board
@@ -904,7 +904,7 @@ int main() {
 
     myfile<<endl;
     myfile<<endl;
-    myfile<<"Auxiliary Constraint Set 6.19.4"<<endl;
+    myfile<<"#Auxiliary Constraint Set 6.19.4"<<endl;
     myfile<<endl;
 
     i=1; //for the x coordinate of the board

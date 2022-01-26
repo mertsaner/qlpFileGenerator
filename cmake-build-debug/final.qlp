@@ -221,19 +221,19 @@ A_constraint4: A1_1_3 + A2_1_3 + A3_1_3 + A1_2_3 + A2_2_3 + A3_2_3 + A1_3_3 + A2
 A_constraint5: A1_1_3 + A2_1_3 + A3_1_3 + A1_2_3 + A2_2_3 + A3_2_3 + A1_3_3 + A2_3_3 + A3_3_3 >= 3*(h2___3)
 A_constraint6: A1_1_3 + A2_1_3 + A3_1_3 + A1_2_3 + A2_2_3 + A3_2_3 + A1_3_3 + A2_3_3 + A3_3_3 >= 3*(h3___3)
 
-Third Set of Auxiliary Constraint Set 6.17
+#Third Set of Auxiliary Constraint Set 6.17
 
 A_constraint7: A1_1_5 + A2_1_5 + A3_1_5 + A1_2_5 + A2_2_5 + A3_2_5 + A1_3_5 + A2_3_5 + A3_3_5 >= 3*(h1___5)
 A_constraint8: A1_1_5 + A2_1_5 + A3_1_5 + A1_2_5 + A2_2_5 + A3_2_5 + A1_3_5 + A2_3_5 + A3_3_5 >= 3*(h2___5)
 A_constraint9: A1_1_5 + A2_1_5 + A3_1_5 + A1_2_5 + A2_2_5 + A3_2_5 + A1_3_5 + A2_3_5 + A3_3_5 >= 3*(h3___5)
 
-Fourth Set of Auxiliary Constraint Set 6.17
+#Fourth Set of Auxiliary Constraint Set 6.17
 
 A_constraint10: A1_1_7 + A2_1_7 + A3_1_7 + A1_2_7 + A2_2_7 + A3_2_7 + A1_3_7 + A2_3_7 + A3_3_7 >= 3*(h1___7)
 A_constraint11: A1_1_7 + A2_1_7 + A3_1_7 + A1_2_7 + A2_2_7 + A3_2_7 + A1_3_7 + A2_3_7 + A3_3_7 >= 3*(h2___7)
 A_constraint12: A1_1_7 + A2_1_7 + A3_1_7 + A1_2_7 + A2_2_7 + A3_2_7 + A1_3_7 + A2_3_7 + A3_3_7 >= 3*(h3___7)
 
-Fifth Set of Auxiliary Constraint Set 6.17
+#Fifth Set of Auxiliary Constraint Set 6.17
 
 A_constraint13: A1_1_9 + A2_1_9 + A3_1_9 + A1_2_9 + A2_2_9 + A3_2_9 + A1_3_9 + A2_3_9 + A3_3_9 >= 3*(h1___9)
 A_constraint14: A1_1_9 + A2_1_9 + A3_1_9 + A1_2_9 + A2_2_9 + A3_2_9 + A1_3_9 + A2_3_9 + A3_3_9 >= 3*(h2___9)
@@ -256,19 +256,19 @@ A_constraint19: A1_1_3 + A2_1_3 + A3_1_3 + A1_2_3 + A2_2_3 + A3_2_3 + A1_3_3 + A
 A_constraint20: A1_1_3 + A2_1_3 + A3_1_3 + A1_2_3 + A2_2_3 + A3_2_3 + A1_3_3 + A2_3_3 + A3_3_3 >= 3*(v2_2_3)
 A_constraint21: A1_1_3 + A2_1_3 + A3_1_3 + A1_2_3 + A2_2_3 + A3_2_3 + A1_3_3 + A2_3_3 + A3_3_3 >= 3*(v3_3_3)
 
-Third Set of Second Auxiliary Constraint Set, (6.17.2)
+#Third Set of Second Auxiliary Constraint Set, (6.17.2)
 
 A_constraint22: A1_1_5 + A2_1_5 + A3_1_5 + A1_2_5 + A2_2_5 + A3_2_5 + A1_3_5 + A2_3_5 + A3_3_5 >= 3*(v1_1_5)
 A_constraint23: A1_1_5 + A2_1_5 + A3_1_5 + A1_2_5 + A2_2_5 + A3_2_5 + A1_3_5 + A2_3_5 + A3_3_5 >= 3*(v2_2_5)
 A_constraint24: A1_1_5 + A2_1_5 + A3_1_5 + A1_2_5 + A2_2_5 + A3_2_5 + A1_3_5 + A2_3_5 + A3_3_5 >= 3*(v3_3_5)
 
-Fourth Set of Second Auxiliary Constraint Set 6.17.2
+#Fourth Set of Second Auxiliary Constraint Set 6.17.2
 
 A_constraint25: A1_1_7 + A2_1_7 + A3_1_7 + A1_2_7 + A2_2_7 + A3_2_7 + A1_3_7 + A2_3_7 + A3_3_7 >= 3*(v1_1_7)
 A_constraint26: A1_1_7 + A2_1_7 + A3_1_7 + A1_2_7 + A2_2_7 + A3_2_7 + A1_3_7 + A2_3_7 + A3_3_7 >= 3*(v2_2_7)
 A_constraint27: A1_1_7 + A2_1_7 + A3_1_7 + A1_2_7 + A2_2_7 + A3_2_7 + A1_3_7 + A2_3_7 + A3_3_7 >= 3*(v3_3_7)
 
-Fifth Set of Second Auxiliary Constraint Set 6.17.2
+#Fifth Set of Second Auxiliary Constraint Set 6.17.2
 
 A_constraint28: A1_1_9 + A2_1_9 + A3_1_9 + A1_2_9 + A2_2_9 + A3_2_9 + A1_3_9 + A2_3_9 + A3_3_9 >= 3*(v1_1_9)
 A_constraint29: A1_1_9 + A2_1_9 + A3_1_9 + A1_2_9 + A2_2_9 + A3_2_9 + A1_3_9 + A2_3_9 + A3_3_9 >= 3*(v2_2_9)
@@ -349,7 +349,7 @@ A_constraint60: A1_3_9 + A2_2_9 + A3_1_9 + A1_3_9 + A2_2_9 + A3_1_9 + A1_3_9 + A
 #=========================================================================================================
 #=========================================================================================================
 
-First Set of Second Auxiliary Constraint Set 6.18 
+#First Set of Second Auxiliary Constraint Set 6.18 
 
 
 A_constraint61: h1___1 + h2___1 + h3___1 + v__1_1 + v__2_1 + v__3_1 + d1_1 + d2_1 >= w1
@@ -364,7 +364,7 @@ A_constraint65: h1___9 + h2___9 + h3___9 + v__1_9 + v__2_9 + v__3_9 + d1_9 + d2_
 #=========================================================================================================
 
 
-First Set Auxiliary Constraint Set 6.19
+#First Set Auxiliary Constraint Set 6.19
 
 A_constraint66: B1_1_2 + B2_1_2 + B3_1_2 + B1_2_2 + B2_2_2 + B3_2_2 + B1_3_2 + B2_3_2 + B3_3_2 <=  2 + w1
 A_constraint67: B1_1_4 + B2_1_4 + B3_1_4 + B1_2_4 + B2_2_4 + B3_2_4 + B1_3_4 + B2_3_4 + B3_3_4 <=  2 + w3
@@ -372,7 +372,7 @@ A_constraint68: B1_1_6 + B2_1_6 + B3_1_6 + B1_2_6 + B2_2_6 + B3_2_6 + B1_3_6 + B
 A_constraint69: B1_1_8 + B2_1_8 + B3_1_8 + B1_2_8 + B2_2_8 + B3_2_8 + B1_3_8 + B2_3_8 + B3_3_8 <=  2 + w7
 
 
-Auxiliary Constraint Set 6.19.2
+#Auxiliary Constraint Set 6.19.2
 
 A_constraint70: B1_1_2 + B2_1_2 + B3_1_2 + B1_2_2 + B2_2_2 + B3_2_2 + B1_3_2 + B2_3_2 + B3_3_2 <=  2 + w1
 A_constraint71: B1_1_4 + B2_1_4 + B3_1_4 + B1_2_4 + B2_2_4 + B3_2_4 + B1_3_4 + B2_3_4 + B3_3_4 <=  2 + w3
@@ -380,7 +380,7 @@ A_constraint72: B1_1_6 + B2_1_6 + B3_1_6 + B1_2_6 + B2_2_6 + B3_2_6 + B1_3_6 + B
 A_constraint73: B1_1_8 + B2_1_8 + B3_1_8 + B1_2_8 + B2_2_8 + B3_2_8 + B1_3_8 + B2_3_8 + B3_3_8 <=  2 + w7
 
 
-Auxiliary Constraint Set 6.19.3
+#Auxiliary Constraint Set 6.19.3
 
 A_constraint74: B1_1_2 + B2_1_2 + B3_1_2 + B1_2_2 + B2_2_2 + B3_2_2 + B1_3_2 + B2_3_2 + B3_3_2 <=  2 + w1
 A_constraint75: B1_1_4 + B2_1_4 + B3_1_4 + B1_2_4 + B2_2_4 + B3_2_4 + B1_3_4 + B2_3_4 + B3_3_4 <=  2 + w3
@@ -388,7 +388,7 @@ A_constraint76: B1_1_6 + B2_1_6 + B3_1_6 + B1_2_6 + B2_2_6 + B3_2_6 + B1_3_6 + B
 A_constraint77: B1_1_8 + B2_1_8 + B3_1_8 + B1_2_8 + B2_2_8 + B3_2_8 + B1_3_8 + B2_3_8 + B3_3_8 <=  2 + w7
 
 
-Auxiliary Constraint Set 6.19.4
+#Auxiliary Constraint Set 6.19.4
 
 A_constraint78: B1_3_2 + B2_2_2 + B3_1_2 + B1_3_2 + B2_2_2 + B3_1_2 + B1_3_2 + B2_2_2 + B3_1_2 <=  2 + w1
 A_constraint79: B1_3_4 + B2_2_4 + B3_1_4 + B1_3_4 + B2_2_4 + B3_1_4 + B1_3_4 + B2_2_4 + B3_1_4 <=  2 + w3
@@ -500,7 +500,6 @@ BINARIES
 
 A1_1_1 A2_1_1 A3_1_1 A1_2_1 A2_2_1 A3_2_1 A1_3_1 A2_3_1 A3_3_1  A1_1_3 A2_1_3 A3_1_3 A1_2_3 A2_2_3 A3_2_3 A1_3_3 A2_3_3 A3_3_3 A1_1_5 A1_2_5 A1_3_5 A2_1_5 A2_2_5 A2_3_5 A3_1_5 A3_2_5 A3_3_5 A1_1_7 A1_2_7 A1_3_7 A2_1_7 A2_2_7 A2_3_7 A3_1_7 A3_2_7 A3_3_7 A1_1_9 A1_2_9 A1_3_9 A2_1_9 A2_2_9 A2_3_9 A3_1_9 A3_2_9 A3_3_9
 B1_1_2 B2_1_2 B3_1_2 B1_2_2 B2_2_2 B3_2_2 B1_3_2 B2_3_2 B3_3_2 B1_1_4 B2_1_4 B3_1_4 B1_2_4 B2_2_4 B3_2_4 B1_3_4 B2_3_4 B3_3_4 B1_1_6 B2_1_6 B3_1_6 B1_2_6 B2_2_6 B3_2_6 B1_3_6 B2_3_6 B3_3_6 B1_1_8 B2_1_8 B3_1_8 B1_2_8 B2_2_8 B3_2_8 B1_3_8 B2_3_8 B3_3_8
-#45 times for C
 
 
 
