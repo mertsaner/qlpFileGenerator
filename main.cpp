@@ -22,7 +22,7 @@ int main() {
 
     ofstream myfile; //Defining file name
     myfile.open ("final.qlp"); //Opening the file
-    //Initialazation of the Variables
+    //Initialization of the Variables
     int i=1; //for the x coordinate of the board
     int j=1; //for the y coordinate of the board
     int k=3; //k value
@@ -32,7 +32,7 @@ int main() {
     int cntA9=0, cntA10=0, cntA11=0, cntA12=0, cntA13=0, cntA14=0, cntA15=0, cntA16=0; //Count for Auxiliary  Constraints
     int cntA17=0, cntA18=0, cntA19=0, cntA20=0, cntA21=0, cntA22=0, cntA23=0, cntA24=0,cntA25=0,cntA26=0; //Count for Auxiliary  Constraints
     int cntTemp=0;
-    int i2=1; //Right hand side of the equation 6.17
+    int i2=1; //Right-hand side of the equation 6.17
 
     myfile<< "MAXIMIZE"<<endl;
     myfile<< "w9"<<endl;
