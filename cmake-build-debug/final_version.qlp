@@ -422,18 +422,45 @@ DONE above it
 ==================================================================
 ==================================================================
 ==================================================================
-
+For each constraint you fix i and k.
+E.g. if you write down the constraint for i=2 and k=4 it should read
+B2_1_2+B2_2_2+B2_3_2 <= 2+w3
+In particular, you fix the i=2 in the sum on the
+left-hand side and sum only over (2,1), (2,2) and (2,3)
 
 #Auxiliary Constraint (6.19)
 
-#for k=2
+#for i=1 k=2
 A_Constraint: B1_1_2 + B2_1_2 + B3_1_2 + B1_2_2 + B2_2_2 + B3_2_2 + B1_3_2 + B2_3_2 + B3_3_2 <= 2 + w1
-#for k=2
+#for i=1 k=4
 A_Constraint: B1_1_2 + B2_1_2 + B3_1_2 + B1_2_2 + B2_2_2 + B3_2_2 + B1_3_2 + B2_3_2 + B3_3_2 <= 2 + w1
-#for k=2
+#for k=1 k=6
 A_Constraint: B1_1_2 + B2_1_2 + B3_1_2 + B1_2_2 + B2_2_2 + B3_2_2 + B1_3_2 + B2_3_2 + B3_3_2 <= 2 + w1
 
+#for i=1 k=2
+A_Constraint: B1_1_2 + B1_2_2 + B1_3_2 +  <= 2 + w1
+#for i=1 k=4
+A_Constraint: B1_1_2 + B1_2_2 + B1_3_2 +  <= 2 + w1
 
+#for i=1 k=6
+#for i=1 k=8
+
+
+#for i=2 k=2
+#for i=2 k=4
+#for i=2 k=6
+#for i=2 k=8
+
+
+#for i=3 k=2
+#for i=3 k=4
+#for i=3 k=6
+#for i=3 k=8
+
+
+
+
+i=2
 for k=4
 A_Constraint: B1_1_4 + B2_1_4 + B3_1_4 + B1_2_4 + B2_2_4 + B3_2_4 + B1_3_4 + B2_3_4 + B3_3_4 <= 2 + w3
 for k=4
