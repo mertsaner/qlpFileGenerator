@@ -440,10 +440,12 @@ A_Constraint: B1_1_2 + B2_1_2 + B3_1_2 + B1_2_2 + B2_2_2 + B3_2_2 + B1_3_2 + B2_
 #for i=1 k=2
 A_Constraint: B1_1_2 + B1_2_2 + B1_3_2 +  <= 2 + w1
 #for i=1 k=4
-A_Constraint: B1_1_2 + B1_2_2 + B1_3_2 +  <= 2 + w1
-
+A_Constraint: B1_1_4 + B1_2_4 + B1_3_4 +  <= 2 + w3
 #for i=1 k=6
+A_Constraint: B1_1_6 + B1_2_6 + B1_3_6 +  <= 2 + w5
 #for i=1 k=8
+A_Constraint: B1_1_8 + B1_2_8 + B1_3_8 +  <= 2 + w7
+
 
 
 #for i=2 k=2
