@@ -210,7 +210,6 @@ int main() {
 /*
  * Third Universal Constraint Set
 */
-
     myfile<<"\\\\Third Constraint Set of Universal Player 6.16 (Ai_j_k) "<<endl;
     myfile<<endl;
 
