@@ -3,7 +3,7 @@ w9
 SUBJECT TO
 \\Existential Constrains
  
-\\First Constraint Set of Existential Player 6.11 (36 Constraints)
+\\First Constraint Set of Existential Player 6.11
 E_constraint1: B1_1_2 + A1_1_3 <= 1
 E_constraint2: B1_1_4 + A1_1_5 <= 1
 E_constraint3: B1_1_6 + A1_1_7 <= 1
@@ -49,7 +49,7 @@ E_constraint34: B3_3_4 + A3_3_5 <= 1
 E_constraint35: B3_3_6 + A3_3_7 <= 1
 E_constraint36: B3_3_8 + A3_3_9 <= 1
 
-\\Second Constraint Set of Existential Player 6.12 (36 Constraints)
+\\Second Constraint Set of Existential Player 6.12
 
 E_constraint37: A1_1_1 + A1_1_3 <= 0
 E_constraint38: A1_1_3 + A1_1_5 <= 0
@@ -96,7 +96,7 @@ E_constraint70: A3_3_3 + A3_3_5 <= 0
 E_constraint71: A3_3_5 + A3_3_7 <= 0
 E_constraint72: A3_3_7 + A3_3_9 <= 0
 
-\\Third Constraint Set of Existential Player 6.13 (Ai_j_k, 5 Constraints)
+\\Third Constraint Set of Existential Player 6.13 (Ai_j_k)
 
 E_constraint73: A1_1_1 + A2_1_1 + A3_1_1 + A1_2_1 + A2_2_1 + A3_2_1 + A1_3_1 + A2_3_1 + A3_3_1 = 1/2 + 1 
 E_constraint74: A1_1_3 + A2_1_3 + A3_1_3 + A1_2_3 + A2_2_3 + A3_2_3 + A1_3_3 + A2_3_3 + A3_3_3 = 3/2 + 1 
@@ -112,7 +112,7 @@ E_constraint77: A1_1_9 + A2_1_9 + A3_1_9 + A1_2_9 + A2_2_9 + A3_2_9 + A1_3_9 + A
  
 \\Universal Constraints
  
-\\First Constraint Set of Universal Player 6.14 (36 Constraints)
+\\First Constraint Set of Universal Player 6.14
 
 U_constraint1: A1_1_1 + B1_1_2 <= 1
 U_constraint2: A1_1_3 + B1_1_4 <= 1
@@ -159,7 +159,7 @@ U_constraint34: A3_3_3 + B3_3_4 <= 1
 U_constraint35: A3_3_5 + B3_3_6 <= 1
 U_constraint36: A3_3_7 + B3_3_8 <= 1
 
-\\Second Constraint Set of Universal Player 6.15 (27 Constraints)
+\\Second Constraint Set of Universal Player 6.15
 
 U_constraint37: B1_1_2 - B1_1_4 <= 0 
 U_constraint38: B1_1_4 - B1_1_6 <= 0 
@@ -197,7 +197,7 @@ U_constraint61: B3_3_2 - B3_3_4 <= 0
 U_constraint62: B3_3_4 - B3_3_6 <= 0 
 U_constraint63: B3_3_6 - B3_3_8 <= 0 
 
-\\Third Constraint Set of Universal Player 6.16 (Ai_j_k, 4 Constraints) 
+\\Third Constraint Set of Universal Player 6.16 (Ai_j_k) 
 
 U_constraint64: B1_1_2 + B2_1_2 + B3_1_2 + B1_2_2 + B2_2_2 + B3_2_2 + B1_3_2 + B2_3_2 + B3_3_2 = 1
 U_constraint65: B1_1_4 + B2_1_4 + B3_1_4 + B1_2_4 + B2_2_4 + B3_2_4 + B1_3_4 + B2_3_4 + B3_3_4 = 2

@@ -44,7 +44,7 @@ int main() {
   * First Existential Constraint Set
 */
 
-    myfile<<"\\\\First Constraint Set of Existential Player 6.11 (36 Constraints)"<<endl;
+    myfile<<"\\\\First Constraint Set of Existential Player 6.11"<<endl;
 
     for(count1=1 ; count1<37;count1++)
     {
@@ -73,7 +73,7 @@ int main() {
  * Second Existential Constraint Set
 */
 
-    myfile<<"\\\\Second Constraint Set of Existential Player 6.12 (36 Constraints)"<<endl;
+    myfile<<"\\\\Second Constraint Set of Existential Player 6.12"<<endl;
     myfile<<endl;
 
     i=1; //for the x coordinate of the board
@@ -106,7 +106,7 @@ int main() {
  * Third Existential Constraint Set
 */
 
-    myfile<<"\\\\Third Constraint Set of Existential Player 6.13 (Ai_j_k, 5 Constraints)"<<endl;
+    myfile<<"\\\\Third Constraint Set of Existential Player 6.13 (Ai_j_k)"<<endl;
     myfile<<endl;
 
     i=1; //for the x coordinate of the board
@@ -146,7 +146,7 @@ int main() {
     myfile<< " "<<endl;
     myfile<< "\\\\Universal Constraints"<<endl;
     myfile<< " "<<endl;
-    myfile<<"\\\\First Constraint Set of Universal Player 6.14 (36 Constraints)"<<endl;
+    myfile<<"\\\\First Constraint Set of Universal Player 6.14"<<endl;
     myfile<< endl;
 
     i=1; //for the x coordinate of the board
@@ -179,7 +179,7 @@ int main() {
  * Second Universal Constraint Set
 */
 
-    myfile<<"\\\\Second Constraint Set of Universal Player 6.15 (27 Constraints)"<<endl;
+    myfile<<"\\\\Second Constraint Set of Universal Player 6.15"<<endl;
     myfile<<endl;
 
     i=1; //for the x coordinate of the board
@@ -211,7 +211,7 @@ int main() {
  * Third Universal Constraint Set
 */
 
-    myfile<<"\\\\Third Constraint Set of Universal Player 6.16 (Ai_j_k, 4 Constraints) "<<endl;
+    myfile<<"\\\\Third Constraint Set of Universal Player 6.16 (Ai_j_k) "<<endl;
     myfile<<endl;
 
     i=1; //for the x coordinate of the board
