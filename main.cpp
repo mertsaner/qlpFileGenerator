@@ -267,7 +267,7 @@ int main() {
             else
                 myfile << "A" + to_string(i) + "_" + to_string(j + d) + "_" + to_string(k)+ " + ";
         }
-        myfile <<" - 3*(h" + to_string(i) + "_" + to_string(k) + ") >= 0 " ;
+        myfile <<" - 3*(h" + to_string(i) + "___" + to_string(k) + ") >= 0 " ;
         k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
         i2++;
         myfile << endl;
@@ -291,7 +291,7 @@ int main() {
             else
                 myfile << "A" + to_string(i) + "_" + to_string(j + d) + "_" + to_string(k)+ " + ";
         }
-        myfile <<" - 3*(h" + to_string(i) + "_" + to_string(k) + ") >= 0 " ;
+        myfile <<" - 3*(h" + to_string(i) + "___" + to_string(k) + ") >= 0 " ;
         k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
         i2++;
         myfile << endl;
@@ -315,7 +315,7 @@ int main() {
                 myfile << "A" + to_string(i) + "_" + to_string(j + d) + "_" + to_string(k)+ " + ";
 
         }
-        myfile <<" - 3*(h" + to_string(i) + "_" + to_string(k) + ") >= 0 " ;
+        myfile <<" - 3*(h" + to_string(i) + "___" + to_string(k) + ") >= 0 " ;
         k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
         i2++;
         myfile << endl;
@@ -350,7 +350,7 @@ int main() {
                 myfile << "A" + to_string(i+d) + "_" + to_string(j) + "_" + to_string(k)+ " + ";
 
         }
-        myfile <<" - 3*(v" + to_string(j) + "_" + to_string(k) + ") >= 0 " ;
+        myfile <<" - 3*(v__" + to_string(j) + "_" + to_string(k) + ") >= 0 " ;
         k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
         i2++;
         myfile << endl;
@@ -374,7 +374,7 @@ int main() {
             else
                 myfile << "A" + to_string(i+d) + "_" + to_string(j) + "_" + to_string(k)+ " + ";
         }
-        myfile <<" - 3*(v" + to_string(j) + "_" + to_string(k) + ") >= 0 " ;
+        myfile <<" - 3*(v__" + to_string(j) + "_" + to_string(k) + ") >= 0 " ;
         k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
         i2++;
         myfile << endl;
@@ -397,7 +397,7 @@ int main() {
             else
                 myfile << "A" + to_string(i+d) + "_" + to_string(j) + "_" + to_string(k)+ " + ";
         }
-        myfile <<" - 3*(v" + to_string(j) + "_" + to_string(k) + ") >= 0 " ;
+        myfile <<" - 3*(v__" + to_string(j) + "_" + to_string(k) + ") >= 0 " ;
         k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
         i2++;
         myfile << endl;

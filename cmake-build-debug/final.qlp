@@ -211,27 +211,27 @@ U_constraint67: B1_1_8 + B2_1_8 + B3_1_8 + B1_2_8 + B2_2_8 + B3_2_8 + B1_3_8 + B
 
 \\First Set of Auxiliary Constraint Set 6.17
 
-A_constraint1: A1_1_1 + A1_2_1 + A1_3_1 - 3*(h1_1) >= 0 
-A_constraint2: A1_1_3 + A1_2_3 + A1_3_3 - 3*(h1_3) >= 0 
-A_constraint3: A1_1_5 + A1_2_5 + A1_3_5 - 3*(h1_5) >= 0 
-A_constraint4: A1_1_7 + A1_2_7 + A1_3_7 - 3*(h1_7) >= 0 
-A_constraint5: A1_1_9 + A1_2_9 + A1_3_9 - 3*(h1_9) >= 0 
+A_constraint1: A1_1_1 + A1_2_1 + A1_3_1 - 3*(h1___1) >= 0 
+A_constraint2: A1_1_3 + A1_2_3 + A1_3_3 - 3*(h1___3) >= 0 
+A_constraint3: A1_1_5 + A1_2_5 + A1_3_5 - 3*(h1___5) >= 0 
+A_constraint4: A1_1_7 + A1_2_7 + A1_3_7 - 3*(h1___7) >= 0 
+A_constraint5: A1_1_9 + A1_2_9 + A1_3_9 - 3*(h1___9) >= 0 
 
 \\Second Set of Auxiliary Constraint Set 6.17
 
-A_constraint6: A2_1_1 + A2_2_1 + A2_3_1 - 3*(h2_1) >= 0 
-A_constraint7: A2_1_3 + A2_2_3 + A2_3_3 - 3*(h2_3) >= 0 
-A_constraint8: A2_1_5 + A2_2_5 + A2_3_5 - 3*(h2_5) >= 0 
-A_constraint9: A2_1_7 + A2_2_7 + A2_3_7 - 3*(h2_7) >= 0 
-A_constraint10: A2_1_9 + A2_2_9 + A2_3_9 - 3*(h2_9) >= 0 
+A_constraint6: A2_1_1 + A2_2_1 + A2_3_1 - 3*(h2___1) >= 0 
+A_constraint7: A2_1_3 + A2_2_3 + A2_3_3 - 3*(h2___3) >= 0 
+A_constraint8: A2_1_5 + A2_2_5 + A2_3_5 - 3*(h2___5) >= 0 
+A_constraint9: A2_1_7 + A2_2_7 + A2_3_7 - 3*(h2___7) >= 0 
+A_constraint10: A2_1_9 + A2_2_9 + A2_3_9 - 3*(h2___9) >= 0 
 
 \\Third Set of Auxiliary Constraint Set 6.17
 
-A_constraint11: A3_1_1 + A3_2_1 + A3_3_1 - 3*(h3_1) >= 0 
-A_constraint12: A3_1_3 + A3_2_3 + A3_3_3 - 3*(h3_3) >= 0 
-A_constraint13: A3_1_5 + A3_2_5 + A3_3_5 - 3*(h3_5) >= 0 
-A_constraint14: A3_1_7 + A3_2_7 + A3_3_7 - 3*(h3_7) >= 0 
-A_constraint15: A3_1_9 + A3_2_9 + A3_3_9 - 3*(h3_9) >= 0 
+A_constraint11: A3_1_1 + A3_2_1 + A3_3_1 - 3*(h3___1) >= 0 
+A_constraint12: A3_1_3 + A3_2_3 + A3_3_3 - 3*(h3___3) >= 0 
+A_constraint13: A3_1_5 + A3_2_5 + A3_3_5 - 3*(h3___5) >= 0 
+A_constraint14: A3_1_7 + A3_2_7 + A3_3_7 - 3*(h3___7) >= 0 
+A_constraint15: A3_1_9 + A3_2_9 + A3_3_9 - 3*(h3___9) >= 0 
 
 
 \\=========================================================================================================
@@ -240,27 +240,27 @@ A_constraint15: A3_1_9 + A3_2_9 + A3_3_9 - 3*(h3_9) >= 0
 
 \\First Set of Second Auxiliary Constraint Set, (6.17.2)
 
-A_constraint16: A1_1_1 + A2_1_1 + A3_1_1 - 3*(v1_1) >= 0 
-A_constraint17: A1_1_3 + A2_1_3 + A3_1_3 - 3*(v1_3) >= 0 
-A_constraint18: A1_1_5 + A2_1_5 + A3_1_5 - 3*(v1_5) >= 0 
-A_constraint19: A1_1_7 + A2_1_7 + A3_1_7 - 3*(v1_7) >= 0 
-A_constraint20: A1_1_9 + A2_1_9 + A3_1_9 - 3*(v1_9) >= 0 
+A_constraint16: A1_1_1 + A2_1_1 + A3_1_1 - 3*(v__1_1) >= 0 
+A_constraint17: A1_1_3 + A2_1_3 + A3_1_3 - 3*(v__1_3) >= 0 
+A_constraint18: A1_1_5 + A2_1_5 + A3_1_5 - 3*(v__1_5) >= 0 
+A_constraint19: A1_1_7 + A2_1_7 + A3_1_7 - 3*(v__1_7) >= 0 
+A_constraint20: A1_1_9 + A2_1_9 + A3_1_9 - 3*(v__1_9) >= 0 
 
 \\Second Set Auxiliary Constraint Set 6.17.2
 
-A_constraint21: A1_2_1 + A2_2_1 + A3_2_1 - 3*(v2_1) >= 0 
-A_constraint22: A1_2_3 + A2_2_3 + A3_2_3 - 3*(v2_3) >= 0 
-A_constraint23: A1_2_5 + A2_2_5 + A3_2_5 - 3*(v2_5) >= 0 
-A_constraint24: A1_2_7 + A2_2_7 + A3_2_7 - 3*(v2_7) >= 0 
-A_constraint25: A1_2_9 + A2_2_9 + A3_2_9 - 3*(v2_9) >= 0 
+A_constraint21: A1_2_1 + A2_2_1 + A3_2_1 - 3*(v__2_1) >= 0 
+A_constraint22: A1_2_3 + A2_2_3 + A3_2_3 - 3*(v__2_3) >= 0 
+A_constraint23: A1_2_5 + A2_2_5 + A3_2_5 - 3*(v__2_5) >= 0 
+A_constraint24: A1_2_7 + A2_2_7 + A3_2_7 - 3*(v__2_7) >= 0 
+A_constraint25: A1_2_9 + A2_2_9 + A3_2_9 - 3*(v__2_9) >= 0 
 
 \\Third Set of Second Auxiliary Constraint Set, (6.17.2)
 
-A_constraint26: A1_3_1 + A2_3_1 + A3_3_1 - 3*(v3_1) >= 0 
-A_constraint27: A1_3_3 + A2_3_3 + A3_3_3 - 3*(v3_3) >= 0 
-A_constraint28: A1_3_5 + A2_3_5 + A3_3_5 - 3*(v3_5) >= 0 
-A_constraint29: A1_3_7 + A2_3_7 + A3_3_7 - 3*(v3_7) >= 0 
-A_constraint30: A1_3_9 + A2_3_9 + A3_3_9 - 3*(v3_9) >= 0 
+A_constraint26: A1_3_1 + A2_3_1 + A3_3_1 - 3*(v__3_1) >= 0 
+A_constraint27: A1_3_3 + A2_3_3 + A3_3_3 - 3*(v__3_3) >= 0 
+A_constraint28: A1_3_5 + A2_3_5 + A3_3_5 - 3*(v__3_5) >= 0 
+A_constraint29: A1_3_7 + A2_3_7 + A3_3_7 - 3*(v__3_7) >= 0 
+A_constraint30: A1_3_9 + A2_3_9 + A3_3_9 - 3*(v__3_9) >= 0 
 
 
 \\=========================================================================================================
