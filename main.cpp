@@ -861,8 +861,6 @@ int main() {
         k=1;
     }
 
-
-
     myfile<<endl;
     myfile<<"\\\\Bound Set for w"<< endl;
     i=1; //for the x coordinate of the board
@@ -874,9 +872,7 @@ int main() {
             k=k+2;
     }
 
-
     myfile<<endl;
-
     myfile<<"BINARIES"<< endl;
     myfile<<endl;
     myfile <<"A1_1_1 A2_1_1 A3_1_1 A1_2_1 A2_2_1 A3_2_1 A1_3_1 A2_3_1 A3_3_1"
