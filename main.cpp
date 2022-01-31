@@ -113,6 +113,7 @@ int main() {
     j=1; //for the y coordinate of the board
     k=1; //k value
 
+
     for (count3=0 ;count3<5; count3++) { //Constraint Number Counter
         myfile << "E_constraint" + to_string(count1+ count2+ count3) + ": ";
         for (int d = 0; d<3; d++) { //Two nested For loops Represents increase in i  and j value
