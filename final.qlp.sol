@@ -2,12 +2,12 @@
 <YasolSolution version="1">
  <header
    ProblemName="final.qlp"
-   SolutionName="final.qlp.sol"
+   SolutionName="final.qlp.sol5"
    ObjectiveValue="-2305843009213693952.000000"
    Runtime="0 seconds"/>
    DecisionNodes="0"/>
    PropagationSteps="0"/>
-   LearntConstraints="1"/>
+   LearntConstraints="0"/>
  <quality
    SolutionStatus="OPTIMAL"
    Gap="100.000000"/>
