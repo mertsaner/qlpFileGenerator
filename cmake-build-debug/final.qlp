@@ -219,19 +219,19 @@ A_constraint5: A1_1_9 + A1_2_9 + A1_3_9 - 3*(h1_9) >= 0
 
 \\Second Set of Auxiliary Constraint Set 6.17
 
-A_constraint6: A2_1_1 + A2_2_1 + A2_3_1 >= 3*(h2_1)
-A_constraint7: A2_1_3 + A2_2_3 + A2_3_3 >= 3*(h2_3)
-A_constraint8: A2_1_5 + A2_2_5 + A2_3_5 >= 3*(h2_5)
-A_constraint9: A2_1_7 + A2_2_7 + A2_3_7 >= 3*(h2_7)
-A_constraint10: A2_1_9 + A2_2_9 + A2_3_9 >= 3*(h2_9)
+A_constraint6: A2_1_1 + A2_2_1 + A2_3_1 - 3*(h2_1) >= 0 
+A_constraint7: A2_1_3 + A2_2_3 + A2_3_3 - 3*(h2_3) >= 0 
+A_constraint8: A2_1_5 + A2_2_5 + A2_3_5 - 3*(h2_5) >= 0 
+A_constraint9: A2_1_7 + A2_2_7 + A2_3_7 - 3*(h2_7) >= 0 
+A_constraint10: A2_1_9 + A2_2_9 + A2_3_9 - 3*(h2_9) >= 0 
 
 \\Third Set of Auxiliary Constraint Set 6.17
 
-A_constraint11: A3_1_1 + A3_2_1 + A3_3_1 >= 3*(h3_1)
-A_constraint12: A3_1_3 + A3_2_3 + A3_3_3 >= 3*(h3_3)
-A_constraint13: A3_1_5 + A3_2_5 + A3_3_5 >= 3*(h3_5)
-A_constraint14: A3_1_7 + A3_2_7 + A3_3_7 >= 3*(h3_7)
-A_constraint15: A3_1_9 + A3_2_9 + A3_3_9 >= 3*(h3_9)
+A_constraint11: A3_1_1 + A3_2_1 + A3_3_1 - 3*(h3_1) >= 0 
+A_constraint12: A3_1_3 + A3_2_3 + A3_3_3 - 3*(h3_3) >= 0 
+A_constraint13: A3_1_5 + A3_2_5 + A3_3_5 - 3*(h3_5) >= 0 
+A_constraint14: A3_1_7 + A3_2_7 + A3_3_7 - 3*(h3_7) >= 0 
+A_constraint15: A3_1_9 + A3_2_9 + A3_3_9 - 3*(h3_9) >= 0 
 
 
 \\=========================================================================================================
@@ -240,27 +240,27 @@ A_constraint15: A3_1_9 + A3_2_9 + A3_3_9 >= 3*(h3_9)
 
 \\First Set of Second Auxiliary Constraint Set, (6.17.2)
 
-A_constraint16: A1_1_1 + A2_1_1 + A3_1_1 >= 3*(v1_1)
-A_constraint17: A1_1_3 + A2_1_3 + A3_1_3 >= 3*(v1_3)
-A_constraint18: A1_1_5 + A2_1_5 + A3_1_5 >= 3*(v1_5)
-A_constraint19: A1_1_7 + A2_1_7 + A3_1_7 >= 3*(v1_7)
-A_constraint20: A1_1_9 + A2_1_9 + A3_1_9 >= 3*(v1_9)
+A_constraint16: A1_1_1 + A2_1_1 + A3_1_1 - 3*(v1_1) >= 0 
+A_constraint17: A1_1_3 + A2_1_3 + A3_1_3 - 3*(v1_3) >= 0 
+A_constraint18: A1_1_5 + A2_1_5 + A3_1_5 - 3*(v1_5) >= 0 
+A_constraint19: A1_1_7 + A2_1_7 + A3_1_7 - 3*(v1_7) >= 0 
+A_constraint20: A1_1_9 + A2_1_9 + A3_1_9 - 3*(v1_9) >= 0 
 
 \\Second Set Auxiliary Constraint Set 6.17.2
 
-A_constraint21: A1_2_1 + A2_2_1 + A3_2_1 >= 3*(v2_1)
-A_constraint22: A1_2_3 + A2_2_3 + A3_2_3 >= 3*(v2_3)
-A_constraint23: A1_2_5 + A2_2_5 + A3_2_5 >= 3*(v2_5)
-A_constraint24: A1_2_7 + A2_2_7 + A3_2_7 >= 3*(v2_7)
-A_constraint25: A1_2_9 + A2_2_9 + A3_2_9 >= 3*(v2_9)
+A_constraint21: A1_2_1 + A2_2_1 + A3_2_1 - 3*(v2_1) >= 0 
+A_constraint22: A1_2_3 + A2_2_3 + A3_2_3 - 3*(v2_3) >= 0 
+A_constraint23: A1_2_5 + A2_2_5 + A3_2_5 - 3*(v2_5) >= 0 
+A_constraint24: A1_2_7 + A2_2_7 + A3_2_7 - 3*(v2_7) >= 0 
+A_constraint25: A1_2_9 + A2_2_9 + A3_2_9 - 3*(v2_9) >= 0 
 
 \\Third Set of Second Auxiliary Constraint Set, (6.17.2)
 
-A_constraint26: A1_3_1 + A2_3_1 + A3_3_1 >= 3*(v3_1)
-A_constraint27: A1_3_3 + A2_3_3 + A3_3_3 >= 3*(v3_3)
-A_constraint28: A1_3_5 + A2_3_5 + A3_3_5 >= 3*(v3_5)
-A_constraint29: A1_3_7 + A2_3_7 + A3_3_7 >= 3*(v3_7)
-A_constraint30: A1_3_9 + A2_3_9 + A3_3_9 >= 3*(v3_9)
+A_constraint26: A1_3_1 + A2_3_1 + A3_3_1 - 3*(v3_1) >= 0 
+A_constraint27: A1_3_3 + A2_3_3 + A3_3_3 - 3*(v3_3) >= 0 
+A_constraint28: A1_3_5 + A2_3_5 + A3_3_5 - 3*(v3_5) >= 0 
+A_constraint29: A1_3_7 + A2_3_7 + A3_3_7 - 3*(v3_7) >= 0 
+A_constraint30: A1_3_9 + A2_3_9 + A3_3_9 - 3*(v3_9) >= 0 
 
 
 \\=========================================================================================================
@@ -269,11 +269,11 @@ A_constraint30: A1_3_9 + A2_3_9 + A3_3_9 >= 3*(v3_9)
 
 \\First Set of Third Auxiliary Constraint Set 6.17.3
 
-A_constraint31: A1_1_1 + A2_2_1 + A3_3_1 >= 3*(d1_1)
-A_constraint32: A1_1_3 + A2_2_3 + A3_3_3 >= 3*(d1_3)
-A_constraint33: A1_1_5 + A2_2_5 + A3_3_5 >= 3*(d1_5)
-A_constraint34: A1_1_7 + A2_2_7 + A3_3_7 >= 3*(d1_7)
-A_constraint35: A1_1_9 + A2_2_9 + A3_3_9 >= 3*(d1_9)
+A_constraint31: A1_1_1 + A2_2_1 + A3_3_1 - 3*(d1_1) >= 0 
+A_constraint32: A1_1_3 + A2_2_3 + A3_3_3 - 3*(d1_3) >= 0 
+A_constraint33: A1_1_5 + A2_2_5 + A3_3_5 - 3*(d1_5) >= 0 
+A_constraint34: A1_1_7 + A2_2_7 + A3_3_7 - 3*(d1_7) >= 0 
+A_constraint35: A1_1_9 + A2_2_9 + A3_3_9 - 3*(d1_9) >= 0 
 
 
 \\=========================================================================================================
@@ -282,11 +282,11 @@ A_constraint35: A1_1_9 + A2_2_9 + A3_3_9 >= 3*(d1_9)
 
 \\First Set of Fourth Auxiliary Constraint Set  6.17.4
 
-A_constraint36: A1_3_1 + A2_2_1 + A3_1_1 >= 3*(d2_1)
-A_constraint37: A1_3_3 + A2_2_3 + A3_1_3 >= 3*(d2_3)
-A_constraint38: A1_3_5 + A2_2_5 + A3_1_5 >= 3*(d2_5)
-A_constraint39: A1_3_7 + A2_2_7 + A3_1_7 >= 3*(d2_7)
-A_constraint40: A1_3_9 + A2_2_9 + A3_1_9 >= 3*(d2_9)
+A_constraint36: A1_3_1 + A2_2_1 + A3_1_1 - 3*(d2_1) >= 0 
+A_constraint37: A1_3_3 + A2_2_3 + A3_1_3 - 3*(d2_3) >= 0 
+A_constraint38: A1_3_5 + A2_2_5 + A3_1_5 - 3*(d2_5) >= 0 
+A_constraint39: A1_3_7 + A2_2_7 + A3_1_7 - 3*(d2_7) >= 0 
+A_constraint40: A1_3_9 + A2_2_9 + A3_1_9 - 3*(d2_9) >= 0 
 
 
 \\=========================================================================================================
@@ -296,11 +296,11 @@ A_constraint40: A1_3_9 + A2_2_9 + A3_1_9 >= 3*(d2_9)
 \\First Set of Second Auxiliary Constraint Set 6.18 
 
 
-A_constraint41: h1___1 + h2___1 + h3___1 + v__1_1 + v__2_1 + v__3_1 + d1_1 + d2_1 >= w1
-A_constraint42: h1___3 + h2___3 + h3___3 + v__1_3 + v__2_3 + v__3_3 + d1_3 + d2_3 >= w3
-A_constraint43: h1___5 + h2___5 + h3___5 + v__1_5 + v__2_5 + v__3_5 + d1_5 + d2_5 >= w5
-A_constraint44: h1___7 + h2___7 + h3___7 + v__1_7 + v__2_7 + v__3_7 + d1_7 + d2_7 >= w7
-A_constraint45: h1___9 + h2___9 + h3___9 + v__1_9 + v__2_9 + v__3_9 + d1_9 + d2_9 >= w9
+A_constraint41: h1___1 + h2___1 + h3___1 + v__1_1 + v__2_1 + v__3_1 + d1_1 + d2_1 - w1 >= 0 
+A_constraint42: h1___3 + h2___3 + h3___3 + v__1_3 + v__2_3 + v__3_3 + d1_3 + d2_3 - w3 >= 0 
+A_constraint43: h1___5 + h2___5 + h3___5 + v__1_5 + v__2_5 + v__3_5 + d1_5 + d2_5 - w5 >= 0 
+A_constraint44: h1___7 + h2___7 + h3___7 + v__1_7 + v__2_7 + v__3_7 + d1_7 + d2_7 - w7 >= 0 
+A_constraint45: h1___9 + h2___9 + h3___9 + v__1_9 + v__2_9 + v__3_9 + d1_9 + d2_9 - w9 >= 0 
 
 
 \\=========================================================================================================
@@ -310,64 +310,64 @@ A_constraint45: h1___9 + h2___9 + h3___9 + v__1_9 + v__2_9 + v__3_9 + d1_9 + d2_
 
 \\First Set Auxiliary Constraint Set 6.19
 
-A_constraint46: B1_1_2 + B1_2_2 + B1_3_2 <= 2 + w1
-A_constraint47: B1_1_4 + B1_2_4 + B1_3_4 <= 2 + w3
-A_constraint48: B1_1_6 + B1_2_6 + B1_3_6 <= 2 + w5
-A_constraint49: B1_1_8 + B1_2_8 + B1_3_8 <= 2 + w7
+A_constraint46: B1_1_2 + B1_2_2 + B1_3_2 - w1 <= 2 
+A_constraint47: B1_1_4 + B1_2_4 + B1_3_4 - w3 <= 2 
+A_constraint48: B1_1_6 + B1_2_6 + B1_3_6 - w5 <= 2 
+A_constraint49: B1_1_8 + B1_2_8 + B1_3_8 - w7 <= 2 
 
 \\Second Set Auxiliary Constraint Set 6.19
 
-A_constraint50: B2_1_2 + B2_2_2 + B2_3_2 <= 2 + w1
-A_constraint51: B2_1_4 + B2_2_4 + B2_3_4 <= 2 + w3
-A_constraint52: B2_1_6 + B2_2_6 + B2_3_6 <= 2 + w5
-A_constraint53: B2_1_8 + B2_2_8 + B2_3_8 <= 2 + w7
+A_constraint50: B2_1_2 + B2_2_2 + B2_3_2 - w1 <= 2 
+A_constraint51: B2_1_4 + B2_2_4 + B2_3_4 - w3 <= 2 
+A_constraint52: B2_1_6 + B2_2_6 + B2_3_6 - w5 <= 2 
+A_constraint53: B2_1_8 + B2_2_8 + B2_3_8 - w7 <= 2 
 
 \\Third Set Auxiliary Constraint Set 6.19
 
-A_constraint54: B3_1_2 + B3_2_2 + B3_3_2 <= 2 + w1
-A_constraint55: B3_1_4 + B3_2_4 + B3_3_4 <= 2 + w3
-A_constraint56: B3_1_6 + B3_2_6 + B3_3_6 <= 2 + w5
-A_constraint57: B3_1_8 + B3_2_8 + B3_3_8 <= 2 + w7
+A_constraint54: B3_1_2 + B3_2_2 + B3_3_2 - w1 <= 2 
+A_constraint55: B3_1_4 + B3_2_4 + B3_3_4 - w3 <= 2 
+A_constraint56: B3_1_6 + B3_2_6 + B3_3_6 - w5 <= 2 
+A_constraint57: B3_1_8 + B3_2_8 + B3_3_8 - w7 <= 2 
 
 
 \\Auxiliary Constraint Set 6.19.2
 
-A_constraint58: B1_1_2 + B2_1_2 + B3_1_2 <= 2 + w1
-A_constraint59: B1_1_4 + B2_1_4 + B3_1_4 <= 2 + w3
-A_constraint60: B1_1_6 + B2_1_6 + B3_1_6 <= 2 + w5
-A_constraint61: B1_1_8 + B2_1_8 + B3_1_8 <= 2 + w7
+A_constraint58: B1_1_2 + B2_1_2 + B3_1_2 - w1 <= 2 
+A_constraint59: B1_1_4 + B2_1_4 + B3_1_4 - w3 <= 2 
+A_constraint60: B1_1_6 + B2_1_6 + B3_1_6 - w5 <= 2 
+A_constraint61: B1_1_8 + B2_1_8 + B3_1_8 - w7 <= 2 
 
 
 \\Second Set of Auxiliary Constraint Set 6.19.2
 
-A_constraint62: B1_2_2 + B2_2_2 + B3_2_2 <= 2 + w1
-A_constraint63: B1_2_4 + B2_2_4 + B3_2_4 <= 2 + w3
-A_constraint64: B1_2_6 + B2_2_6 + B3_2_6 <= 2 + w5
-A_constraint65: B1_2_8 + B2_2_8 + B3_2_8 <= 2 + w7
+A_constraint62: B1_2_2 + B2_2_2 + B3_2_2 - w1 <= 2 
+A_constraint63: B1_2_4 + B2_2_4 + B3_2_4 - w3 <= 2 
+A_constraint64: B1_2_6 + B2_2_6 + B3_2_6 - w5 <= 2 
+A_constraint65: B1_2_8 + B2_2_8 + B3_2_8 - w7 <= 2 
 
 
 \\Third Set of  Constraint Set 6.19.2
 
-A_constraint66: B1_3_2 + B2_3_2 + B3_3_2 <= 2 + w1
-A_constraint67: B1_3_4 + B2_3_4 + B3_3_4 <= 2 + w3
-A_constraint68: B1_3_6 + B2_3_6 + B3_3_6 <= 2 + w5
-A_constraint69: B1_3_8 + B2_3_8 + B3_3_8 <= 2 + w7
+A_constraint66: B1_3_2 + B2_3_2 + B3_3_2 - w1 <= 2 
+A_constraint67: B1_3_4 + B2_3_4 + B3_3_4 - w3 <= 2 
+A_constraint68: B1_3_6 + B2_3_6 + B3_3_6 - w5 <= 2 
+A_constraint69: B1_3_8 + B2_3_8 + B3_3_8 - w7 <= 2 
 
 
 \\Auxiliary Constraint Set 6.19.3
 
-A_constraint70: B1_1_2 + B2_2_2 + B3_3_2 <= 2 + w1
-A_constraint71: B1_1_4 + B2_2_4 + B3_3_4 <= 2 + w3
-A_constraint72: B1_1_6 + B2_2_6 + B3_3_6 <= 2 + w5
-A_constraint73: B1_1_8 + B2_2_8 + B3_3_8 <= 2 + w7
+A_constraint70: B1_1_2 + B2_2_2 + B3_3_2 - w1 <= 2 
+A_constraint71: B1_1_4 + B2_2_4 + B3_3_4 - w3 <= 2 
+A_constraint72: B1_1_6 + B2_2_6 + B3_3_6 - w5 <= 2 
+A_constraint73: B1_1_8 + B2_2_8 + B3_3_8 - w7 <= 2 
 
 
 \\Auxiliary Constraint Set 6.19.4
 
-A_constraint74: B1_3_2 + B2_2_2 + B3_1_2 <= 2 + w1
-A_constraint75: B1_3_4 + B2_2_4 + B3_1_4 <= 2 + w3
-A_constraint76: B1_3_6 + B2_2_6 + B3_1_6 <= 2 + w5
-A_constraint77: B1_3_8 + B2_2_8 + B3_1_8 <= 2 + w7
+A_constraint74: B1_3_2 + B2_2_2 + B3_1_2 - w1 <= 2 
+A_constraint75: B1_3_4 + B2_2_4 + B3_1_4 - w3 <= 2 
+A_constraint76: B1_3_6 + B2_2_6 + B3_1_6 - w5 <= 2 
+A_constraint77: B1_3_8 + B2_2_8 + B3_1_8 - w7 <= 2 
 \\=========================================================================================================
 \\=========================================================================================================
 \\=========================================================================================================
