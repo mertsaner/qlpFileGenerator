@@ -258,19 +258,14 @@ int main() {
     i2=1; //Right hand side of the equation
 
 
-    for (cntA1 = 1; cntA1 < 4; cntA1++) {  //Constraint Number Counter
+    for (cntA1 = 1; cntA1 < 6; cntA1++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntA1) + ": ";
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
-            for (int e = 0; e < 3; e++) {
-                if (e == 2 && d == 2) {
-                    myfile << "A" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k);
-                } else
-                    myfile << "A" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k) + " + ";
-            }
+                    myfile << "A" + to_string(i) + "_" + to_string(j + d) + "_" + to_string(k)+ " + ";
         }
-        myfile << " >= "  "3*(h" + to_string(i2) + "___" + to_string(k) + ")";
-      //  k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
-      i2++;
+        myfile << " >= "  "3*(h" + to_string(i) + "_" + to_string(k) + ")";
+        k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
+        i2++;
         myfile << endl;
     }
 
@@ -279,23 +274,18 @@ int main() {
     myfile<<"\\\\Second Set of Auxiliary Constraint Set 6.17"<<endl;
     myfile<<endl;
 
-    i=1; //for the x coordinate of the board
+    i=2; //for the x coordinate of the board
     j=1; //for the y coordinate of the board
-    k=3; //k value
+    k=1; //k value
     i2=1; //Right hand side of the equation
 
-    for (cntA2 = 0; cntA2 < 3; cntA2++) { //Constraint Number Counter
-        myfile << "A_constraint" + to_string(cntA1 + cntA2) + ": ";
+    for (cntA1 = 1; cntA1 < 6; cntA1++) {  //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntA1) + ": ";
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
-            for (int e = 0; e < 3; e++) {
-                if (e == 2 && d == 2) { //This Helps to delete last sum symbol at the end of the equation
-                    myfile << "A" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k);
-                } else
-                    myfile << "A" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k) + " + ";
-            }
+            myfile << "A" + to_string(i) + "_" + to_string(j + d) + "_" + to_string(k)+ " + ";
         }
-        myfile << " >= "  "3*(h" + to_string(i2) + "___" + to_string(k) + ")";
-      //  k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
+        myfile << " >= "  "3*(h" + to_string(i) + "_" + to_string(k) + ")";
+        k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
         i2++;
         myfile << endl;
     }
@@ -304,22 +294,18 @@ int main() {
     myfile<<"\\\\Third Set of Auxiliary Constraint Set 6.17"<<endl;
     myfile<<endl;
 
-    i=1; //for the x coordinate of the board
+    i=3; //for the x coordinate of the board
     j=1; //for the y coordinate of the board
-    k=5; //k value
+    k=1; //k value
     i2=1; //Right hand side of the equation
-    for (cntA3 = 0; cntA3 < 3; cntA3++) { //Constraint Number Counter
-        myfile << "A_constraint" + to_string(cntA1 + cntA2 + cntA3) + ": ";
+
+    for (cntA1 = 1; cntA1 < 6; cntA1++) {  //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntA1) + ": ";
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
-            for (int e = 0; e < 3; e++) {
-                if (e == 2 && d == 2) { //This Helps to delete last sum symbol at the end of the equation
-                    myfile << "A" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k);
-                } else
-                    myfile << "A" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k) + " + ";
-            }
+            myfile << "A" + to_string(i) + "_" + to_string(j + d) + "_" + to_string(k)+ " + ";
         }
-        myfile << " >= "  "3*(h" + to_string(i2) + "___" + to_string(k) + ")";
-    //    k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
+        myfile << " >= "  "3*(h" + to_string(i) + "_" + to_string(k) + ")";
+        k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
         i2++;
         myfile << endl;
     }
