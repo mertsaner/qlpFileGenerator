@@ -962,7 +962,7 @@ int main() {
 
     i=1; //for the x coordinate of the board
     j=1; //for the y coordinate of the board
-    k=2; //k value
+    k=3; //k value
     for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
         for (int e = 0; e < 3; e++) {
             myfile << "0 <= A" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k)+ " <= 1";
@@ -970,12 +970,12 @@ int main() {
         }
     }
     myfile << endl;
-    myfile <<"\\\\Third Bound Set for A"<<endl;
+    myfile <<"\\\\Fourth Bound Set for A"<<endl;
 
 
     i=1; //for the x coordinate of the board
     j=1; //for the y coordinate of the board
-    k=3; //k value
+    k=7; //k value
     for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
         for (int e = 0; e < 3; e++) {
             myfile << "0 <= A" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k)+ " <= 1";
@@ -985,11 +985,66 @@ int main() {
     myfile << endl;
     myfile<<endl;
 
+
+    myfile << endl;
+    myfile <<"\\\\Third Bound Set for A"<<endl;
+
+
+    i=1; //for the x coordinate of the board
+    j=1; //for the y coordinate of the board
+    k=5; //k value
+    for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
+        for (int e = 0; e < 3; e++) {
+            myfile << "0 <= A" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k)+ " <= 1";
+            myfile<<endl;
+        }
+    }
+    myfile << endl;
+    myfile<<endl;
+
+
+    myfile << endl;
+    myfile <<"\\\\Fourth Bound Set for A"<<endl;
+
+
+    i=1; //for the x coordinate of the board
+    j=1; //for the y coordinate of the board
+    k=7; //k value
+    for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
+        for (int e = 0; e < 3; e++) {
+            myfile << "0 <= A" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k)+ " <= 1";
+            myfile<<endl;
+        }
+    }
+    myfile << endl;
+    myfile<<endl;
+
+    myfile << endl;
+    myfile <<"\\\\Fifth Bound Set for A"<<endl;
+
+
+    i=1; //for the x coordinate of the board
+    j=1; //for the y coordinate of the board
+    k=9; //k value
+    for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
+        for (int e = 0; e < 3; e++) {
+            myfile << "0 <= A" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k)+ " <= 1";
+            myfile<<endl;
+        }
+    }
+    myfile << endl;
+    myfile<<endl;
+
+
+
+
+
+
     myfile <<"\\\\First Bound Set for B"<<endl;
 
     i=1; //for the x coordinate of the board
     j=1; //for the y coordinate of the board
-    k=1; //k value
+    k=2; //k value
     for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
         for (int e = 0; e < 3; e++) {
             myfile << "0 <= B" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k)+ " <= 1";
@@ -1002,7 +1057,7 @@ int main() {
 
     i=1; //for the x coordinate of the board
     j=1; //for the y coordinate of the board
-    k=2; //k value
+    k=4; //k value
     for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
         for (int e = 0; e < 3; e++) {
             myfile << "0 <= B" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k)+ " <= 1";
@@ -1014,7 +1069,7 @@ int main() {
 
     i=1; //for the x coordinate of the board
     j=1; //for the y coordinate of the board
-    k=3; //k value
+    k=4; //k value
     for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
         for (int e = 0; e < 3; e++) {
             myfile << "0 <= B" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k)+ " <= 1";
@@ -1026,7 +1081,7 @@ int main() {
 
     myfile<<"BINARIES"<< endl;
     myfile<<endl;
-    myfile <<"A1_1_1 A2_1_1 A3_1_1 A1_2_1 A2_2_1 A3_2_1 A1_3_1 A2_3_1 A3_3_1 "
+    myfile <<"A1_1_1 A2_1_1 A3_1_1 A1_2_1 A2_2_1 A3_2_1 A1_3_1 A2_3_1 A3_3_1"
              " A1_1_3 A2_1_3 A3_1_3 A1_2_3 A2_2_3 A3_2_3 A1_3_3 A2_3_3 A3_3_3"
              " A1_1_5 A1_2_5 A1_3_5 A2_1_5 A2_2_5 A2_3_5 A3_1_5 A3_2_5 A3_3_5"
              " A1_1_7 A1_2_7 A1_3_7 A2_1_7 A2_2_7 A2_3_7 A3_1_7 A3_2_7 A3_3_7"
@@ -1132,7 +1187,7 @@ int main() {
              " A1_1_9 A1_2_9 A1_3_9 A2_1_9 A2_2_9 A2_3_9 A3_1_9 A3_2_9 A3_3_9"
              " h1___9 h2___9 h3___9"
              " v__1_9 v__2_9 v__3_9"
-             " d2_9 d2_9"
+             " d1_9 d2_9"
              " w9"
            <<endl; //Defining Variable A in the .qlp
 
