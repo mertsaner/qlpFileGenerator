@@ -282,11 +282,11 @@ A_constraint5: A1_1_9 + A2_2_9 + A3_3_9 >= 3*(d1_9)
 
 \\First Set of Fourth Auxiliary Constraint Set  6.17.4
 
-A_constraint1: A1_3_1 + A2_2_1 + A3_1_1 +  >= 3*(d2_1)
-A_constraint2: A1_3_3 + A2_2_3 + A3_1_3 +  >= 3*(d2_3)
-A_constraint3: A1_3_5 + A2_2_5 + A3_1_5 +  >= 3*(d2_5)
-A_constraint4: A1_3_7 + A2_2_7 + A3_1_7 +  >= 3*(d2_7)
-A_constraint5: A1_3_9 + A2_2_9 + A3_1_9 +  >= 3*(d2_9)
+A_constraint1: A1_3_1 + A2_2_1 + A3_1_1 >= 3*(d2_1)
+A_constraint2: A1_3_3 + A2_2_3 + A3_1_3 >= 3*(d2_3)
+A_constraint3: A1_3_5 + A2_2_5 + A3_1_5 >= 3*(d2_5)
+A_constraint4: A1_3_7 + A2_2_7 + A3_1_7 >= 3*(d2_7)
+A_constraint5: A1_3_9 + A2_2_9 + A3_1_9 >= 3*(d2_9)
 
 
 \\=========================================================================================================
@@ -310,64 +310,64 @@ A_constraint10: h1___9 + h2___9 + h3___9 + v__1_9 + v__2_9 + v__3_9 + d1_9 + d2_
 
 \\First Set Auxiliary Constraint Set 6.19
 
-A_constraint1: B1_1_2 + B1_2_2 + B1_3_2 +  <= 2 + w1
-A_constraint2: B1_1_4 + B1_2_4 + B1_3_4 +  <= 2 + w3
-A_constraint3: B1_1_6 + B1_2_6 + B1_3_6 +  <= 2 + w5
-A_constraint4: B1_1_8 + B1_2_8 + B1_3_8 +  <= 2 + w7
+A_constraint1: B1_1_2 + B1_2_2 + B1_3_2 <= 2 + w1
+A_constraint2: B1_1_4 + B1_2_4 + B1_3_4 <= 2 + w3
+A_constraint3: B1_1_6 + B1_2_6 + B1_3_6 <= 2 + w5
+A_constraint4: B1_1_8 + B1_2_8 + B1_3_8 <= 2 + w7
 
 \\Second Set Auxiliary Constraint Set 6.19
 
-A_constraint1: B2_1_2 + B2_2_2 + B2_3_2 +  <= 2 + w1
-A_constraint2: B2_1_4 + B2_2_4 + B2_3_4 +  <= 2 + w3
-A_constraint3: B2_1_6 + B2_2_6 + B2_3_6 +  <= 2 + w5
-A_constraint4: B2_1_8 + B2_2_8 + B2_3_8 +  <= 2 + w7
+A_constraint1: B2_1_2 + B2_2_2 + B2_3_2 <= 2 + w1
+A_constraint2: B2_1_4 + B2_2_4 + B2_3_4 <= 2 + w3
+A_constraint3: B2_1_6 + B2_2_6 + B2_3_6 <= 2 + w5
+A_constraint4: B2_1_8 + B2_2_8 + B2_3_8 <= 2 + w7
 
 \\Third Set Auxiliary Constraint Set 6.19
 
-A_constraint1: B3_1_2 + B3_2_2 + B3_3_2 +  <= 2 + w1
-A_constraint2: B3_1_4 + B3_2_4 + B3_3_4 +  <= 2 + w3
-A_constraint3: B3_1_6 + B3_2_6 + B3_3_6 +  <= 2 + w5
-A_constraint4: B3_1_8 + B3_2_8 + B3_3_8 +  <= 2 + w7
+A_constraint1: B3_1_2 + B3_2_2 + B3_3_2 <= 2 + w1
+A_constraint2: B3_1_4 + B3_2_4 + B3_3_4 <= 2 + w3
+A_constraint3: B3_1_6 + B3_2_6 + B3_3_6 <= 2 + w5
+A_constraint4: B3_1_8 + B3_2_8 + B3_3_8 <= 2 + w7
 
 
 \\Auxiliary Constraint Set 6.19.2
 
-A_constraint1: B1_1_2 + B2_1_2 + B3_1_2 +  <= 2 + w1
-A_constraint2: B1_1_4 + B2_1_4 + B3_1_4 +  <= 2 + w3
-A_constraint3: B1_1_6 + B2_1_6 + B3_1_6 +  <= 2 + w5
-A_constraint4: B1_1_8 + B2_1_8 + B3_1_8 +  <= 2 + w7
+A_constraint1: B1_1_2 + B2_1_2 + B3_1_2 <= 2 + w1
+A_constraint2: B1_1_4 + B2_1_4 + B3_1_4 <= 2 + w3
+A_constraint3: B1_1_6 + B2_1_6 + B3_1_6 <= 2 + w5
+A_constraint4: B1_1_8 + B2_1_8 + B3_1_8 <= 2 + w7
 
 
 \\Second Set of Auxiliary Constraint Set 6.19.2
 
-A_constraint1: B1_2_2 + B2_2_2 + B3_2_2 +  <= 2 + w1
-A_constraint2: B1_2_4 + B2_2_4 + B3_2_4 +  <= 2 + w3
-A_constraint3: B1_2_6 + B2_2_6 + B3_2_6 +  <= 2 + w5
-A_constraint4: B1_2_8 + B2_2_8 + B3_2_8 +  <= 2 + w7
+A_constraint1: B1_2_2 + B2_2_2 + B3_2_2 <= 2 + w1
+A_constraint2: B1_2_4 + B2_2_4 + B3_2_4 <= 2 + w3
+A_constraint3: B1_2_6 + B2_2_6 + B3_2_6 <= 2 + w5
+A_constraint4: B1_2_8 + B2_2_8 + B3_2_8 <= 2 + w7
 
 
 \\Third Set of  Constraint Set 6.19.2
 
-A_constraint1: B1_3_2 + B2_3_2 + B3_3_2 +  <= 2 + w1
-A_constraint2: B1_3_4 + B2_3_4 + B3_3_4 +  <= 2 + w3
-A_constraint3: B1_3_6 + B2_3_6 + B3_3_6 +  <= 2 + w5
-A_constraint4: B1_3_8 + B2_3_8 + B3_3_8 +  <= 2 + w7
+A_constraint1: B1_3_2 + B2_3_2 + B3_3_2 <= 2 + w1
+A_constraint2: B1_3_4 + B2_3_4 + B3_3_4 <= 2 + w3
+A_constraint3: B1_3_6 + B2_3_6 + B3_3_6 <= 2 + w5
+A_constraint4: B1_3_8 + B2_3_8 + B3_3_8 <= 2 + w7
 
 
 \\Auxiliary Constraint Set 6.19.3
 
-A_constraint1: B1_1_2 + B2_2_2 + B3_3_2 +  <= 2 + w1
-A_constraint2: B1_1_4 + B2_2_4 + B3_3_4 +  <= 2 + w3
-A_constraint3: B1_1_6 + B2_2_6 + B3_3_6 +  <= 2 + w5
-A_constraint4: B1_1_8 + B2_2_8 + B3_3_8 +  <= 2 + w7
+A_constraint1: B1_1_2 + B2_2_2 + B3_3_2 <= 2 + w1
+A_constraint2: B1_1_4 + B2_2_4 + B3_3_4 <= 2 + w3
+A_constraint3: B1_1_6 + B2_2_6 + B3_3_6 <= 2 + w5
+A_constraint4: B1_1_8 + B2_2_8 + B3_3_8 <= 2 + w7
 
 
 \\Auxiliary Constraint Set 6.19.4
 
-A_constraint1: B1_3_2 + B2_2_2 + B3_1_2 +  <= 2 + w1
-A_constraint2: B1_3_4 + B2_2_4 + B3_1_4 +  <= 2 + w3
-A_constraint3: B1_3_6 + B2_2_6 + B3_1_6 +  <= 2 + w5
-A_constraint4: B1_3_8 + B2_2_8 + B3_1_8 +  <= 2 + w7
+A_constraint1: B1_3_2 + B2_2_2 + B3_1_2 <= 2 + w1
+A_constraint2: B1_3_4 + B2_2_4 + B3_1_4 <= 2 + w3
+A_constraint3: B1_3_6 + B2_2_6 + B3_1_6 <= 2 + w5
+A_constraint4: B1_3_8 + B2_2_8 + B3_1_8 <= 2 + w7
 \\=========================================================================================================
 \\=========================================================================================================
 \\=========================================================================================================

@@ -454,7 +454,10 @@ int main() {
     for (cntA1 = 1; cntA1 < 6; cntA1++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntA1) + ": ";
         for (int d = 1; d < 4; d++) { //Two nested For loops Represents increase in i  and j value
-            myfile << "A" + to_string(i+d) + "_" + to_string((4-d)+i) + "_" + to_string(k)+ " + ";
+            if (d==3)
+                myfile << "A" + to_string(i+d) + "_" + to_string((4-d)+i) + "_" + to_string(k);
+            else
+                myfile << "A" + to_string(i+d) + "_" + to_string((4-d)+i) + "_" + to_string(k)+ " + ";
         }
         myfile << " >= "  "3*(d" + to_string(2) + "_" + to_string(k) + ")";
         k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
@@ -530,7 +533,11 @@ int main() {
     for (cntA1 = 1; cntA1 < 5; cntA1++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntA1) + ": ";
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
-            myfile << "B" + to_string(i) + "_" + to_string(j+d) + "_" + to_string(k) + " + ";
+            if (d==2)
+                myfile << "B" + to_string(i) + "_" + to_string(j+d) + "_" + to_string(k);
+            else
+                myfile << "B" + to_string(i) + "_" + to_string(j+d) + "_" + to_string(k) + " + ";
+
         }
         myfile << " <= "  "2 + w" + to_string(k-1) ;
         k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
@@ -551,7 +558,10 @@ int main() {
     for (cntA1 = 1; cntA1 < 5; cntA1++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntA1) + ": ";
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
-            myfile << "B" + to_string(i) + "_" + to_string(j+d) + "_" + to_string(k) + " + ";
+            if (d==2)
+                myfile << "B" + to_string(i) + "_" + to_string(j+d) + "_" + to_string(k);
+            else
+                myfile << "B" + to_string(i) + "_" + to_string(j+d) + "_" + to_string(k) + " + ";
         }
         myfile << " <= "  "2 + w" + to_string(k-1) ;
         k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
@@ -572,7 +582,10 @@ int main() {
     for (cntA1 = 1; cntA1 < 5; cntA1++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntA1) + ": ";
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
-            myfile << "B" + to_string(i) + "_" + to_string(j+d) + "_" + to_string(k) + " + ";
+            if (d==2)
+                myfile << "B" + to_string(i) + "_" + to_string(j+d) + "_" + to_string(k);
+            else
+                myfile << "B" + to_string(i) + "_" + to_string(j+d) + "_" + to_string(k) + " + ";
         }
         myfile << " <= "  "2 + w" + to_string(k-1) ;
         k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
@@ -597,7 +610,10 @@ int main() {
     for (cntA1 = 1; cntA1 < 5; cntA1++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntA1) + ": ";
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
-            myfile << "B" + to_string(i+d) + "_" + to_string(j) + "_" + to_string(k) + " + ";
+            if (d==2)
+                myfile << "B" + to_string(i+d) + "_" + to_string(j) + "_" + to_string(k);
+            else
+                myfile << "B" + to_string(i+d) + "_" + to_string(j) + "_" + to_string(k) + " + ";
         }
         myfile << " <= 2 + w" + to_string(k-1) ;
         k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
@@ -619,7 +635,11 @@ int main() {
     for (cntA1 = 1; cntA1 < 5; cntA1++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntA1) + ": ";
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
-            myfile << "B" + to_string(i+d) + "_" + to_string(j) + "_" + to_string(k) + " + ";
+            if (d==2)
+                myfile << "B" + to_string(i+d) + "_" + to_string(j) + "_" + to_string(k);
+            else
+                myfile << "B" + to_string(i+d) + "_" + to_string(j) + "_" + to_string(k) + " + ";
+
         }
         myfile << " <= 2 + w" + to_string(k-1) ;
         k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
@@ -640,7 +660,10 @@ int main() {
     for (cntA1 = 1; cntA1 < 5; cntA1++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntA1) + ": ";
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
-            myfile << "B" + to_string(i+d) + "_" + to_string(j) + "_" + to_string(k) + " + ";
+            if (d==2)
+                myfile << "B" + to_string(i+d) + "_" + to_string(j) + "_" + to_string(k);
+            else
+                myfile << "B" + to_string(i+d) + "_" + to_string(j) + "_" + to_string(k) + " + ";
         }
         myfile << " <= 2 + w" + to_string(k-1) ;
         k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
@@ -667,7 +690,10 @@ int main() {
     for (cntA1 = 1; cntA1 < 5; cntA1++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntA1) + ": ";
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
-            myfile << "B" + to_string(i+d) + "_" + to_string(j+d) + "_" + to_string(k) + " + ";
+            if (d==2)
+                myfile << "B" + to_string(i+d) + "_" + to_string(j+d) + "_" + to_string(k);
+            else
+                myfile << "B" + to_string(i+d) + "_" + to_string(j+d) + "_" + to_string(k) + " + ";
         }
         myfile << " <= 2 + w" + to_string(k-1) ;
         k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
@@ -690,7 +716,10 @@ int main() {
     for (cntA1 = 1; cntA1 < 5; cntA1++) {  //Constraint Number Counter
         myfile << "A_constraint" + to_string(cntA1) + ": ";
         for (int d = 1; d < 4; d++) { //Two nested For loops Represents increase in i  and j value
-            myfile << "B" + to_string(i+d) + "_" + to_string(j+(4-d)) + "_" + to_string(k) + " + ";
+            if (d==3)
+                myfile << "B" + to_string(i+d) + "_" + to_string(j+(4-d)) + "_" + to_string(k);
+            else
+                myfile << "B" + to_string(i+d) + "_" + to_string(j+(4-d)) + "_" + to_string(k) + " + ";
         }
         myfile << " <= 2 + w" + to_string(k-1) ;
         k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
