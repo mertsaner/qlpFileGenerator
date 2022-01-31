@@ -38,10 +38,13 @@ maintainPv=1
 solve initial LP ...
 finished initial LP. lp-val=inf sol.size=0 feas:1
 Warning: Initial LP not adequately solved.
-Warning dcbc: useless cut generated?
+1x0 + 1x3 + 1x6 +  0 >= 2.9999999989999999
+wanted to set x0 to 0
+-1x0 + -1x27 +  0 >= -1.0000000000000001e-09
+wanted to set x0 to 1
 final score=-2.305843009213694e+18 final dual bound=1
 NodeTypes: 0:0 1:1 2:0 3:0 4:0 5:0 6:0 7:0 8:0 9:0 10:0 11:0 12:0 13:0 14:0 15:0 16:0 17:0 18:0 19:0 
-solution file written to final.qlp.sol1
+solution file written to final.qlp.sol5
 RESULT: -2.30584e+18 : final.qlp
-NODES: 0, #RELAXATIONS:0, LEARNED: 1
+NODES: 0, #RELAXATIONS:0, LEARNED: 0
 TIME: 0
