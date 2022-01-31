@@ -1,0 +1,47 @@
+mert@mert-Dell-G15-5510:~/Desktop/Yasol_3.9.9.3.1_Linux/bin$ ./Yasol_CPLEX final.qlp
+Yasol
+final.qlp
+InfoLevel is = 1
+DO makeBinary
+QLP ready
+Hashtable ready
+Variables ready
+Blocks:9
+C-Blocks:3 Stages:1
+Objective ready
+Found universal constraint.
+Found universal constraint that contains universal variables of more than one block!
+Constraints ready
+Reading input finished
+Objective Shift = 0
+learnDualCuts=1
+useGMI=1
+useCover=1
+usePump=1
+useShadow=1
+useLazyLP=1
+useFarJumping=1
+useFastFix=0
+useImplications=1
+useLimitedLP=1
+useStrongBranching=1
+useEarlyBackjump=1
+useBestLevelExtraction=1
+useUniversalBackjump=1
+maxBaCLevel=1000000
+useAlphabeta=1
+useScout=0
+useMonotones=1
+isSimplyRestricted=1
+writeOutputFile=1
+maintainPv=1
+solve initial LP ...
+finished initial LP. lp-val=inf sol.size=0 feas:1
+Warning: Initial LP not adequately solved.
+Warning dcbc: useless cut generated?
+final score=-2.305843009213694e+18 final dual bound=1
+NodeTypes: 0:0 1:1 2:0 3:0 4:0 5:0 6:0 7:0 8:0 9:0 10:0 11:0 12:0 13:0 14:0 15:0 16:0 17:0 18:0 19:0 
+solution file written to final.qlp.sol1
+RESULT: -2.30584e+18 : final.qlp
+NODES: 0, #RELAXATIONS:0, LEARNED: 1
+TIME: 0
