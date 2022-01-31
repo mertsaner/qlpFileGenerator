@@ -282,8 +282,8 @@ int main() {
     k=1; //k value
     i2=1; //Right hand side of the equation
 
-    for (cntA1 = 1; cntA1 < 6; cntA1++) {  //Constraint Number Counter
-        myfile << "A_constraint" + to_string(cntA1) + ": ";
+    for (cntA2 = 0; cntA2 < 5; cntA2++) {  //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntA1+cntA2) + ": ";
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
             if (d==2)
                 myfile << "A" + to_string(i) + "_" + to_string(j + d) + "_" + to_string(k);
@@ -305,8 +305,8 @@ int main() {
     k=1; //k value
     i2=1; //Right hand side of the equation
 
-    for (cntA1 = 1; cntA1 < 6; cntA1++) {  //Constraint Number Counter
-        myfile << "A_constraint" + to_string(cntA1) + ": ";
+    for (cntA3 = 0; cntA3 < 5; cntA3++) {  //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntA1+cntA2+cntA3) + ": ";
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
             if (d==2)
                 myfile << "A" + to_string(i) + "_" + to_string(j + d) + "_" + to_string(k);
@@ -340,8 +340,8 @@ int main() {
     k=1; //k value
     i2=1; //Right hand side of the equation
 
-    for (cntA1 = 1; cntA1 < 6; cntA1++) {  //Constraint Number Counter
-        myfile << "A_constraint" + to_string(cntA1) + ": ";
+    for (cntA4 = 0; cntA4 < 5; cntA4++) {  //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntA1+cntA2+cntA3+cntA4) + ": ";
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
             if (d==2)
                 myfile << "A" + to_string(i+d) + "_" + to_string(j) + "_" + to_string(k);
@@ -365,8 +365,8 @@ int main() {
     k=1; //k value
     i2=1; //Right hand side of the equation
 
-    for (cntA1 = 1; cntA1 < 6; cntA1++) {  //Constraint Number Counter
-        myfile << "A_constraint" + to_string(cntA1) + ": ";
+    for (cntA5 = 0; cntA5 < 5; cntA5++) {  //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntA1+cntA2+cntA3+cntA4+cntA5) + ": ";
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
             if (d==2)
                 myfile << "A" + to_string(i+d) + "_" + to_string(j) + "_" + to_string(k);
@@ -388,8 +388,8 @@ int main() {
     k=1; //k value
     i2=1; //Right hand side of the equation
 
-    for (cntA1 = 1; cntA1 < 6; cntA1++) {  //Constraint Number Counter
-        myfile << "A_constraint" + to_string(cntA1) + ": ";
+    for (cntA6 = 0; cntA6 < 5; cntA6++) {  //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntA1+cntA2+cntA3+cntA4+cntA5+cntA6) + ": ";
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
             if (d==2)
                 myfile << "A" + to_string(i+d) + "_" + to_string(j) + "_" + to_string(k);
@@ -405,7 +405,7 @@ int main() {
 
 
     //Counting Temporary Sum of Counts
-    cntTemp=cntA1 + cntA2 + cntA3 + cntA4 + cntA5 + cntA6+ cntA7 + cntA8 + cntA9 + cntA10;
+    cntTemp=cntA1 + cntA2 + cntA3 + cntA4 + cntA5 + cntA6;
 
     myfile<<endl;
     myfile<<endl;
@@ -422,8 +422,8 @@ int main() {
     k=1; //k value
     i2=1; //Right hand side of the equation
 
-    for (cntA1 = 1; cntA1 < 6; cntA1++) {  //Constraint Number Counter
-        myfile << "A_constraint" + to_string(cntA1) + ": ";
+    for (cntA7 = 0; cntA7 < 5; cntA7++) {  //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntTemp+cntA7) + ": ";
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
             if (d==2)
                 myfile << "A" + to_string(i+d) + "_" + to_string(i+d) + "_" + to_string(k);
@@ -451,8 +451,8 @@ int main() {
     k=1; //k value
     i2=1; //Right hand side of the equation
 
-    for (cntA1 = 1; cntA1 < 6; cntA1++) {  //Constraint Number Counter
-        myfile << "A_constraint" + to_string(cntA1) + ": ";
+    for (cntA8 = 0; cntA8 < 5; cntA8++) {  //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntTemp+cntA7+cntA8) + ": ";
         for (int d = 1; d < 4; d++) { //Two nested For loops Represents increase in i  and j value
             if (d==3)
                 myfile << "A" + to_string(i+d) + "_" + to_string((4-d)+i) + "_" + to_string(k);
@@ -465,8 +465,6 @@ int main() {
         myfile << endl;
     }
 
-
-    cntTemp=cntTemp+cntA11+cntA12+cntA13+cntA14+cntA15+cntA16+cntA17+cntA18+cntA19+cntA20;
     myfile<<endl;
     myfile<<endl;
     myfile<< "\\\\========================================================================================================="<<endl;
@@ -481,8 +479,8 @@ int main() {
     j=1; //for the y coordinate of the board
     k=1; //k value
     i2=1; //Right hand side of the equation
-    for (cntA21 = 0; cntA21 < 5; cntA21++) { //Constraint Number Counter
-        myfile << "A_constraint" + to_string(cntTemp+cntA21) + ": ";
+    for (cntA9 = 0; cntA9 < 5; cntA9++) { //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntTemp+cntA7+cntA8+cntA9) + ": ";
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
             for (int e = 0; e < 3; e++) {
 
@@ -530,8 +528,8 @@ int main() {
     k=2; //k value
     i2=1; //Right hand side of the equation
 
-    for (cntA1 = 1; cntA1 < 5; cntA1++) {  //Constraint Number Counter
-        myfile << "A_constraint" + to_string(cntA1) + ": ";
+    for (cntA10 = 0; cntA10 < 4; cntA10++) {  //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntTemp+cntA7+cntA8+cntA9+cntA10) + ": ";
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
             if (d==2)
                 myfile << "B" + to_string(i) + "_" + to_string(j+d) + "_" + to_string(k);
@@ -555,8 +553,8 @@ int main() {
     k=2; //k value
     i2=1; //Right hand side of the equation
 
-    for (cntA1 = 1; cntA1 < 5; cntA1++) {  //Constraint Number Counter
-        myfile << "A_constraint" + to_string(cntA1) + ": ";
+    for (cntA11 = 0; cntA11 < 4; cntA11++) {  //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntTemp+cntA7+cntA8+cntA9+cntA10+cntA11) + ": ";
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
             if (d==2)
                 myfile << "B" + to_string(i) + "_" + to_string(j+d) + "_" + to_string(k);
@@ -579,8 +577,8 @@ int main() {
     k=2; //k value
     i2=1; //Right hand side of the equation
 
-    for (cntA1 = 1; cntA1 < 5; cntA1++) {  //Constraint Number Counter
-        myfile << "A_constraint" + to_string(cntA1) + ": ";
+    for (cntA12 = 0; cntA12 < 4; cntA12++) {  //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntTemp+cntA7+cntA8+cntA9+cntA10+cntA11+cntA12) + ": ";
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
             if (d==2)
                 myfile << "B" + to_string(i) + "_" + to_string(j+d) + "_" + to_string(k);
@@ -595,7 +593,7 @@ int main() {
 
 
 
-
+    cntTemp=cntTemp+cntA7+cntA8+cntA9+cntA10+cntA11+cntA12;
 
     myfile<<endl;
     myfile<<endl;
@@ -607,8 +605,8 @@ int main() {
     k=2; //k value
     i2=1; //Right hand side of the equation
 
-    for (cntA1 = 1; cntA1 < 5; cntA1++) {  //Constraint Number Counter
-        myfile << "A_constraint" + to_string(cntA1) + ": ";
+    for (cntA13 = 0; cntA13 < 4; cntA13++) {  //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntTemp+cntA13) + ": ";
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
             if (d==2)
                 myfile << "B" + to_string(i+d) + "_" + to_string(j) + "_" + to_string(k);
@@ -632,8 +630,8 @@ int main() {
     k=2; //k value
     i2=1; //Right hand side of the equation
 
-    for (cntA1 = 1; cntA1 < 5; cntA1++) {  //Constraint Number Counter
-        myfile << "A_constraint" + to_string(cntA1) + ": ";
+    for (cntA14 = 0; cntA14 < 4; cntA14++) {  //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntTemp+cntA13+cntA14) + ": ";
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
             if (d==2)
                 myfile << "B" + to_string(i+d) + "_" + to_string(j) + "_" + to_string(k);
@@ -657,8 +655,8 @@ int main() {
     k=2; //k value
     i2=1; //Right hand side of the equation
 
-    for (cntA1 = 1; cntA1 < 5; cntA1++) {  //Constraint Number Counter
-        myfile << "A_constraint" + to_string(cntA1) + ": ";
+    for (cntA15 = 0; cntA15 < 4; cntA15++) {  //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntTemp+cntA13+cntA14+cntA15) + ": ";
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
             if (d==2)
                 myfile << "B" + to_string(i+d) + "_" + to_string(j) + "_" + to_string(k);
@@ -687,8 +685,8 @@ int main() {
     k=2; //k value
     i2=1; //Right hand side of the equation
 
-    for (cntA1 = 1; cntA1 < 5; cntA1++) {  //Constraint Number Counter
-        myfile << "A_constraint" + to_string(cntA1) + ": ";
+    for (cntA16 = 0; cntA16 < 4; cntA16++) {  //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntTemp+cntA13+cntA14+cntA15+cntA16) + ": ";
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
             if (d==2)
                 myfile << "B" + to_string(i+d) + "_" + to_string(j+d) + "_" + to_string(k);
@@ -713,8 +711,8 @@ int main() {
     k=2; //k value
     i2=1; //Right hand side of the equation
 
-    for (cntA1 = 1; cntA1 < 5; cntA1++) {  //Constraint Number Counter
-        myfile << "A_constraint" + to_string(cntA1) + ": ";
+    for (cntA17 = 0; cntA17 < 4; cntA17++) {  //Constraint Number Counter
+        myfile << "A_constraint" + to_string(cntTemp+cntA13+cntA14+cntA15+cntA16+cntA17) + ": ";
         for (int d = 1; d < 4; d++) { //Two nested For loops Represents increase in i  and j value
             if (d==3)
                 myfile << "B" + to_string(i+d) + "_" + to_string(j+(4-d)) + "_" + to_string(k);
