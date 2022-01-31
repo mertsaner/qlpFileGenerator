@@ -717,21 +717,6 @@ int main() {
             myfile<<endl;
         }
     }
-    myfile << endl;
-    myfile <<"\\\\Fourth Bound Set for A"<<endl;
-
-
-    i=1; //for the x coordinate of the board
-    j=1; //for the y coordinate of the board
-    k=7; //k value
-    for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
-        for (int e = 0; e < 3; e++) {
-            myfile << "0 <= A" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k)+ " <= 1";
-            myfile<<endl;
-        }
-    }
-    myfile << endl;
-    myfile<<endl;
 
 
     myfile << endl;
@@ -747,8 +732,6 @@ int main() {
             myfile<<endl;
         }
     }
-    myfile << endl;
-    myfile<<endl;
 
 
     myfile << endl;
@@ -764,8 +747,6 @@ int main() {
             myfile<<endl;
         }
     }
-    myfile << endl;
-    myfile<<endl;
 
     myfile << endl;
     myfile <<"\\\\Fifth Bound Set for A"<<endl;
@@ -817,13 +798,82 @@ int main() {
 
     i=1; //for the x coordinate of the board
     j=1; //for the y coordinate of the board
-    k=4; //k value
+    k=6; //k value
     for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
         for (int e = 0; e < 3; e++) {
             myfile << "0 <= B" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k)+ " <= 1";
             myfile<<endl;
         }
     }
+
+    myfile << endl;
+    myfile <<"\\\\Fourth Bound Set for B"<<endl;
+
+    i=1; //for the x coordinate of the board
+    j=1; //for the y coordinate of the board
+    k=8; //k value
+    for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
+        for (int e = 0; e < 3; e++) {
+            myfile << "0 <= B" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k)+ " <= 1";
+            myfile<<endl;
+        }
+    }
+
+    myfile<<endl;
+    myfile<<"\\\\Bound Set for h"<< endl;
+    i=1; //for the x coordinate of the board
+    j=1; //for the y coordinate of the board
+    k=1; //k value
+    for (int d = 0; d < 5; d++) { //Two nested For loops Represents increase in i  and j value
+        for (int e = 0; e < 3; e++) {
+            myfile << "0 <= h" + to_string(i + e) + "___" + to_string(k) + " <= 1";
+            myfile<<endl;
+        }
+        k=k+2;
+    }
+
+
+    myfile<<endl;
+    myfile<<"\\\\Bound Set for v"<< endl;
+    i=1; //for the x coordinate of the board
+    j=1; //for the y coordinate of the board
+    k=1; //k value
+    for (int d = 0; d < 5; d++) { //Two nested For loops Represents increase in i  and j value
+        for (int e = 0; e < 3; e++) {
+            myfile << "0 <= v__" + to_string(i + e) + "_" + to_string(k) + " <= 1";
+            myfile<<endl;
+        }
+        k=k+2;
+    }
+
+
+    myfile<<endl;
+    myfile<<"\\\\Bound Set for d"<< endl;
+    i=1; //for the x coordinate of the board
+    j=1; //for the y coordinate of the board
+    k=1; //k value
+    for (int d = 1; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
+        for (int e = 0; e < 5; e++) {
+            myfile << "0 <= d" + to_string(d) + "_" + to_string(k) + " <= 1";
+            myfile<<endl;
+            k=k+2;
+        }
+        k=1;
+    }
+
+
+
+    myfile<<endl;
+    myfile<<"\\\\Bound Set for w"<< endl;
+    i=1; //for the x coordinate of the board
+    j=1; //for the y coordinate of the board
+    k=1; //k value
+    for (int d = 1; d < 6; d++) { //Two nested For loops Represents increase in i  and j value
+            myfile << "0 <= w" + to_string(k) + " <= 1";
+            myfile << endl;
+            k=k+2;
+    }
+
 
     myfile<<endl;
 
