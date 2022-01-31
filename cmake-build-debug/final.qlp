@@ -51,50 +51,50 @@ E_constraint36: B3_3_8 + A3_3_9 <= 1
 
 \\Second Constraint Set of Existential Player 6.12
 
-E_constraint37: A1_1_1 + A1_1_3 <= 0
-E_constraint38: A1_1_3 + A1_1_5 <= 0
-E_constraint39: A1_1_5 + A1_1_7 <= 0
-E_constraint40: A1_1_7 + A1_1_9 <= 0
+E_constraint37: A1_1_1 - A1_1_3 <= 0
+E_constraint38: A1_1_3 - A1_1_5 <= 0
+E_constraint39: A1_1_5 - A1_1_7 <= 0
+E_constraint40: A1_1_7 - A1_1_9 <= 0
 
-E_constraint41: A1_2_1 + A1_2_3 <= 0
-E_constraint42: A1_2_3 + A1_2_5 <= 0
-E_constraint43: A1_2_5 + A1_2_7 <= 0
-E_constraint44: A1_2_7 + A1_2_9 <= 0
+E_constraint41: A1_2_1 - A1_2_3 <= 0
+E_constraint42: A1_2_3 - A1_2_5 <= 0
+E_constraint43: A1_2_5 - A1_2_7 <= 0
+E_constraint44: A1_2_7 - A1_2_9 <= 0
 
-E_constraint45: A1_3_1 + A1_3_3 <= 0
-E_constraint46: A1_3_3 + A1_3_5 <= 0
-E_constraint47: A1_3_5 + A1_3_7 <= 0
-E_constraint48: A1_3_7 + A1_3_9 <= 0
+E_constraint45: A1_3_1 - A1_3_3 <= 0
+E_constraint46: A1_3_3 - A1_3_5 <= 0
+E_constraint47: A1_3_5 - A1_3_7 <= 0
+E_constraint48: A1_3_7 - A1_3_9 <= 0
 
-E_constraint49: A2_1_1 + A2_1_3 <= 0
-E_constraint50: A2_1_3 + A2_1_5 <= 0
-E_constraint51: A2_1_5 + A2_1_7 <= 0
-E_constraint52: A2_1_7 + A2_1_9 <= 0
+E_constraint49: A2_1_1 - A2_1_3 <= 0
+E_constraint50: A2_1_3 - A2_1_5 <= 0
+E_constraint51: A2_1_5 - A2_1_7 <= 0
+E_constraint52: A2_1_7 - A2_1_9 <= 0
 
-E_constraint53: A2_2_1 + A2_2_3 <= 0
-E_constraint54: A2_2_3 + A2_2_5 <= 0
-E_constraint55: A2_2_5 + A2_2_7 <= 0
-E_constraint56: A2_2_7 + A2_2_9 <= 0
+E_constraint53: A2_2_1 - A2_2_3 <= 0
+E_constraint54: A2_2_3 - A2_2_5 <= 0
+E_constraint55: A2_2_5 - A2_2_7 <= 0
+E_constraint56: A2_2_7 - A2_2_9 <= 0
 
-E_constraint57: A2_3_1 + A2_3_3 <= 0
-E_constraint58: A2_3_3 + A2_3_5 <= 0
-E_constraint59: A2_3_5 + A2_3_7 <= 0
-E_constraint60: A2_3_7 + A2_3_9 <= 0
+E_constraint57: A2_3_1 - A2_3_3 <= 0
+E_constraint58: A2_3_3 - A2_3_5 <= 0
+E_constraint59: A2_3_5 - A2_3_7 <= 0
+E_constraint60: A2_3_7 - A2_3_9 <= 0
 
-E_constraint61: A3_1_1 + A3_1_3 <= 0
-E_constraint62: A3_1_3 + A3_1_5 <= 0
-E_constraint63: A3_1_5 + A3_1_7 <= 0
-E_constraint64: A3_1_7 + A3_1_9 <= 0
+E_constraint61: A3_1_1 - A3_1_3 <= 0
+E_constraint62: A3_1_3 - A3_1_5 <= 0
+E_constraint63: A3_1_5 - A3_1_7 <= 0
+E_constraint64: A3_1_7 - A3_1_9 <= 0
 
-E_constraint65: A3_2_1 + A3_2_3 <= 0
-E_constraint66: A3_2_3 + A3_2_5 <= 0
-E_constraint67: A3_2_5 + A3_2_7 <= 0
-E_constraint68: A3_2_7 + A3_2_9 <= 0
+E_constraint65: A3_2_1 - A3_2_3 <= 0
+E_constraint66: A3_2_3 - A3_2_5 <= 0
+E_constraint67: A3_2_5 - A3_2_7 <= 0
+E_constraint68: A3_2_7 - A3_2_9 <= 0
 
-E_constraint69: A3_3_1 + A3_3_3 <= 0
-E_constraint70: A3_3_3 + A3_3_5 <= 0
-E_constraint71: A3_3_5 + A3_3_7 <= 0
-E_constraint72: A3_3_7 + A3_3_9 <= 0
+E_constraint69: A3_3_1 - A3_3_3 <= 0
+E_constraint70: A3_3_3 - A3_3_5 <= 0
+E_constraint71: A3_3_5 - A3_3_7 <= 0
+E_constraint72: A3_3_7 - A3_3_9 <= 0
 
 \\Third Constraint Set of Existential Player 6.13 (Ai_j_k)
 

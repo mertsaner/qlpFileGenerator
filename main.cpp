@@ -84,7 +84,7 @@ int main() {
     {
         //Printing
         myfile<< "E_constraint" + to_string(count1+count2) +": ";
-        myfile<<"A" + to_string(i)+ "_"+to_string(j)+ "_"+to_string(k-2)+ " + ";
+        myfile<<"A" + to_string(i)+ "_"+to_string(j)+ "_"+to_string(k-2)+ " - ";
         myfile<<"A" + to_string(i)+ "_"+to_string(j)+ "_"+to_string(k)+ " <= 0"<< endl;
 
         k=k+2; //Increase k value in each step, k ∈ {3,5,7,9}
