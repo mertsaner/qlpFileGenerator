@@ -248,19 +248,19 @@ A_constraint5: A1_1_9 + A2_1_9 + A3_1_9 +  >= 3*(v1_9)
 
 \\Second Set Auxiliary Constraint Set 6.17.2
 
-A_constraint1: A1_2_1 + A2_2_1 + A3_2_1 +  >= 3*(v1_1)
-A_constraint2: A1_2_3 + A2_2_3 + A3_2_3 +  >= 3*(v1_3)
-A_constraint3: A1_2_5 + A2_2_5 + A3_2_5 +  >= 3*(v1_5)
-A_constraint4: A1_2_7 + A2_2_7 + A3_2_7 +  >= 3*(v1_7)
-A_constraint5: A1_2_9 + A2_2_9 + A3_2_9 +  >= 3*(v1_9)
+A_constraint1: A1_2_1 + A2_2_1 + A3_2_1 +  >= 3*(v2_1)
+A_constraint2: A1_2_3 + A2_2_3 + A3_2_3 +  >= 3*(v2_3)
+A_constraint3: A1_2_5 + A2_2_5 + A3_2_5 +  >= 3*(v2_5)
+A_constraint4: A1_2_7 + A2_2_7 + A3_2_7 +  >= 3*(v2_7)
+A_constraint5: A1_2_9 + A2_2_9 + A3_2_9 +  >= 3*(v2_9)
 
 \\Third Set of Second Auxiliary Constraint Set, (6.17.2)
 
-A_constraint1: A3_2_1 + A4_2_1 + A5_2_1 +  >= 3*(v3_1)
-A_constraint2: A3_2_3 + A4_2_3 + A5_2_3 +  >= 3*(v3_3)
-A_constraint3: A3_2_5 + A4_2_5 + A5_2_5 +  >= 3*(v3_5)
-A_constraint4: A3_2_7 + A4_2_7 + A5_2_7 +  >= 3*(v3_7)
-A_constraint5: A3_2_9 + A4_2_9 + A5_2_9 +  >= 3*(v3_9)
+A_constraint1: A1_3_1 + A2_3_1 + A3_3_1 +  >= 3*(v3_1)
+A_constraint2: A1_3_3 + A2_3_3 + A3_3_3 +  >= 3*(v3_3)
+A_constraint3: A1_3_5 + A2_3_5 + A3_3_5 +  >= 3*(v3_5)
+A_constraint4: A1_3_7 + A2_3_7 + A3_3_7 +  >= 3*(v3_7)
+A_constraint5: A1_3_9 + A2_3_9 + A3_3_9 +  >= 3*(v3_9)
 
 
 \\=========================================================================================================

@@ -335,7 +335,7 @@ int main() {
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
             myfile << "A" + to_string(i+d) + "_" + to_string(j) + "_" + to_string(k)+ " + ";
         }
-        myfile << " >= "  "3*(v" + to_string(i) + "_" + to_string(k) + ")";
+        myfile << " >= "  "3*(v" + to_string(j) + "_" + to_string(k) + ")";
         k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
         i2++;
         myfile << endl;
@@ -356,7 +356,7 @@ int main() {
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
             myfile << "A" + to_string(i+d) + "_" + to_string(j) + "_" + to_string(k)+ " + ";
         }
-        myfile << " >= "  "3*(v" + to_string(i) + "_" + to_string(k) + ")";
+        myfile << " >= "  "3*(v" + to_string(j) + "_" + to_string(k) + ")";
         k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
         i2++;
         myfile << endl;
@@ -366,8 +366,8 @@ int main() {
     myfile<<"\\\\Third Set of Second Auxiliary Constraint Set, (6.17.2)"<<endl;
     myfile<<endl;
 
-    i=3; //for the x coordinate of the board
-    j=2; //for the y coordinate of the board
+    i=1; //for the x coordinate of the board
+    j=3; //for the y coordinate of the board
     k=1; //k value
     i2=1; //Right hand side of the equation
 
@@ -376,7 +376,7 @@ int main() {
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
             myfile << "A" + to_string(i+d) + "_" + to_string(j) + "_" + to_string(k)+ " + ";
         }
-        myfile << " >= "  "3*(v" + to_string(i) + "_" + to_string(k) + ")";
+        myfile << " >= "  "3*(v" + to_string(j) + "_" + to_string(k) + ")";
         k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
         i2++;
         myfile << endl;
