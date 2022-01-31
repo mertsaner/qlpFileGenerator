@@ -40,9 +40,9 @@ int main() {
     myfile<< "\\\\Existential Constrains"<<endl;
     myfile<< " "<<endl;
 
- /*
-  * First Existential Constraint Set
-*/
+    /*
+     * First Existential Constraint Set
+   */
 
     myfile<<"\\\\First Constraint Set of Existential Player 6.11"<<endl;
 
@@ -123,7 +123,7 @@ int main() {
                     myfile << "A" + to_string(i+e) + "_" + to_string(j+d) + "_" + to_string(k);
                 }
                 else
-                myfile << "A" + to_string(i+e) + "_" + to_string(j+d) + "_" + to_string(k) + " + ";
+                    myfile << "A" + to_string(i+e) + "_" + to_string(j+d) + "_" + to_string(k) + " + ";
             }
         }
         myfile <<" = "+ to_string(k)+"/2 + 1 ";
@@ -132,11 +132,11 @@ int main() {
     }
 
 
- /*
-  * =====================================================================
-  * =====================================================================
-  * First Universal Constraint Set
-*/
+    /*
+     * =====================================================================
+     * =====================================================================
+     * First Universal Constraint Set
+   */
     myfile<< " "<<endl;
     myfile<< " "<<endl;
     myfile<< "\\\\========================================================================================================="<<endl;
@@ -210,6 +210,7 @@ int main() {
 /*
  * Third Universal Constraint Set
 */
+
     myfile<<"\\\\Third Constraint Set of Universal Player 6.16 (Ai_j_k) "<<endl;
     myfile<<endl;
 
@@ -261,7 +262,7 @@ int main() {
         myfile << "A_constraint" + to_string(cntA1) + ": ";
         for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
             if (d==2)
-              myfile << "A" + to_string(i) + "_" + to_string(j + d) + "_" + to_string(k);
+                myfile << "A" + to_string(i) + "_" + to_string(j + d) + "_" + to_string(k);
             else
                 myfile << "A" + to_string(i) + "_" + to_string(j + d) + "_" + to_string(k)+ " + ";
         }
@@ -484,30 +485,30 @@ int main() {
             for (int e = 0; e < 3; e++) {
 
                 if (d==0) { //Printing as much as required given by the equation
-                        myfile << "h" + to_string(i + e) + "__" + "_" + to_string(k) + " + ";
+                    myfile << "h" + to_string(i + e) + "__" + "_" + to_string(k) + " + ";
                 }
                 else if (d==1)  { //Printing as much as required given by the equation
-                        myfile << "v__" + to_string(i+e) + "_" + to_string(k) + " + ";
+                    myfile << "v__" + to_string(i+e) + "_" + to_string(k) + " + ";
                 }
 
-                 else if(d==2) { //Printing as much as required given by the equation
-                     if (e==2) //Printing only twice
-                         continue;
-                     else{
-                         if (e==1) {  //Removing one of sum sign after the print
-                             myfile << "d" + to_string(i + e) + "_" + to_string(k);
-                         }
-                         else{
-                             myfile << "d" + to_string(i + e) + "_" + to_string(k) + " + ";
-                         }
-                     }
-                 }
+                else if(d==2) { //Printing as much as required given by the equation
+                    if (e==2) //Printing only twice
+                        continue;
+                    else{
+                        if (e==1) {  //Removing one of sum sign after the print
+                            myfile << "d" + to_string(i + e) + "_" + to_string(k);
+                        }
+                        else{
+                            myfile << "d" + to_string(i + e) + "_" + to_string(k) + " + ";
+                        }
+                    }
+                }
 
             }
         }
         myfile << " >= "  "w" + to_string(k);
-           k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
-       // i2++;
+        k = k + 2;     //Increase k value in each step, k ∈ {2,4,6,8}
+        // i2++;
         myfile << endl;
     }
 
@@ -745,12 +746,12 @@ int main() {
     i=1; //for the x coordinate of the board
     j=1; //for the y coordinate of the board
     k=1; //k value
-        for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
-            for (int e = 0; e < 3; e++) {
-                    myfile << "0 <= A" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k)+ " <= 1";
-                    myfile<<endl;
-            }
+    for (int d = 0; d < 3; d++) { //Two nested For loops Represents increase in i  and j value
+        for (int e = 0; e < 3; e++) {
+            myfile << "0 <= A" + to_string(i + e) + "_" + to_string(j + d) + "_" + to_string(k)+ " <= 1";
+            myfile<<endl;
         }
+    }
 
     myfile << endl;
     myfile <<"\\\\Second Bound Set for A"<<endl;
@@ -916,9 +917,9 @@ int main() {
     j=1; //for the y coordinate of the board
     k=1; //k value
     for (int d = 1; d < 6; d++) { //Two nested For loops Represents increase in i  and j value
-            myfile << "0 <= w" + to_string(k) + " <= 1";
-            myfile << endl;
-            k=k+2;
+        myfile << "0 <= w" + to_string(k) + " <= 1";
+        myfile << endl;
+        k=k+2;
     }
 
     myfile<<endl;
@@ -928,7 +929,7 @@ int main() {
              " A1_1_5 A1_2_5 A1_3_5 A2_1_5 A2_2_5 A2_3_5 A3_1_5 A3_2_5 A3_3_5"
              " A1_1_7 A1_2_7 A1_3_7 A2_1_7 A2_2_7 A2_3_7 A3_1_7 A3_2_7 A3_3_7"
              " A1_1_9 A1_2_9 A1_3_9 A2_1_9 A2_2_9 A2_3_9 A3_1_9 A3_2_9 A3_3_9"
-            <<endl;
+           <<endl;
 
 
     myfile <<"B1_1_2 B2_1_2 B3_1_2 B1_2_2 B2_2_2 B3_2_2 B1_3_2 B2_3_2 B3_3_2"
@@ -996,36 +997,36 @@ int main() {
              " v__1_1 v__2_1 v__3_1"
              " d1_1 d2_1"
              " w1"
-            <<endl;
+           <<endl;
 
 
     myfile <<" B1_1_2 B2_1_2 B3_1_2 B1_2_2 B2_2_2 B3_2_2 B1_3_2 B2_3_2 B3_3_2"
-            <<endl;
+           <<endl;
     myfile <<" A1_1_3 A2_1_3 A3_1_3 A1_2_3 A2_2_3 A3_2_3 A1_3_3 A2_3_3 A3_3_3"
              " h1___3 h2___3 h3___3"
              " v__1_3 v__2_3 v__3_3"
              " d1_3 d2_3"
              " w3"
-            <<endl;
+           <<endl;
     myfile <<" B1_1_4 B2_1_4 B3_1_4 B1_2_4 B2_2_4 B3_2_4 B1_3_4 B2_3_4 B3_3_4"
-            <<endl;
+           <<endl;
     myfile <<" A1_1_5 A1_2_5 A1_3_5 A2_1_5 A2_2_5 A2_3_5 A3_1_5 A3_2_5 A3_3_5"
              " h1___5 h2___5 h3___5 "
              " v__1_5 v__2_5 v__3_5 "
              " d1_5 d2_5"
              " w5"
-            <<endl;
+           <<endl;
 
     myfile <<" B1_1_6 B2_1_6 B3_1_6 B1_2_6 B2_2_6 B3_2_6 B1_3_6 B2_3_6 B3_3_6"
-            <<endl;
+           <<endl;
     myfile <<" A1_1_7 A1_2_7 A1_3_7 A2_1_7 A2_2_7 A2_3_7 A3_1_7 A3_2_7 A3_3_7"
              " h1___7 h2___7 h3___7"
              " v__1_7 v__2_7 v__3_7"
              " d1_7 d2_7"
              " w7"
-            <<endl;
+           <<endl;
     myfile <<" B1_1_8 B2_1_8 B3_1_8 B1_2_8 B2_2_8 B3_2_8 B1_3_8 B2_3_8 B3_3_8"
-            <<endl;
+           <<endl;
     myfile <<" A1_1_9 A1_2_9 A1_3_9 A2_1_9 A2_2_9 A2_3_9 A3_1_9 A3_2_9 A3_3_9"
              " h1___9 h2___9 h3___9"
              " v__1_9 v__2_9 v__3_9"
