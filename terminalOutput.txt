@@ -35,13 +35,27 @@ isSimplyRestricted=1
 writeOutputFile=1
 maintainPv=1
 solve initial LP ...
-finished initial LP. lp-val=-0 sol.size=126 feas:0
-TTTTTTTWarning: data singularity in maintainPV.
-Warning: data singularity in maintainPV.
-Warning: data singularity in maintainPV.
-final score=-2.305843009213694e+18 final dual bound=-0
-NodeTypes: 0:10 1:3 2:0 3:0 4:0 5:0 6:0 7:0 8:0 9:0 10:0 11:0 12:0 13:0 14:0 15:0 16:0 17:0 18:0 19:0 
+finished initial LP. lp-val=1 sol.size=126 feas:0
++++++ 0 +++++ score: 0 | time: 1 |  dual: 1 gap=1000000000000%
+Maximum coef_t Precision reached. rhs=0 and v*=0
+----- 0 ----- score: 0 | time: 1 |  dual: 1.0000000010000001 gap=1000000001000%
+----- 0 ----- score: 0 | time: 1 |  dual: 1.0000000010000001 gap=1000000001000%
+----- 0 ----- score: 0 | time: 1 |  dual: 1.0000000010000001 gap=1000000001000%
+----- 0 ----- score: 0 | time: 1 |  dual: 1.0000000010000001 gap=1000000001000%
+----- 0 ----- score: 0 | time: 1 |  dual: 1.0000000010000001 gap=1000000001000%
+----- 0 ----- score: 0 | time: 1 |  dual: 1.0000000010000001 gap=1000000001000%
+----- 0 ----- score: 0 | time: 1 |  dual: 1.0000000010000001 gap=1000000001000%
+----- 0 ----- score: 0 | time: 1 |  dual: 1.0000000010000001 gap=1000000001000%
+----- 0 ----- score: 0 | time: 1 |  dual: 1.0000000010000001 gap=1000000001000%
++++++ 9 ++++u score: 0 | time: 2 |  dual: 0.99999000000000005 gap=999990000000%
+final score=0 final dual bound=0.99999000100000002
+NodeTypes: 0:31473 1:46 2:16 3:0 4:16 5:4326 6:0 7:0 8:0 9:0 10:0 11:0 12:0 13:0 14:0 15:8599 16:0 17:0 18:0 19:0 
+PV value and objective are the same.
 solution file written to final.qlp.sol
-RESULT: -2.30584e+18 : final.qlp
-NODES: 915, #RELAXATIONS:0, LEARNED: 0
-TIME: 0
+objOffset=0
+Solution might be ok. I have no fast counter proof and it is muti-stage.
+Solution value might be correct.
+0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 s2 s2 s2 s2 s2 s2 s2 s2 s2 s3 s3 s3 s3 s3 s3 s3 s3 s3 s3 s3 s3 s3 s3 s3 s3 s3 s3 s4 s4 s4 s4 s4 s4 s4 s4 s4 s5 s5 s5 s5 s5 s5 s5 s5 s5 s5 s5 s5 s5 s5 s5 s5 s5 s5 s6 s6 s6 s6 s6 s6 s6 s6 s6 s7 s7 s7 s7 s7 s7 s7 s7 s7 s7 s7 s7 s7 s7 s7 s7 s7 s7 s8 s8 s8 s8 s8 s8 s8 s8 s8 s9 s9 s9 s9 s9 s9 s9 s9 s9 s9 s9 s9 s9 s9 s9 s9 s9 s9 
+RESULT: 0 : final.qlp
+NODES: 119061, #RELAXATIONS:7515, LEARNED: 401
+TIME: 2
