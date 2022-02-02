@@ -127,7 +127,7 @@ int main() {
                     myfile << "A" + to_string(i+e) + "_" + to_string(j+d) + "_" + to_string(k) + " + ";
             }
         }
-        myfile <<" = floor("+ to_string(k)+"/2) + 1 ";
+        myfile <<" = " + to_string((k/2)+1 );
         k=k+2;     //Increase k value in each step, k ∈ {3,5,7,9}
         myfile<<endl;
     }
