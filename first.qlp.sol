@@ -142,3 +142,32 @@
   <variable name="w9" index="125" value="0" block="9"/>
  </variables>
 </YasolSolution>
+
+
+4. [_,x,_] 
+     [o,_,_]
+     [o,_, x]
+5. [x,x,_] 
+     [o,_,_]
+     [o,_, x]
+then universal player plays 
+6. [x, x,_] 
+     [o,_,_]
+     [o, o, x]
+Instead playing (1,3) to  block x winning,
+
+7. So x  plays (1,3) and wins,
+     [x, x, x] 
+     [o,_,_]
+     [o, o, x]
+
+8. 
+     [x, x, x] 
+     [o,_,o]
+     [o, o, x]
+
+9. 
+     [x, x, x] 
+     [o, x, o]
+     [o, o, x]
+
