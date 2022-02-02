@@ -1,0 +1,144 @@
+<?xml version = "1.0" encoding="UTF-8" standalone="yes"?>
+<YasolSolution version="1">
+ <header
+   ProblemName="final.qlp"
+   SolutionName="final.qlp.sol"
+   ObjectiveValue="0.000000"
+   Runtime="2 seconds"/>
+   DecisionNodes="14573"/>
+   PropagationSteps="137943"/>
+   LearntConstraints="474"/>
+ <quality
+   SolutionStatus="OPTIMAL"
+   Gap="999990001000.000000"/>
+ <linearConstraints>
+ </linearConstraints>
+ <variables>
+  <variable name="A1_1_1" index="0" value="0" block="1"/>
+  <variable name="A2_1_1" index="1" value="0" block="1"/>
+  <variable name="A3_1_1" index="2" value="0" block="1"/>
+  <variable name="A1_2_1" index="3" value="0" block="1"/>
+  <variable name="A2_2_1" index="4" value="0" block="1"/>
+  <variable name="A3_2_1" index="5" value="0" block="1"/>
+  <variable name="A1_3_1" index="6" value="0" block="1"/>
+  <variable name="A2_3_1" index="7" value="0" block="1"/>
+  <variable name="A3_3_1" index="8" value="1" block="1"/>
+  <variable name="h1___1" index="9" value="0" block="1"/>
+  <variable name="h2___1" index="10" value="0" block="1"/>
+  <variable name="h3___1" index="11" value="0" block="1"/>
+  <variable name="v__1_1" index="12" value="0" block="1"/>
+  <variable name="v__2_1" index="13" value="0" block="1"/>
+  <variable name="v__3_1" index="14" value="0" block="1"/>
+  <variable name="d1_1" index="15" value="0" block="1"/>
+  <variable name="d2_1" index="16" value="0" block="1"/>
+  <variable name="w1" index="17" value="0" block="1"/>
+  <variable name="B1_1_2" index="18" value="0" block="2"/>
+  <variable name="B2_1_2" index="19" value="0" block="2"/>
+  <variable name="B3_1_2" index="20" value="1" block="2"/>
+  <variable name="B1_2_2" index="21" value="0" block="2"/>
+  <variable name="B2_2_2" index="22" value="0" block="2"/>
+  <variable name="B3_2_2" index="23" value="0" block="2"/>
+  <variable name="B1_3_2" index="24" value="0" block="2"/>
+  <variable name="B2_3_2" index="25" value="0" block="2"/>
+  <variable name="B3_3_2" index="26" value="0" block="2"/>
+  <variable name="A1_1_3" index="27" value="0" block="3"/>
+  <variable name="A2_1_3" index="28" value="0" block="3"/>
+  <variable name="A3_1_3" index="29" value="0" block="3"/>
+  <variable name="A1_2_3" index="30" value="1" block="3"/>
+  <variable name="A2_2_3" index="31" value="0" block="3"/>
+  <variable name="A3_2_3" index="32" value="0" block="3"/>
+  <variable name="A1_3_3" index="33" value="0" block="3"/>
+  <variable name="A2_3_3" index="34" value="0" block="3"/>
+  <variable name="A3_3_3" index="35" value="1" block="3"/>
+  <variable name="h1___3" index="36" value="0" block="3"/>
+  <variable name="h2___3" index="37" value="0" block="3"/>
+  <variable name="h3___3" index="38" value="0" block="3"/>
+  <variable name="v__1_3" index="39" value="0" block="3"/>
+  <variable name="v__2_3" index="40" value="0" block="3"/>
+  <variable name="v__3_3" index="41" value="0" block="3"/>
+  <variable name="d1_3" index="42" value="0" block="3"/>
+  <variable name="d2_3" index="43" value="0" block="3"/>
+  <variable name="w3" index="44" value="0" block="3"/>
+  <variable name="B1_1_4" index="45" value="0" block="4"/>
+  <variable name="B2_1_4" index="46" value="1" block="4"/>
+  <variable name="B3_1_4" index="47" value="1" block="4"/>
+  <variable name="B1_2_4" index="48" value="0" block="4"/>
+  <variable name="B2_2_4" index="49" value="0" block="4"/>
+  <variable name="B3_2_4" index="50" value="0" block="4"/>
+  <variable name="B1_3_4" index="51" value="0" block="4"/>
+  <variable name="B2_3_4" index="52" value="0" block="4"/>
+  <variable name="B3_3_4" index="53" value="0" block="4"/>
+  <variable name="A1_1_5" index="54" value="1" block="5"/>
+  <variable name="A1_2_5" index="55" value="1" block="5"/>
+  <variable name="A1_3_5" index="56" value="0" block="5"/>
+  <variable name="A2_1_5" index="57" value="0" block="5"/>
+  <variable name="A2_2_5" index="58" value="0" block="5"/>
+  <variable name="A2_3_5" index="59" value="0" block="5"/>
+  <variable name="A3_1_5" index="60" value="0" block="5"/>
+  <variable name="A3_2_5" index="61" value="0" block="5"/>
+  <variable name="A3_3_5" index="62" value="1" block="5"/>
+  <variable name="h1___5" index="63" value="0" block="5"/>
+  <variable name="h2___5" index="64" value="0" block="5"/>
+  <variable name="h3___5" index="65" value="0" block="5"/>
+  <variable name="v__1_5" index="66" value="0" block="5"/>
+  <variable name="v__2_5" index="67" value="0" block="5"/>
+  <variable name="v__3_5" index="68" value="0" block="5"/>
+  <variable name="d1_5" index="69" value="0" block="5"/>
+  <variable name="d2_5" index="70" value="0" block="5"/>
+  <variable name="w5" index="71" value="0" block="5"/>
+  <variable name="B1_1_6" index="72" value="0" block="6"/>
+  <variable name="B2_1_6" index="73" value="1" block="6"/>
+  <variable name="B3_1_6" index="74" value="1" block="6"/>
+  <variable name="B1_2_6" index="75" value="0" block="6"/>
+  <variable name="B2_2_6" index="76" value="0" block="6"/>
+  <variable name="B3_2_6" index="77" value="1" block="6"/>
+  <variable name="B1_3_6" index="78" value="0" block="6"/>
+  <variable name="B2_3_6" index="79" value="0" block="6"/>
+  <variable name="B3_3_6" index="80" value="0" block="6"/>
+  <variable name="A1_1_7" index="81" value="1" block="7"/>
+  <variable name="A1_2_7" index="82" value="1" block="7"/>
+  <variable name="A1_3_7" index="83" value="0" block="7"/>
+  <variable name="A2_1_7" index="84" value="0" block="7"/>
+  <variable name="A2_2_7" index="85" value="1" block="7"/>
+  <variable name="A2_3_7" index="86" value="0" block="7"/>
+  <variable name="A3_1_7" index="87" value="0" block="7"/>
+  <variable name="A3_2_7" index="88" value="0" block="7"/>
+  <variable name="A3_3_7" index="89" value="1" block="7"/>
+  <variable name="h1___7" index="90" value="0" block="7"/>
+  <variable name="h2___7" index="91" value="0" block="7"/>
+  <variable name="h3___7" index="92" value="0" block="7"/>
+  <variable name="v__1_7" index="93" value="0" block="7"/>
+  <variable name="v__2_7" index="94" value="0" block="7"/>
+  <variable name="v__3_7" index="95" value="0" block="7"/>
+  <variable name="d1_7" index="96" value="1" block="7"/>
+  <variable name="d2_7" index="97" value="0" block="7"/>
+  <variable name="w7" index="98" value="0" block="7"/>
+  <variable name="B1_1_8" index="99" value="0" block="8"/>
+  <variable name="B2_1_8" index="100" value="1" block="8"/>
+  <variable name="B3_1_8" index="101" value="1" block="8"/>
+  <variable name="B1_2_8" index="102" value="0" block="8"/>
+  <variable name="B2_2_8" index="103" value="0" block="8"/>
+  <variable name="B3_2_8" index="104" value="1" block="8"/>
+  <variable name="B1_3_8" index="105" value="0" block="8"/>
+  <variable name="B2_3_8" index="106" value="1" block="8"/>
+  <variable name="B3_3_8" index="107" value="0" block="8"/>
+  <variable name="A1_1_9" index="108" value="1" block="9"/>
+  <variable name="A1_2_9" index="109" value="1" block="9"/>
+  <variable name="A1_3_9" index="110" value="1" block="9"/>
+  <variable name="A2_1_9" index="111" value="0" block="9"/>
+  <variable name="A2_2_9" index="112" value="1" block="9"/>
+  <variable name="A2_3_9" index="113" value="0" block="9"/>
+  <variable name="A3_1_9" index="114" value="0" block="9"/>
+  <variable name="A3_2_9" index="115" value="0" block="9"/>
+  <variable name="A3_3_9" index="116" value="1" block="9"/>
+  <variable name="h1___9" index="117" value="0" block="9"/>
+  <variable name="h2___9" index="118" value="0" block="9"/>
+  <variable name="h3___9" index="119" value="0" block="9"/>
+  <variable name="v__1_9" index="120" value="0" block="9"/>
+  <variable name="v__2_9" index="121" value="0" block="9"/>
+  <variable name="v__3_9" index="122" value="0" block="9"/>
+  <variable name="d1_9" index="123" value="0" block="9"/>
+  <variable name="d2_9" index="124" value="0" block="9"/>
+  <variable name="w9" index="125" value="0" block="9"/>
+ </variables>
+</YasolSolution>
