@@ -143,17 +143,17 @@
  </variables>
 </YasolSolution>
 
-
-4. [_,x,_] 
+===============================================
+4.   [_,x,_] 
      [o,_,_]
      [o,_, x]
-5. [x,x,_] 
+5.   [x,x,_] 
      [o,_,_]
      [o,_, x]
 then universal player plays 
-6. [x, x,_] 
+6.   [x,x,_] 
      [o,_,_]
-     [o, o, x]
+     [o,o,x]
 Instead playing (1,3) to  block x winning,
 
 7. So x  plays (1,3) and wins,
