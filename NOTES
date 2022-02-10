@@ -1,0 +1,96 @@
+/usr/bin/clang++ *.o -L -lLAPACK -static-libgcc -ldl ../Solver/Solver_cplex.a ../QBPSolver/QBPSolver_cplex.a /nfs/optimi/usr/sw/cplex/lib/x86-64_linux/static_pic/libcplex.a -lpthread -lm -o Yasol_cplex
+-rw-r--r-- 1 msaner optimi 21907296 Feb 10 18:42 ../QBPSolver/QBPSolver_cplex.a
+-rw-r--r-- 1 msaner optimi 24425034 Feb 10 18:41 ../Solver/Solver_cplex.a
+ls: Zugriff auf 'Debug/Yasol*' nicht möglich: Datei oder Verzeichnis nicht gefunden
+
+
+So no solution file is written and Tic-Tac-Toe output:
+
+
+
+msaner@opt120:~/Schreibtisch/Yasol_3.9.9.3.1_Linux/bin$ ./Yasol_CPLEX final.qlp
+Yasol
+final.qlp
+InfoLevel is = 1
+DO makeBinary
+QLP ready
+Hashtable ready
+Variables ready
+Blocks:9
+C-Blocks:3 Stages:1
+Objective ready
+Found universal constraint.
+Found universal constraint that contains universal variables of more than one block!
+Constraints ready
+Reading input finished
+Objective Shift = 0
+learnDualCuts=1
+useGMI=1
+useCover=1
+usePump=1
+useShadow=1
+useLazyLP=1
+useFarJumping=1
+useFastFix=0
+useImplications=1
+useLimitedLP=1
+useStrongBranching=1
+useEarlyBackjump=1
+useBestLevelExtraction=1
+useUniversalBackjump=1
+maxBaCLevel=1000000
+useAlphabeta=1
+useScout=0
+useMonotones=1
+isSimplyRestricted=1
+writeOutputFile=0
+maintainPv=1
+solve initial LP ...
+finished initial LP. lp-val=1 sol.size=126 feas:0
++++++ 0 +++++ score: 0 | time: 1 |  dual: 1 gap=1000000000000%
+Maximum coef_t Precision reached. rhs=0 and v*=0
+----- 0 ----- score: 0 | time: 1 |  dual: 1.0000000010000001 gap=1000000001000%
+----- 0 ----- score: 0 | time: 1 |  dual: 1.0000000010000001 gap=1000000001000%
+----- 0 ----- score: 0 | time: 1 |  dual: 1.0000000010000001 gap=1000000001000%
+----- 0 ----- score: 0 | time: 1 |  dual: 1.0000000010000001 gap=1000000001000%
+----- 0 ----- score: 0 | time: 1 |  dual: 1.0000000010000001 gap=1000000001000%
+----- 0 ----- score: 0 | time: 1 |  dual: 1.0000000010000001 gap=1000000001000%
+----- 0 ----- score: 0 | time: 2 |  dual: 1.0000000010000001 gap=1000000001000%
+----- 0 ----- score: 0 | time: 2 |  dual: 1.0000000010000001 gap=1000000001000%
+----- 0 ----- score: 0 | time: 2 |  dual: 1.0000000010000001 gap=1000000001000%
++++++ 9 ++++u score: 0 | time: 2 |  dual: 0.99999000000000005 gap=999990000000%
+final score=0 final dual bound=0.99999000100000002
+NodeTypes: 0:45329 1:40 2:5 3:0 4:4 5:6241 6:0 7:0 8:0 9:0 10:0 11:0 12:0 13:0 14:0 15:8299 16:0 17:0 18:0 19:0 
+PV value and objective are the same.
+objOffset=0
+Solution might be ok. I have no fast counter proof and it is muti-stage.
+Solution value might be correct.
+0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 s2 s2 s2 s2 s2 s2 s2 s2 s2 s3 s3 s3 s3 s3 s3 s3 s3 s3 s3 s3 s3 s3 s3 s3 s3 s3 s3 s4 s4 s4 s4 s4 s4 s4 s4 s4 s5 s5 s5 s5 s5 s5 s5 s5 s5 s5 s5 s5 s5 s5 s5 s5 s5 s5 s6 s6 s6 s6 s6 s6 s6 s6 s6 s7 s7 s7 s7 s7 s7 s7 s7 s7 s7 s7 s7 s7 s7 s7 s7 s7 s7 s8 s8 s8 s8 s8 s8 s8 s8 s8 s9 s9 s9 s9 s9 s9 s9 s9 s9 s9 s9 s9 s9 s9 s9 s9 s9 s9 
+RESULT: 0 : final.qlp
+NODES: 152516, #RELAXATIONS:8695, LEARNED: 474
+TIME: 3
+
+
+
+
+
+
+
+
+
+===============================================================================================
+
+NOTES
+
+Yasol Setup
+
+export YASOL_CPLEX_PATH=/nfs/optimi/usr/sw/cplex
+cd ~/Schreibtisch/Yasol_3.9.9.3.1_Linux 
+./build_CPLEX.bat
+
+
+export LD_LIBRARY_PATH=$YASOL_CLP_PATH/lib:$LD_LIBRARY_PATH
+
+Yasol Run
+
+./Yasol_CPLEX  ~/Schreibtisch/Yasol_3.9.9.3.1_Linux/bin/final.qlp
