@@ -521,7 +521,7 @@ int main() {
     myfile<< "\\\\========================================================================================================="<<endl;
     myfile<<endl;
     myfile<<endl;
-    myfile<<"\\\\First Set Auxiliary Constraint Set 6.19"<<endl;
+    myfile<<"\\\\First Set Auxiliary Constraint Set 6.19, Row Checking i=1"<<endl;
     myfile<<endl;
 
     i=1; //for the x coordinate of the board
@@ -546,7 +546,7 @@ int main() {
 
 
     myfile<<endl;
-    myfile<<"\\\\Second Set Auxiliary Constraint Set 6.19"<<endl;
+    myfile<<"\\\\Second Set Auxiliary Constraint Set 6.19, Row Checking i=2"<<endl;
     myfile<<endl;
 
     i=2; //for the x coordinate of the board
@@ -570,7 +570,7 @@ int main() {
 
 
     myfile<<endl;
-    myfile<<"\\\\Third Set Auxiliary Constraint Set 6.19"<<endl;
+    myfile<<"\\\\Third Set Auxiliary Constraint Set 6.19, Row Checking i=3"<<endl;
     myfile<<endl;
 
     i=3; //for the x coordinate of the board
@@ -598,7 +598,7 @@ int main() {
 
     myfile<<endl;
     myfile<<endl;
-    myfile<<"\\\\Auxiliary Constraint Set 6.19.2"<<endl;
+    myfile<<"\\\\Auxiliary Constraint Set 6.19.2, Column Checking j=1"<<endl;
     myfile<<endl;
 
     i=1; //for the x coordinate of the board
@@ -623,7 +623,7 @@ int main() {
 
     myfile<<endl;
     myfile<<endl;
-    myfile<<"\\\\Second Set of Auxiliary Constraint Set 6.19.2"<<endl;
+    myfile<<"\\\\Second Set of Auxiliary Constraint Set 6.19.2, Column Checking j=2"<<endl;
     myfile<<endl;
 
     i=1; //for the x coordinate of the board
@@ -648,7 +648,7 @@ int main() {
 
     myfile<<endl;
     myfile<<endl;
-    myfile<<"\\\\Third Set of  Constraint Set 6.19.2"<<endl;
+    myfile<<"\\\\Third Set of  Constraint Set 6.19.2, Column Checking j=3"<<endl;
     myfile<<endl;
 
     i=1; //for the x coordinate of the board
@@ -677,7 +677,7 @@ int main() {
 
     myfile<<endl;
     myfile<<endl;
-    myfile<<"\\\\Auxiliary Constraint Set 6.19.3"<<endl;
+    myfile<<"\\\\Auxiliary Constraint Set 6.19.3, Standard Diagonal Checking"<<endl;
     myfile<<endl;
 
 
@@ -704,7 +704,7 @@ int main() {
 
     myfile<<endl;
     myfile<<endl;
-    myfile<<"\\\\Auxiliary Constraint Set 6.19.4"<<endl;
+    myfile<<"\\\\Auxiliary Constraint Set 6.19.4, Inverse Diagonal Checking"<<endl;
     myfile<<endl;
 
     i=0; //for the x coordinate of the board

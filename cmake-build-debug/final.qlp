@@ -308,21 +308,21 @@ A_constraint45: h1___9 + h2___9 + h3___9 + v__1_9 + v__2_9 + v__3_9 + d1_9 + d2_
 \\=========================================================================================================
 
 
-\\First Set Auxiliary Constraint Set 6.19
+\\First Set Auxiliary Constraint Set 6.19, Row Checking i=1
 
 A_constraint46: B1_1_2 + B1_2_2 + B1_3_2 - w1 <= 2 
 A_constraint47: B1_1_4 + B1_2_4 + B1_3_4 - w3 <= 2 
 A_constraint48: B1_1_6 + B1_2_6 + B1_3_6 - w5 <= 2 
 A_constraint49: B1_1_8 + B1_2_8 + B1_3_8 - w7 <= 2 
 
-\\Second Set Auxiliary Constraint Set 6.19
+\\Second Set Auxiliary Constraint Set 6.19, Row Checking i=2
 
 A_constraint50: B2_1_2 + B2_2_2 + B2_3_2 - w1 <= 2 
 A_constraint51: B2_1_4 + B2_2_4 + B2_3_4 - w3 <= 2 
 A_constraint52: B2_1_6 + B2_2_6 + B2_3_6 - w5 <= 2 
 A_constraint53: B2_1_8 + B2_2_8 + B2_3_8 - w7 <= 2 
 
-\\Third Set Auxiliary Constraint Set 6.19
+\\Third Set Auxiliary Constraint Set 6.19, Row Checking i=3
 
 A_constraint54: B3_1_2 + B3_2_2 + B3_3_2 - w1 <= 2 
 A_constraint55: B3_1_4 + B3_2_4 + B3_3_4 - w3 <= 2 
@@ -330,7 +330,7 @@ A_constraint56: B3_1_6 + B3_2_6 + B3_3_6 - w5 <= 2
 A_constraint57: B3_1_8 + B3_2_8 + B3_3_8 - w7 <= 2 
 
 
-\\Auxiliary Constraint Set 6.19.2
+\\Auxiliary Constraint Set 6.19.2, Column Checking j=1
 
 A_constraint58: B1_1_2 + B2_1_2 + B3_1_2 - w1 <= 2 
 A_constraint59: B1_1_4 + B2_1_4 + B3_1_4 - w3 <= 2 
@@ -338,7 +338,7 @@ A_constraint60: B1_1_6 + B2_1_6 + B3_1_6 - w5 <= 2
 A_constraint61: B1_1_8 + B2_1_8 + B3_1_8 - w7 <= 2 
 
 
-\\Second Set of Auxiliary Constraint Set 6.19.2
+\\Second Set of Auxiliary Constraint Set 6.19.2, Column Checking j=2
 
 A_constraint62: B1_2_2 + B2_2_2 + B3_2_2 - w1 <= 2 
 A_constraint63: B1_2_4 + B2_2_4 + B3_2_4 - w3 <= 2 
@@ -346,7 +346,7 @@ A_constraint64: B1_2_6 + B2_2_6 + B3_2_6 - w5 <= 2
 A_constraint65: B1_2_8 + B2_2_8 + B3_2_8 - w7 <= 2 
 
 
-\\Third Set of  Constraint Set 6.19.2
+\\Third Set of  Constraint Set 6.19.2, Column Checking j=3
 
 A_constraint66: B1_3_2 + B2_3_2 + B3_3_2 - w1 <= 2 
 A_constraint67: B1_3_4 + B2_3_4 + B3_3_4 - w3 <= 2 
@@ -354,7 +354,7 @@ A_constraint68: B1_3_6 + B2_3_6 + B3_3_6 - w5 <= 2
 A_constraint69: B1_3_8 + B2_3_8 + B3_3_8 - w7 <= 2 
 
 
-\\Auxiliary Constraint Set 6.19.3
+\\Auxiliary Constraint Set 6.19.3, Standard Diagonal Checking
 
 A_constraint70: B1_1_2 + B2_2_2 + B3_3_2 - w1 <= 2 
 A_constraint71: B1_1_4 + B2_2_4 + B3_3_4 - w3 <= 2 
@@ -362,7 +362,7 @@ A_constraint72: B1_1_6 + B2_2_6 + B3_3_6 - w5 <= 2
 A_constraint73: B1_1_8 + B2_2_8 + B3_3_8 - w7 <= 2 
 
 
-\\Auxiliary Constraint Set 6.19.4
+\\Auxiliary Constraint Set 6.19.4, Inverse Diagonal Checking
 
 A_constraint74: B1_3_2 + B2_2_2 + B3_1_2 - w1 <= 2 
 A_constraint75: B1_3_4 + B2_2_4 + B3_1_4 - w3 <= 2 
