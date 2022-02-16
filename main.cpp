@@ -11,6 +11,7 @@
 The existential player assigns the variables Ak ∈ {0, 1}3×3 and the universal player assigns Bk ∈ {0,1}3×3 in the k-th turn.
  Aki,j = 1 indicates that cell (i,j) is filled with a piece from the existential player after turn k.
 */
+// Author Mert Saner
 
 
 #include <iostream>
